@@ -1,0 +1,218 @@
+---
+title: 'PHIL 383: Knowledge and Reality'
+author: "Brian Weatherson"
+date: "Fall 2022"
+format:
+  pdf:
+    documentclass: article
+    md-extensions: +compact_definition_lists
+    keep-tex: true
+    block-headings: false
+    pdf-engine: xelatex
+    include-in-header: 
+      - packages.tex
+  html:
+    minimal: true
+geometry: margin=1.5in
+mainfont: SF Pro Thin
+mainfontoptions: 
+ - BoldFont = SF Pro Rounded Semibold
+ - Scale = MatchLowercase
+mathfont: Fira Math
+---
+
+```{r setup, include=FALSE, cache=F, message=F, warning=F, results="hide"}
+knitr::opts_chunk$set(cache=TRUE)
+knitr::opts_chunk$set(fig.path='figs/')
+knitr::opts_chunk$set(cache.path='_cache/')
+knitr::opts_chunk$set(warning=F, message=F)
+# knitr::opts_knit$get(kable.force.latex = TRUE)
+require(tidyverse)
+require(fontawesome)
+```
+
+```{r dates_bib, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE, dev='pdf')
+mon <- as.Date("2022-08-29") # Monday of the First Week
+tue <- mon + 1
+wed <- tue + 1
+thu <- wed + 1
+fri <- thu + 1
+# fri <- as.Date("2016-01-08")
+
+advdate <- function(obj, adv) {
+ theday <- obj + 7*(adv-1)
+ ttheday <- format(theday, format="%A, %B %d")
+ return(ttheday)
+}
+
+#library(RefManageR)
+## library(knitcitations)
+## library(rcrossref)
+#bib <- ReadBib("411bib.bib")
+#myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 20)
+
+```
+
+| **Lead Instructor**: Brian Weatherson
+| `r fa("far fa-envelope")` weath\@umich.edu
+| `r fa("fas fa-wifi")` canvas.umich.edu
+| 
+| **Office Hours**: TBA (via Zoom)
+| 
+| **Discussion Section Leader**: Sumeet Patwardhan
+| `r fa("far fa-envelope")` sumeetcp\@umich.edu
+
+# Course Description
+
+This course discusses a number of topics in *epistemology*, the theory of knowledge. We will start with a very brief survey of some recent debates, mainly to ensure everyone is up to speed with what is assumed in the readings later in the course. Then the bulk of the course will be devoted to working through two recent books: *After Certainty* by Robert Pasnau, and *The Rationality of Perception* by Susanna Siegel. These books are designed to complement one another. Pasnau's book is a history of how European epistemology developed the way it did, focussing on two key periods, the early 14th century and the late 17th century. Siegel's book engages with contemporary empirical work on perception and, via considerations of the social and political significance of some features of perception, comes to a new view on the role of perception in epistemology. So hopefully looking at some contemporary work in light of historical work will give us fresh insights into both.
+
+# Canvas
+
+There is a Canvas site for this course, which can be accessed from <https://canvas.umich.edu>. Course documents (syllabus, lecture notes, assignments) will be available from this site. Please make sure that you can access this site. Consult the site regularly for announcements, including changes to the course schedule. And there are many tools on the site to communicate with each other, and with me.
+
+\newpage
+
+# Required Materials
+
+There are two books for the course. Both of them are available through the bookstore. You do not need physical versions of the books; I'll be primarily teaching off the electronic versions. The books are:
+
+-   *After Certainty: A History of Our Epistemic Ideals and Illusions*, by Robert Pasnau. Oxford University Press, 2017.
+-   *The Rationality of Perception*, by Susanna Siegel. Oxford University Press, 2017.
+
+Note that in class we'll be working through the main text of Pasnau's book, not the hundreds of pages of endnotes. These are not required reading, but I do encourage you to dip into them if you're interested in more detail on any of the points. The endnotes are basically blog posts, sometimes short essays, expanding on the text, and often filling in fascinating historical detail. But I'm not expecting everyone to read all of them in the middle of term.
+
+# Course Requirements
+
+1.  Participate in discussion section. This will require that you have read the relevant material closely, and thought about what to say about it. And it will require that you then participate in the discussions in section. This will help you learn, and it will help your classmates learn.
+
+2.  Do three online quizzes. At the end of each section of the course, there will be a short quiz to do on Canvas. This will be timed, though you can take it at a time of your own choosing. The quizzes will be multiple choice.
+
+3.  Write three short essays. You will have to write a short paper, around 1500-2000 words, on each of the three sections of the course. Topics will be distributed well in advance.
+
+# Grade Breakdown
+
+-   Discussion section participation: 10%;
+-   Three Quizzes: 10% each, for a total of 30%;
+-   Three Essays: 20% each, for a total of 60%.
+
+\newpage
+
+The course is in three parts: Introduction, which is weeks 1-5, Pasnau, which is weeks 6-8, and Siegel, which is weeks 9-12. We will do some revision and general discussion of things that have come up in the course after that.
+
+# Part One: Introduction
+
+## `r advdate(mon, 1)`
+
+Topic
+:   Introducing the course
+
+Required Reading
+:   This syllabus
+
+Suggested Reading
+:   None
+
+## `r advdate(wed, 1)`
+
+Topic
+:   Classical Indian Philosophy
+
+Required Reading
+:   Stephen Phillips, [*Epistemology in Classical Indian Philosophy*](Epistemology%20in%20Classical%20Indian%20Philosophy).
+
+Suggested Reading
+:   None
+
+## `r advdate(mon, 2)`
+
+Topic
+:   Testimony as a pramāṇa
+
+Required Reading
+:   Dhirendon Mohon Datta, [*Testimony as a Method of Knowledge*](https://www.jstor.org/stable/2249544).
+
+Suggested Reading
+:   Nick Leonard, [*Epistemological Problems of Testimony*](https://plato.stanford.edu/entries/testimony-episprob/), especially §§1 & 3.
+
+## `r advdate(wed, 2)`
+
+Topic
+:   Testimony and vigilance
+
+Required Reading
+:   Dan Sperber *et al*, [*Epistemic Vigilance*](https://doi.org/10.1111/j.1468-0017.2010.01394.x).
+
+Suggested Reading
+:   Kourken Michaelian, [*The Evolution of Testimony: Receiver Vigilance, Speaker Honesty and the Reliability of Communication*](https://doi.org/10.1017/epi.2013.2).
+
+## `r advdate(mon, 3)`
+
+Topic
+:   Internalism and Externalism
+
+Required Reading
+:   George Pappas, [*Internalist vs. Externalist Conceptions of Epistemic Justification*](https://plato.stanford.edu/entries/justep-intext/), §§7 & 10.
+:   Alvin Goldman and Bob Beddor, [*Reliabilist Epistemology*](https://plato.stanford.edu/entries/reliabilism/), §2.
+
+Suggested Reading
+:   The other sections of those articles.
+:   James Pryor, [*Highlights of Recent Epistemology*](https://www.jstor.org/stable/3541945), §3.
+
+## `r advdate(wed, 3)`
+
+Topic
+:   Political arguments for externalism
+
+Required Reading
+:   Amia Srinivasan, [*Radical Externalism*](https://doi.org/10.1215/00318108-8311261).
+
+Suggested Reading
+:   Zoë Johnson King, [*Radical Internalism*](https://www.zoejohnsonking.com/s/Radical-Internalism-draft-46.pdf).
+
+# Summary of Grading System
+
+1.  Weekly assignments - 8.9% each, 9 assignments count, 80% total.
+2.  Final exam - 20%.
+
+# Grading Schema
+
+By default, we've set up Canvas with the automatic system for converting numerical grades to letter grades. If the questions turn out to be harder than we expected, we might move those numbers around a little bit - the line betwen a B+ and an A- might get moved down a point or two. We won't move any of the lines up though - so the changes can only improve your letter grade.
+
+# Plagiarism
+
+Although team-work, and even co-authorship, is encouraged, plagiarism is strictly prohibited. You are responsible for making sure that none of your work is plagiarized. Be sure to cite work that you use, both direct quotations and paraphrased ideas. Any citation method that is tolerably clear is permitted, but if you'd like a good description of a citation scheme that works well in philosophy, look at <http://bit.ly/VDhRJ4>.
+
+You are encouraged to discuss the course material, including assignments, with your classmates, but all written work that you hand in under your own name must be your own. If work is handed is as the work of two people, you are affirming that each person did a fair share of the work. (Note that when you're submitting work on Canvas, you have to each submit the paper, even if it is co-authored. That way Canvas knows that everyone has turned in work.)
+
+You should also be familiar with the academic integrity policies of the College of Literature, Science & the Arts at the University of Michigan, which are available here: <http://www.lsa.umich.edu/academicintegrity/>. Violations of these policies will be reported to the Office of the Assistant Dean for Student Academic Affairs, and sanctioned with a course grade of F.
+
+# Disability
+
+The University of Michigan abides by the Americans with Disabilities Act of 1990, Section 504 of the Rehabilitation Act of 1973, and other applicable federal and state laws that prohibit discrimination on the basis of disability, which mandate that reasonable accommodations be provided for qualified students with disabilities.
+
+If you have a disability, and may require some type of instructional and/or examination accommodation, please contact me early in the semester. If you have not already done so, you will also need to register with the Office of Services for Students with Disabilities. The office is located at G664 Haven Hall.
+
+For more information on disability services at the University of Michigan, go to <http://ssd.umich.edu>.
+
+\newpage
+
+# Class Schedule
+
+The readings will all be from the three textbooks. I've produced short videos going over the material in the books, and occasionally other philosophically interesting points. Then the time in class will be entirely spent on questions people have, and going over worked examples. So you should do the reading, and watch the lectures, before the scheduled class.
+
+Most of the readings are from the two textbooks. The other readings are all in the UM library or online. You might have to be logged in to UM to get them though. The names of the papers are links to a source where you can get a copy of the paper.
+
+The video lectures will have a number of the form $x.y$, where $x$ is the week they are for, and the $y$ is their order in the week. You should watch these **before** class, and we can discuss the material in class.
+
+Most weeks have a fairly simple structure. There are in person classes with me on Tuesday and Thursday, and you have a smaller in person class with Mica as well. There are video lectures before each of my classes. And at the end of the week there is a Canvas quiz assigned about the material we covered. But there are exceptions, especially around late January-early February. I'm going to be away on **January 27**, and that leads to the following complications.
+
+-   There is no in person class with me on Thursday, January 27.
+-   The assignment in week 4 will just be about the material through class on Tuesday, January 25.
+-   There is no assignment in week 5.
+-   The assignment in week 6 will be about the material through class on Thursday, February 3, i.e., the end of week 5.
+-   The assignment in week 7 will cover the material in weeks 6 and 7.
+
+There is also no assignment the week after Spring Break, so we can all get a bit of a soft relaunch of the term before the final push to the end of term.
+
+\newpage
