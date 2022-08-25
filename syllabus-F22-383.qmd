@@ -88,13 +88,23 @@ Note that in class we'll be working through the main text of Pasnau's book, not 
 
 2.  Do three online quizzes. At the end of each section of the course, there will be a short quiz to do on Canvas. The quizzes will be multiple choice.
 
-3.  Write three short essays. You will have to write a short paper, around 1500-2000 words, on each of the three sections of the course. Topics will be distributed well in advance.
+3.  Write three short essays. You will have to write a short paper, around 1500 words, on each of the three sections of the course. Topics will be distributed well in advance.
 
 # Grade Breakdown
 
 -   Discussion section participation: 10%;
 -   Three Quizzes: 10% each, for a total of 30%;
 -   Three Essays: 20% each, for a total of 60%.
+
+# Due Dates
+
+- Quiz One: `r advdate(fri, 5)`, 5pm.
+- Essay One: `r advdate(fri, 7)`, 5pm.
+- Quiz Two: `r advdate(fri, 9)`, 5pm.
+- Essay Two: `r advdate(fri, 10)`, 5pm.
+- Quiz Three: `r advdate(fri, 14)`, 5pm.
+- Essay Three: `r advdate(fri, 16)`, midday.
+
 
 \newpage
 
@@ -356,11 +366,25 @@ Suggested Reading
 
 - The last week will be for review, and for extra time for any topic we felt was too rushed through the course.
 
+\newpage
+# Co-Authorship
+
+You are allowed to co-author essays in this class. But there are some rules.
+
+1. Only essays, not quizzes, can be co-authored.
+2. Each paper can have at most two co-authors.
+3. You can only co-author one paper with each co-author. (That is, you can co-author multiple papers, but you have to have different collaborators each time.)
+4. Each person has to turn the paper in on Canvas, and it has to be clearly marked as a co-authored piece.
+
+# Anonymous Grading
+
+We aim to grade work anonymously as much as possible. So when you turn in papers, do not include your name on the PDF or DOCX file that you turn in. You should just include your UMID as a way of getting the paper back to you if it gets misfiled. (And if it is co-authored, make the two ID numbers prominent, so we don't think there was in class copying!) Canvas can show us the paper without telling us who turned it in, so as long as there are no identifying marks on the paper itself we can grade the papers anonymously. We think this is a fairer way to grade papers, and we appreciate your help in making this possible.
+
 # Plagiarism
 
 Although team-work, and even co-authorship, is encouraged, plagiarism is strictly prohibited. You are responsible for making sure that none of your work is plagiarized. Be sure to cite work that you use, both direct quotations and paraphrased ideas. Any citation method that is tolerably clear is permitted, but if you'd like a good description of a citation scheme that works well in philosophy, look at <http://bit.ly/VDhRJ4>.
 
-You are encouraged to discuss the course material, including assignments, with your classmates, but all written work that you hand in under your own name must be your own. If work is handed is as the work of two people, you are affirming that each person did a fair share of the work. (Note that when you're submitting work on Canvas, you have to each submit the paper, even if it is co-authored. That way Canvas knows that everyone has turned in work.)
+You are encouraged to discuss the course material, including assignments, with your classmates, but all written work that you hand in under your own name/ID number must be your own. If work is handed is as the work of two people, you are affirming that each person did a fair share of the work.
 
 You should also be familiar with the academic integrity policies of the College of Literature, Science & the Arts at the University of Michigan, which are available here: <http://www.lsa.umich.edu/academicintegrity/>. Violations of these policies will be reported to the Office of the Assistant Dean for Student Academic Affairs, and sanctioned with a course grade of F.
 
