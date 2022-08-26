@@ -1,0 +1,48 @@
+---
+title: "Knowledge and Reality, Lecture 01"
+author: "Brian Weatherson"
+date: 2022-08-29
+format: 
+  beamer: 
+    aspectratio: 169
+    navigation: empty
+    incremental: true
+    theme: AnnArbor
+    colortheme: wolverine
+    toc: true
+    toc-depth: 2
+    toc-title: "Day Plan"
+    fontsize: 17pt
+    keep-tex: true
+    linespread: 2
+---
+
+
+# Introduction
+
+## Hello World
+
+- Some text
+- More text
+
+## Doing More
+
+::: columns
+
+:::: column
+- A point
+- Another point
+::::
+
+:::: column
+- Keep on
+- Trucking
+::::
+
+:::
+
+# The Books
+
+## Pasnau
+
+![After certainty](../images/pasnau_cover.jpeg){height=70%}
