@@ -15,31 +15,91 @@ format:
     fontsize: 17pt
     keep-tex: true
     linespread: 2
+    include-in-header:
+      - \captionsetup[figure]{labelformat=empty}
 ---
 
-
-# Introduction
+# Logistics
 
 ## Hello World
 
-- Some text
-- More text
+- Welcome to philosophy 383 - Knowledge and Reality
 
-## Doing More
+## Who We are
 
 ::: columns
 
 :::: column
-- A point
-- Another point
+Lectures by:
+
+- Brian Weatherson
+- weath@umich.edu
 ::::
 
 :::: column
-- Keep on
-- Trucking
+Discussion sections by:
+
+- Sumeet Patwardhan
+- sumeetcp@umich.edu
 ::::
 
 :::
+
+
+## Logistics
+
+- Two 1.5 hour meetings like we're having now.
+- One 1 hour discussion section per week.
+
+## Interaction
+
+- One hour out of four being interactive isn't enough.
+- Feel free to put your hand up to ask questions a lot.
+- I will be asking you some questions too.
+
+## Demographics
+
+How many people here are:
+
+- Cog Sci majors?
+- PPE majors?
+- Philosophy majors?
+- Some other major?
+
+## Demographics
+
+How many people here have previously taken:
+
+- 0-1 philosophy classes?
+- 2 philosophy classes?
+- 3-4 philosophy classes?
+- 5+ philosophy classes?
+
+## Course Goals
+
+- What are you hoping to get out of the course? Why did you enroll in it?
+
+## Canvas
+
+![](../images/canvas.jpeg){height=70%}
+
+## Syllabus
+
+![](../images/syllabus.jpeg){height=70%}
+
+
+## Grading
+
+- Three essays
+- Three quizzes
+- Discussion section participation
+
+## Co-authorship
+
+- Essays can be co-authored.
+- At most one co-author per paper.
+- Different co-authors for different papers.
+
 
 # The Books
 
