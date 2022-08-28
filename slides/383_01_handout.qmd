@@ -1,0 +1,284 @@
+---
+title: "Knowledge and Reality, Lecture 01"
+author: "Brian Weatherson"
+date: 2022-08-29
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+
+---
+
+# Logistics
+
+## Hello World
+
+- Welcome to **Philosophy** 383 - Knowledge and Reality
+
+## Who We are
+
+::: columns
+
+:::: column
+Lectures by:
+
+- Brian Weatherson
+- weath@umich.edu
+::::
+
+:::: column
+Discussion sections by:
+
+- Sumeet Patwardhan
+- sumeetcp@umich.edu
+::::
+
+:::
+
+
+## Logistics
+
+- Two 1.5 hour meetings like we're having now.
+- One 1 hour discussion section per week.
+
+## Interaction
+
+- One hour out of four being interactive isn't enough.
+- Feel free to put your hand up to ask questions a lot.
+- I will be asking you some questions too.
+
+## Demographics
+
+How many people here are:
+
+- Cog Sci majors?
+- PPE majors?
+- Philosophy majors?
+- Some other major?
+
+## Demographics
+
+How many people here have previously taken:
+
+- 0-1 philosophy classes?
+- 2 philosophy classes?
+- 3-4 philosophy classes?
+- 5+ philosophy classes?
+
+## Course Goals
+
+- What are you hoping to get out of the course? Why did you enroll in it?
+
+## Canvas
+
+![&nbsp;](../images/canvas.jpeg){height=60%}
+
+## Syllabus
+
+![&nbsp;](../images/syllabus.jpeg){height=60%}
+
+## Slides
+
+- All the slides are on Canvas.
+- You don't need to copy down anything that's up here.
+
+## Grading
+
+- Three essays
+- Three quizzes
+- Discussion section participation
+
+## Co-authorship
+
+- Essays can be co-authored.
+- At most one co-author per paper.
+- Different co-authors for different papers.
+
+## Skills
+
+Why are we going to read about what some 14th century dudes thought?
+
+1. Intrinsically intersting.
+2. Cultural history.
+3. Thinking and writing clearly about hard subjects is valuable.
+
+## An Extrinsic Payoff
+
+![&nbsp;](../images/philosophy_pay.jpeg){height=70%}
+
+## The Two Books We're Reading
+
+::: columns
+
+:::: column
+![Pasnau, After certainty](../images/pasnau_cover.jpeg){height=60%}
+::::
+
+:::: column
+![Siegel, Rationality of Perception](../images/siegel_cover.jpeg){height=60%}
+::::
+
+:::
+
+# Pasnau
+
+## Belief
+
+Here are some things I believe: \pause
+
+- I have two hands.
+- The Battle of Gettysburg was in 1863.
+- Human action is causing global warming.
+
+## Two Questions
+
+Two questions about each of these beliefs: \pause
+
+1. What would it take for these beliefs to be ideal, and how can we be more like that?
+2. When is the belief good enough to assert/act on/hold?
+
+## Pasnau's Focus
+
+One big theme of his book:
+
+- Philosophers used to care more about the first question, but they came to care more about the second.
+- This was a mistake.
+
+## The Ideal
+
+If you like the first question, then some natural questions arise from it.
+
+- Can we ever be epistemically ideal?
+- If so, in what situations can we be ideal? Is it when thinking about mathematics, or our own minds, or, most optimistically, the external world.
+
+## Pasnau
+
+The book is primarily about two time periods:
+
+- Early 14th century; and
+- Late 17th century.
+
+## Pasnau
+
+- The body text, which we'll cover, is only about 1/3 of the book.
+- The endnotes are fascinating, and while I encourage you to read them, they aren't required.
+
+## Pasnau
+
+- The book is very focussed on Western Europe; mostly France and England.
+- It's a bit of a pity it didn't do more to connect the debates here to debates in Indian philosophy.
+
+# Siegel
+
+## An Example
+
+::: columns
+
+:::: column
+![](../images/lennon.jpeg){height=70%}
+::::
+
+:::: column
+| I'm sick and tired 
+|   of hearing things
+| From uptight, short-sighted, 
+|   narrow-minded hypocritics
+|        John Lennon, 
+|        "Gimme Some Truth"
+::::
+
+:::
+
+## Two Epistemic Shortcomings
+
+1. Short-sighted
+
+2. Narrow-minded
+
+## Epistemic Vices
+
+| If we treat these literally, 
+|     narrow-mindedness is a **vice**, 
+|     while short-sightedness is at worst a **misfortune**.
+
+## A Simple Picture of Empirical Knowledge
+
+1. We get inputs from reality via our perceptual system.
+2. We use our minds to figure out more things about the world using these inputs.
+
+## Philosophical Differences Between Stages
+
+- If dualism is true, the first is carried out by our body, the second by our mind.
+
+## Philosophical Differences Between Stages
+
+- Even if that's not right, philosophy has something to say about the second, but not really about the first.
+
+## Philosophical Differences Between Stages
+
+- Relatedly, we criticise people for doing badly at the second, but not the first.
+
+## Some Questions
+
+1. Where is the perception/inference boundary?
+2. What are the inputs that perception provides to inference?
+3. Does the postulation of a boundary make sense given modern biological theories?
+4. Does the two-stage, dualist, picture make sense?
+
+## Two Radical Views
+
+- Philosophical, evaluative, terms are appropriate either side of the boundary. We can talk about the **Rationality of Perception**.
+- The boundary does not in fact make sense, and should be abandoned as pre-scientific.
+
+## Motivation for Radicalism
+
+Prejudiced seeing
+
+# Four Issues in Epistemology
+
+## Ways of Knowing
+
+- How many distinct ways of knowing are there?
+- Is testimony one of them?
+
+## Justification
+
+Is having a justified belief more a matter of:
+
+- Having a well-ordered mind?; or
+- Having a reliable connection to reality?
+
+## Knowledge
+
+- What is the difference betewen knowledge and lucky guesses?
+
+## Scepticism
+
+- Do we know anything about the external world?
+- If so, how and why do sceptical arguments fail?
+
+## For Next Time
+
+- We will start a fair way back, with a (very quick!) survey of some issues that come up in Classical Indian Epistemology.
