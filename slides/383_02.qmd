@@ -1,0 +1,148 @@
+---
+title: "Knowledge and Reality, Lecture 02"
+author: "Brian Weatherson"
+date: 2022-08-31
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+
+---
+
+# Where and When
+
+## Don't Hope for Precision
+
+- We don't have nearly as good a sense of where and when the classical Indian texts were written as we do for a lot of Western texts.
+- It's a lot more like the situation with Homer and Hesiod (or the Bible) than with Plato and Aristotle.
+
+## Roughly
+
+- The foundational works are mostly written pre 0 CE, or not that long after.
+- But a lot of the more developed works are late first millenium CE or early second millenium CE.
+
+## Where
+
+- I'm calling this all "Indian philosophy", but don't think that this means that it call came from within the present-day country called **India** any more than "European philosophy" all comes from within what we now call Europe.
+- On the latter, plenty of important documents from antiquity are from Asia (at least from Asian parts of Turkey) or North Africa.
+
+## Where
+
+- Mostly within present-day India.
+- But some from within present-day Nepal and Bangladesh.
+- And maybe some from within present-day Pakistan and perhaps Bhutan.
+
+# Pramāṇa
+
+## Common Assumptions
+
+- All knowledge come from a pramāṇa of some form or another.
+- There are finitely many of these.
+
+## Etymology
+
+- Pramāṇa literally means proof.
+- So to know something is to have a proof of it.
+- This suggests that there is a connection between knowledge and certainty.
+- And yet most schools do not think that pramāṇas can only lead to very abstract mathematical knowledge.
+
+## Infallibility
+
+- A knowledge-source produces knowledge.
+- So if something does not produce knowledge, it produces false beliefs or lucky guesses, then it isn't a knowledge-source.
+- So we may not be able to tell from the inside whether we are using a knowledge-source or not.
+
+## Two Cases
+
+1. Sumeet tells me that it's raining and it is raining, and indeed he just came in from the rain. I come to know that it's raining by the pramāṇa Śabda (or Word).
+2. Sumeet tells me that it's raining but he's playing a trick, and just wants me to stay inside away from the nice weather. I don't get knowledge, so I must not be using Śabda.
+
+## Transparency
+
+- The schools differ some on this, but most accept that we don't always know what method we're using.
+- For every pramāṇa, there is something that we might call a psuedo-pramāṇa, that feels a lot like it from the inside, but is crucially different.
+
+## Disjunctivism
+
+- In contemporary epistemology of perception, this kind of position is sometimes called **disjunctivism**.
+- The idea is that perceiving an apple and hallucinating an apple are fundamentally different kinds of experience, even if occasionally one may not be able to tell the difference.
+- What philosophers used to call "Having an apple-like experience" is a disjunction: you're either seeing an apple **or** hallucinating an apple.
+
+# Scepticism
+
+## Scepticism
+
+- There were sceptics in classical Indian philosophy; indeed, there were entire sceptical schools.
+- But most of them were not sceptics.
+- The reason for rejecting scepticism was quite distinctive.
+
+## Disjunctive Responses to Scepticism
+
+- A lot of contemporary philosophers adopt disjunctivism as a way of responding to the sceptic.
+- They say the sceptic doesn't realise that things like appearances of an apple are disjunctive.
+- A real perception of an apple isn't the same thing as a hallucination, so we don't have to worry about confusing them.
+
+## Classical Indian Responses to Scepticism
+
+- A lot of these philosophers were disjunctivists, but this doesn't seem to have been a big part of the response to scepticism.
+- Instead, the response is **pragmatic**.
+
+## An Anti-Sceptical Argument
+
+1. Some actions are sensible and some are stupid.
+2. The difference between sensible actions and stupid ones is that sensible ones are properly grounded in knowledge.
+3. So some people at least, the ones who perform sensible actions, know a lot.
+
+## Ordinary Language
+
+- There is a strong default across the schools that things we ordinarily say are true unless proven otherwise.
+- I can't stress enough how much everything I've said so far is extremely commonplace in Anglophone philosophy post-circa-1950, and miles outside the European mainstream for the preceding several centuries.
+
+## Ordinary Language and Scepticism
+
+There is another anti-sceptical argument around here.
+
+1. We talk all the time as if people know stuff.
+2. What we say is usually correct.
+3. So lots of people know stuff.
+
+## Ordinary Truth
+
+- A hallucination wouldn't be a hallucination of an apple unless we often saw apples.
+- The words in a lie wouldn't have the meaning they have unless they were usually used in true sentences.
+- Both suggest that vision and speech must usually be accurate.
+- And this might have epistemological consequences.
+
+## A Thought Experiment
+
+- There is a world that is physically just like this one, down to the atomic level.
+- But in it the word 'cat' means dog and 'dog' means cat, so when people say "The cat is on the mat", they usually speak falsely.
+- Is this coherent? 
+- If not why not?
+
+
+
+
+
