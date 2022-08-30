@@ -1,0 +1,114 @@
+# Entailment
+
+## Definition
+
+- $\Gamma \vDash A$ just in case whenever every sentence in $\Gamma$ gets value 1, so does $A$.
+
+## Working Out
+
+- Assume $\Gamma$ has finitely many elements. (The infinite case turns out to be the same, but it's messier.)
+- Then there are $k$ different sentence letters in $\Gamma \cup \{A\}$.
+- So there are $2^k$ different $v$ that are seeded by the assignment of each of these letters to 0 or 1.
+
+## Working out
+
+- So here's one way to test for validity.
+- Go through all $2^k$ options, and check if any of them make everything in $\Gamma$ true, and $A$ false.
+- If any do, argument is invalid (in classical propositional logic).
+- If none do, argument is valid (in classical propositional logic).
+
+## A Worked Example
+
+$A \vDash (A supset B) \supset A \vDash A$
+
+- How many sentence letters?
+- How many $v$ to check?
+
+## $v(A) = 1, v(B) = 1$
+
+- $v(A) = 1$,
+- $v(A \supset B) = 1$,
+- So $v((A \supset B) \supset A) = 1)$.
+- So this is a case where $\Gamma$ gets value 1, and so does $A$. No problem
+
+## $v(A) = 1, v(B) = 0$
+
+- $v(A) = 1$,
+- $v(A \supset B) = 0$,
+- So $v((A \supset B) \supset A) = 1)$.
+- So this is a case where $\Gamma$ gets value 1, and so does $A$. No problem.
+
+## $v(A) = 0, v(B) = 1$
+
+- $v(A) = 0$,
+- $v(A \supset B) = 1$,
+- So $v((A \supset B) \supset A) = 0)$.
+- So this is a case where $\Gamma$ gets value 0, so it can't be a problem.
+
+## $v(A) = 0, v(B) = 0$
+
+- $v(A) = 0$,
+- $v(A \supset B) = 1$,
+- So $v((A \supset B) \supset A) = 0)$.
+- So this is a case where $\Gamma$ gets value 0, so it can't be a problem.
+
+## Summary
+
+There is no case where all of $\Gamma$ is 1 and $A$ is false, so valid.
+
+## Another worked example
+
+$A \vDash (A supset B) \supset B \vDash A$
+
+- This one is not valid; can you find the $v$ that's a problem.
+
+## The Counterexample
+
+- $v(A) = 0, v(B) = 1$.
+- Then $v(A \supset B) = 1$.
+- So $v((A \supset B) \supset B) = 1$.
+- But $v(A) = 0$.
+
+## A Familiar Example
+
+- $A \vee B, \neg B \vDash A$
+
+## $v(A) = 1, v(B) = 1$
+
+- $v(A \vee B) = 1$, but $v(\neg B) = 0$, so not all of $\Gamma$ is 1.
+
+## $v(A) = 1, v(B) = 0$
+
+- $v(A \vee B) = 1$, and $v(\neg B) = 0$, so all of $\Gamma$ is 1.
+- But $v(A) = 1$, so it's not a counterexample.
+
+## $v(A) = 0, v(B) = 1$
+
+- $v(A \vee B) = 1$, but $v(\neg B) = 0$, so not all of $\Gamma$ is 1.
+
+## $v(A) = 0, v(B) = 0$
+
+- $v(A \vee B) = 1$, so not all of $\Gamma$ is 1.
+
+## Summary
+
+There is no case where **both** premises are 1, and conclusion is 0, so it is valid.
+
+## Last Example for Today
+
+$A \supset B, B \vDash A$
+
+- Can you find the counterexample?
+
+## Counterexample
+
+$v(A) = 0, v(B) = 1$.
+
+- Clearly that makes second premise 1 and conclusion 0.
+- And reading off the rule for $\supset$, first premise is 1 as well.
+
+## For Next Time
+
+- We'll look at how to use tableau to do proofs, which is much quicker than this when $k > 2$.
+- And we'll talk about how these formal sentences relate to English/other natural language expressions.
+
