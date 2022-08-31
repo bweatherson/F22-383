@@ -1,0 +1,823 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 02},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 02}
+\author{Brian Weatherson}
+\date{2022-08-31}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, boxrule=0pt, frame hidden, enhanced, interior hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
+
+\hypertarget{where-and-when}{%
+\section{Where and When}\label{where-and-when}}
+
+\begin{frame}{Don't Hope for Precision}
+\protect\hypertarget{dont-hope-for-precision}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We don't have nearly as good a sense of where and when the classical
+  Indian texts were written as we do for a lot of Western texts.
+\item
+  It's a lot more like the situation with Homer and Hesiod (or the
+  Bible) than with Plato and Aristotle.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Roughly}
+\protect\hypertarget{roughly}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The foundational works are mostly written pre 0 CE, or not that long
+  after.
+\item
+  But a lot of the more developed works are late first millennium CE or
+  early second millennium CE.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Where}
+\protect\hypertarget{where}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  I'm calling this all ``Indian philosophy'', but don't think that this
+  means that it call came from within the present-day country called
+  \textbf{India} any more than ``European philosophy'' all comes from
+  within what we now call Europe.
+\item
+  On the latter, plenty of important documents from antiquity are from
+  Asia (at least from Asian parts of Turkey) or North Africa.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Where}
+\protect\hypertarget{where-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Mostly within present-day India.
+\item
+  But some from within present-day Nepal and Bangladesh.
+\item
+  And maybe some from within present-day Pakistan and perhaps Bhutan.
+\end{itemize}
+\end{frame}
+
+\hypertarget{pramux101ux1e47a}{%
+\section{Pramāṇa}\label{pramux101ux1e47a}}
+
+\begin{frame}{Common Assumptions}
+\protect\hypertarget{common-assumptions}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  All knowledge come from a pramāṇa of some form or another.
+\item
+  There are finitely many of these.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Etymology}
+\protect\hypertarget{etymology}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Pramāṇa literally means proof.
+\item
+  So to know something is to have a proof of it.
+\item
+  This suggests that there is a connection between knowledge and
+  certainty.
+\item
+  And yet most schools do not think that pramāṇas can only lead to very
+  abstract mathematical knowledge.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Infallibility}
+\protect\hypertarget{infallibility}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A knowledge-source produces knowledge.
+\item
+  So if something does not produce knowledge, it produces false beliefs
+  or lucky guesses, then it isn't a knowledge-source.
+\item
+  So we may not be able to tell from the inside whether we are using a
+  knowledge-source or not.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Cases}
+\protect\hypertarget{two-cases}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Sumeet tells me that it's raining and it is raining, and indeed he
+  just came in from the rain. I come to know that it's raining by the
+  pramāṇa Śabda (or Word).
+\item
+  Sumeet tells me that it's raining but he's playing a trick, and just
+  wants me to stay inside away from the nice weather. I don't get
+  knowledge, so I must not be using Śabda.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Transparency}
+\protect\hypertarget{transparency}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The schools differ some on this, but most accept that we don't always
+  know what method we're using.
+\item
+  For every pramāṇa, there is something that we might call a
+  psuedo-pramāṇa, that feels a lot like it from the inside, but is
+  crucially different.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Disjunctivism}
+\protect\hypertarget{disjunctivism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  In contemporary epistemology of perception, this kind of position is
+  sometimes called \textbf{disjunctivism}.
+\item
+  The idea is that perceiving an apple and hallucinating an apple are
+  fundamentally different kinds of experience, even if occasionally one
+  may not be able to tell the difference.
+\item
+  What philosophers used to call ``Having an apple-like experience'' is
+  a disjunction: you're either seeing an apple \textbf{or} hallucinating
+  an apple.
+\end{itemize}
+\end{frame}
+
+\hypertarget{scepticism}{%
+\section{Scepticism}\label{scepticism}}
+
+\begin{frame}{Scepticism}
+\protect\hypertarget{scepticism-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There were sceptics in classical Indian philosophy; indeed, there were
+  entire sceptical schools.
+\item
+  But most of them were not sceptics.
+\item
+  The reason for rejecting scepticism was quite distinctive.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Disjunctive Responses to Scepticism}
+\protect\hypertarget{disjunctive-responses-to-scepticism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A lot of contemporary philosophers adopt disjunctivism as a way of
+  responding to the sceptic.
+\item
+  They say the sceptic doesn't realise that things like appearances of
+  an apple are disjunctive.
+\item
+  A real perception of an apple isn't the same thing as a hallucination,
+  so we don't have to worry about confusing them.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Classical Indian Responses to Scepticism}
+\protect\hypertarget{classical-indian-responses-to-scepticism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A lot of these philosophers were disjunctivists, but this doesn't seem
+  to have been a big part of the response to scepticism.
+\item
+  Instead, the response is \textbf{pragmatic}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An Anti-Sceptical Argument}
+\protect\hypertarget{an-anti-sceptical-argument}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Some actions are sensible and some are stupid.
+\item
+  The difference between sensible actions and stupid ones is that
+  sensible ones are properly grounded in knowledge.
+\item
+  So some people at least, the ones who perform sensible actions, know a
+  lot.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Ordinary Language}
+\protect\hypertarget{ordinary-language}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There is a strong default across the schools that things we ordinarily
+  say are true unless proven otherwise.
+\item
+  I can't stress enough how much everything I've said so far is
+  extremely commonplace in Anglophone philosophy post-circa-1950, and
+  miles outside the European mainstream for the preceding several
+  centuries.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ordinary Language and Scepticism}
+\protect\hypertarget{ordinary-language-and-scepticism}{}
+There is another anti-sceptical argument around here.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  We talk all the time as if people know stuff.
+\item
+  What we say is usually correct.
+\item
+  So lots of people know stuff.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Ordinary Truth}
+\protect\hypertarget{ordinary-truth}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A hallucination wouldn't be a hallucination of an apple unless we
+  often saw apples.
+\item
+  The words in a lie wouldn't have the meaning they have unless they
+  were usually used in true sentences.
+\item
+  Both suggest that vision and speech must usually be accurate.
+\item
+  And this might have epistemological consequences.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A Thought Experiment}
+\protect\hypertarget{a-thought-experiment}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There is a world that is physically just like this one, down to the
+  atomic level.
+\item
+  But in it the word `cat' means dog and `dog' means cat, so when people
+  say ``The cat is on the mat'', they usually speak falsely.
+\item
+  Is this coherent?
+\item
+  If not why not?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Sceptical Arguments}
+\protect\hypertarget{two-sceptical-arguments}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  In Ancient Greek/Roman epistemology, there are two sceptical
+  arguments.
+\item
+  These are known as Academic Scepticism and Pyrrhonian Scepticism.
+\item
+  Rather than filling them out, I'll set up the very brief versions of
+  each.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A Philosophical Strategy}
+\protect\hypertarget{a-philosophical-strategy}{}
+\textasciitilde{}\href{../images/underpants.jpeg}{~}\{height=60\%)
+\end{frame}
+
+\begin{frame}{Academic Scepticism}
+\protect\hypertarget{academic-scepticism}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  For any belief \(p\), you could have had the same inputs while
+  \(\neg p\).
+\item
+  ????
+\item
+  Therefore, you don't know that \(p\).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Pyrrhonian Scepticism}
+\protect\hypertarget{pyrrhonian-scepticism}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  For any belief that \(p\), you only know \(p\) if you know you
+  acquired the belief via a good method (a pramāṇa).
+\item
+  So if you know \(p\), you must know something else.
+\item
+  ???
+\item
+  So, you don't know that \(p\).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Back to India}
+\protect\hypertarget{back-to-india}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Both these sceptical arguments are in the Indian tradition.
+\item
+  What's distinctive (a bit distinctive at least) is how anti-sceptics
+  respond.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Academic Scepticism}
+\protect\hypertarget{academic-scepticism-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We've already seen one response to Academic Scepticism that is popular
+  nowadays, but really isn't a big part of European(/West Asian/North
+  African) replies.
+\item
+  If you know \(p\), there is in fact not another scenario where you use
+  the \textbf{same} method and \(p\) is false.
+\item
+  That's because you used a pramāṇa to know \(p\), and would use a
+  psuedo-pramāṇa to falsely believe it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pyrrhonian Scepticism}
+\protect\hypertarget{pyrrhonian-scepticism-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Academic scepticism is limited to the external world.
+\item
+  There isn't a nearby scenario where I reason mathematically the same
+  way, but two plus two is in fact not four.
+\item
+  But the pyrrhonian sceptical argument is universal; anything is
+  subject to it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Slingshot}
+\protect\hypertarget{slingshot}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This is an obvious problem, since it means that the pyrrhonian sceptic
+  doesn't know that pyrrhonian scepticism is true.
+\item
+  And this means their position is unstable, a fact that critics on both
+  sides of the Indus river pointed out.
+\item
+  This is what is meant by saying the position involves a ``pragmatic
+  contradiction''.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Further Replies}
+\protect\hypertarget{further-replies}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But this just shows that the position does go wrong, not where it goes
+  wrong.
+\item
+  And there is an interesting division among the Indian schools on this
+  point.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-Certification}
+\protect\hypertarget{self-certification}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The threat is that one piece of knowledge requires an infinite amount
+  of knowledge, which we don't have.
+\item
+  One response, taken by Mīmāṃsā and Vedānta philosophers, is to deny
+  that we need an infinite amount of knowledge.
+\item
+  At some level, our knowledge that \(p\) just is our knowledge that our
+  knowledge that \(p\) is known (by that very method).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pain}
+\protect\hypertarget{pain}{}
+Compare these things.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Having a sharp headache.
+\item
+  Knowing that you have a sharp headache.
+\end{enumerate}
+
+\pause Could these be different? Could you have one without the other?
+If not, perhaps they are just the same thing? The headache is
+self-certifying, and maybe knowledge is too.
+\end{frame}
+
+\begin{frame}{Deny the Premise}
+\protect\hypertarget{deny-the-premise}{}
+The other option, which Nyāya philosophers take, is to simply deny step
+1.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  To know \(p\) requires that the method by which the belief was formed
+  was in fact a pramāṇa.
+\item
+  But we don't need to know that it was.
+\item
+  At most, we need to not have good reason to believe it was not.
+\end{itemize}
+\end{frame}
+
+\hypertarget{perception}{%
+\section{Perception}\label{perception}}
+
+\begin{frame}{Universals}
+\protect\hypertarget{universals}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Imagine I see Sumeet walking, perhaps walking in Angell Hall.
+\item
+  What, precisely, do I see?
+\item
+  One question: Do I see \textbf{Sumeet}, or just a bundle of properties
+  that lets me, cognitively, non-perceptually, identify Sumeet.
+\item
+  Another question: Do I see walkingness as a property of Sumeet (at
+  that time)? Do I see \textbf{that} Sumeet is walking?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Individuals and Universals}
+\protect\hypertarget{individuals-and-universals}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  To see that Sumeet is walking, to see as it were Sumeet under the
+  guise of walkingness, both the individual (Sumeet) and the property
+  (walkingness) have to exist.
+\item
+  We might have metaphysical reasons for rejecting each of these.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{No Individuals}
+\protect\hypertarget{no-individuals}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If you have a strong no-self view, then perhaps Sumeet doesn't really
+  exist, so he can't be seen.
+\item
+  Or perhaps you think only momentary individuals exist, and identifying
+  any sequence of them with Sumeet is arbitrary.
+\item
+  I'm not going to go into the metaphysics of no-self theories; I
+  struggle enough explaining Hindu theories to try and get Buddhist
+  ones.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Modern European Philosophy}
+\protect\hypertarget{modern-european-philosophy}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But this view, at least the perceptual version of it, becomes a really
+  big deal in European philosophy from mid-C18 onwards, thanks to David
+  Hume.
+\item
+  Who might, maybe, have been influenced by Buddhist thinking, though
+  that's really a story for another class.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Nyāya vs Yogācāra}
+\protect\hypertarget{nyux101ya-vs-yogux101cux101ra}{}
+The two schools that the SEP article focuses on though do not worry
+about individuals, but about properties.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Nyāya philosophers think that one really can perceive proposition like
+  things, like that Sumeet is walking.
+\item
+  Yogācāra think that we just perceive objects, like Sumeet.
+\item
+  So they are really the opposite of the Buddhist/Humean position that
+  we only perceive features, not individuals.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Persistence}
+\protect\hypertarget{persistence}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  To be sure, I'm not sure it's fair to say the Yogācāra think we
+  perceive continuing things, like Sumeet.
+\item
+  We just perceive objects, and maybe by cognition (perhaps mistaken
+  cognition) we put these things into continuants.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Realism vs Nominalism}
+\protect\hypertarget{realism-vs-nominalism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  One reason they don't want to say that we perceive things like
+  walkingness is that they don't believe in properties.
+\item
+  They are what came to be called \textbf{nominalists}, they don't
+  believe that properties are real.
+\item
+  Perhaps better is to call them \textbf{projectivists}; what we call
+  properties are really patterns that we project onto the world.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Details}
+\protect\hypertarget{details}{}
+But surely there is a difference between seeing Sumeet standing and
+seeing him sitting.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The Yogācāra need not deny that.
+\item
+  A natural move (no idea if they make it, but it would fit) is to adopt
+  what became known as an \textbf{adverbial} position on perception.
+\item
+  We might see Sumeet ``walkingly'', where the adverb modifies the
+  seeing, not the thing seen.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Questions for Nyāya}
+\protect\hypertarget{two-questions-for-nyux101ya}{}
+But the Nyāya position is surely more natural. And it makes sense to
+focus on why we might give it up.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Metaphysical scruples about properties/propositions.
+\item
+  Whether the view can account for illusions.
+\item
+  How we acquire the concepts we (allegedly) deploy in perception.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Illusion}
+\protect\hypertarget{illusion}{}
+The picture here is simple; perception is good and pure, but upset by
+bad human cognition.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Perception is simple, but illusion is always complex.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Acquisition}
+\protect\hypertarget{acquisition}{}
+The Nyāya were not \textbf{nativists}, they did not think that concepts
+like \textbf{walking} were innate.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Instead, they thought that we had a handful of Yogācāra like
+  perceptions as infants, and from those we directly acquired concepts
+  like \textbf{walking}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{For Next Time}
+\protect\hypertarget{for-next-time}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Other pramāṇa, with a little on forms of non-deductive knowledge, but
+  the majority on whether testimony is a pramāṇa.
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
