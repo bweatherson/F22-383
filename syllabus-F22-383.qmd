@@ -58,7 +58,7 @@ advdate <- function(obj, adv) {
 | `r fa("far fa-envelope")` weath\@umich.edu
 | `r fa("fas fa-wifi")` canvas.umich.edu
 | 
-| **Office Hours**: TBA (via Zoom)
+| **Office Hours**: Wednesday 10-11, Room 2207; Friday 10-11, Zoom.
 | 
 | **Discussion Section Leader**: Sumeet Patwardhan
 | `r fa("far fa-envelope")` sumeetcp\@umich.edu
