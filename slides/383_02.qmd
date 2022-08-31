@@ -1,0 +1,300 @@
+---
+title: "Knowledge and Reality, Lecture 02"
+author: "Brian Weatherson"
+date: 2022-08-31
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+
+---
+
+# Where and When
+
+## Don't Hope for Precision
+
+- We don't have nearly as good a sense of where and when the classical Indian texts were written as we do for a lot of Western texts.
+- It's a lot more like the situation with Homer and Hesiod (or the Bible) than with Plato and Aristotle.
+
+## Roughly
+
+- The foundational works are mostly written pre 0 CE, or not that long after.
+- But a lot of the more developed works are late first millenium CE or early second millenium CE.
+
+## Where
+
+- I'm calling this all "Indian philosophy", but don't think that this means that it call came from within the present-day country called **India** any more than "European philosophy" all comes from within what we now call Europe.
+- On the latter, plenty of important documents from antiquity are from Asia (at least from Asian parts of Turkey) or North Africa.
+
+## Where
+
+- Mostly within present-day India.
+- But some from within present-day Nepal and Bangladesh.
+- And maybe some from within present-day Pakistan and perhaps Bhutan.
+
+# Pramāṇa
+
+## Common Assumptions
+
+- All knowledge come from a pramāṇa of some form or another.
+- There are finitely many of these.
+
+## Etymology
+
+- Pramāṇa literally means proof.
+- So to know something is to have a proof of it.
+- This suggests that there is a connection between knowledge and certainty.
+- And yet most schools do not think that pramāṇas can only lead to very abstract mathematical knowledge.
+
+## Infallibility
+
+- A knowledge-source produces knowledge.
+- So if something does not produce knowledge, it produces false beliefs or lucky guesses, then it isn't a knowledge-source.
+- So we may not be able to tell from the inside whether we are using a knowledge-source or not.
+
+## Two Cases
+
+1. Sumeet tells me that it's raining and it is raining, and indeed he just came in from the rain. I come to know that it's raining by the pramāṇa Śabda (or Word).
+2. Sumeet tells me that it's raining but he's playing a trick, and just wants me to stay inside away from the nice weather. I don't get knowledge, so I must not be using Śabda.
+
+## Transparency
+
+- The schools differ some on this, but most accept that we don't always know what method we're using.
+- For every pramāṇa, there is something that we might call a psuedo-pramāṇa, that feels a lot like it from the inside, but is crucially different.
+
+## Disjunctivism
+
+- In contemporary epistemology of perception, this kind of position is sometimes called **disjunctivism**.
+- The idea is that perceiving an apple and hallucinating an apple are fundamentally different kinds of experience, even if occasionally one may not be able to tell the difference.
+- What philosophers used to call "Having an apple-like experience" is a disjunction: you're either seeing an apple **or** hallucinating an apple.
+
+# Scepticism
+
+## Scepticism
+
+- There were sceptics in classical Indian philosophy; indeed, there were entire sceptical schools.
+- But most of them were not sceptics.
+- The reason for rejecting scepticism was quite distinctive.
+
+## Disjunctive Responses to Scepticism
+
+- A lot of contemporary philosophers adopt disjunctivism as a way of responding to the sceptic.
+- They say the sceptic doesn't realise that things like appearances of an apple are disjunctive.
+- A real perception of an apple isn't the same thing as a hallucination, so we don't have to worry about confusing them.
+
+## Classical Indian Responses to Scepticism
+
+- A lot of these philosophers were disjunctivists, but this doesn't seem to have been a big part of the response to scepticism.
+- Instead, the response is **pragmatic**.
+
+## An Anti-Sceptical Argument
+
+1. Some actions are sensible and some are stupid.
+2. The difference between sensible actions and stupid ones is that sensible ones are properly grounded in knowledge.
+3. So some people at least, the ones who perform sensible actions, know a lot.
+
+## Ordinary Language
+
+- There is a strong default across the schools that things we ordinarily say are true unless proven otherwise.
+- I can't stress enough how much everything I've said so far is extremely commonplace in Anglophone philosophy post-circa-1950, and miles outside the European mainstream for the preceding several centuries.
+
+## Ordinary Language and Scepticism
+
+There is another anti-sceptical argument around here.
+
+1. We talk all the time as if people know stuff.
+2. What we say is usually correct.
+3. So lots of people know stuff.
+
+## Ordinary Truth
+
+- A hallucination wouldn't be a hallucination of an apple unless we often saw apples.
+- The words in a lie wouldn't have the meaning they have unless they were usually used in true sentences.
+- Both suggest that vision and speech must usually be accurate.
+- And this might have epistemological consequences.
+
+## A Thought Experiment
+
+- There is a world that is physically just like this one, down to the atomic level.
+- But in it the word 'cat' means dog and 'dog' means cat, so when people say "The cat is on the mat", they usually speak falsely.
+- Is this coherent? 
+- If not why not?
+
+## Two Sceptical Arguments
+
+- In Ancient Greek/Roman epistemology, there are two sceptical arguments.
+- These are known as Academic Scepticism and Pyrrhonian Scepticism.
+- Rather than filling them out, I'll set up the very brief versions of each.
+
+## A Philosophical Strategy
+
+~[&nbsp;](../images/underpants.jpeg){height=60%)
+
+## Academic Scepticism
+
+1. For any belief $p$, you could have had the same inputs while $\neg p$.
+2. ????
+3. Therefore, you don't know that $p$.
+
+## Pyrrhonian Scepticism
+
+1. For any belief that $p$, you only know $p$ if you know you acquired the belief via a good method (a pramāṇa).
+2. So if you know $p$, you must know something else.
+3. ???
+4. So, you don't know that $p$.
+
+## Back to India
+
+- Both these sceptical arguments are in the Indian tradition.
+- What's distinctive (a bit distinctive at least) is how anti-sceptics respond.
+
+## Academic Scepticism
+
+- We've already seen one response to Academic Scepticism that is popular nowadays, but really isn't a big part of European(/West Asian/North African) replies.
+- If you know $p$, there is in fact not another scenario where you use the **same** method and $p$ is false.
+- That's because you used a pramāṇa to know $p$, and would use a psuedo-pramāṇa to falsely believe it.
+
+## Pyrrhonian Scepticism
+
+- Academic scepticism is limited to the external world.
+- There isn't a nearby scenario where I reason mathematically the same way, but two plus two is in fact not four.
+- But the pyrrhonian sceptical argument is universal; anything is subject to it.
+
+## Slingshot
+
+- This is an obvious problem, since it means that the pyrrhonian sceptic doesn't know that pyrrhonian scepticism is true.
+- And this means their position is unstable, a fact that critics on both sides of the Indus river pointed out.
+- This is what is meant by saying the position involves a "pragmatic contradiction".
+
+## Further Replies
+
+- But this just shows that the position does go wrong, not where it goes wrong.
+- And there is an interesting division among the Indian schools on this point.
+
+## Self-Certification
+
+- The threat is that one piece of knowledge requires an infinite amount of knowledge, which we don't have.
+- One response, taken by Mīmāṃsā and Vedānta philosophers, is to deny that we need an infinite amount of knowledge.
+- At some level, our knowledge that $p$ just is our knowledge that our knowledge that $p$ is known (by that very method).
+
+## Pain
+
+Compare these things.
+
+1. Having a sharp headache.
+2. Knowing that you have a sharp headache.
+
+\pause Could these be different? Could you have one without the other? If not, perhaps they are just the same thing? The headache is self-certifying, and maybe knowledge is too.
+
+## Deny the Premise
+
+The other option, which Nyāya philosophers take, is to simply deny step 1.
+
+- To know $p$ requires that the method by which the belief was formed was in fact a pramāṇa.
+- But we don't need to know that it was.
+- At most, we need to not have good reason to believe it was not.
+
+# Perception
+
+## Universals
+
+- Imagine I see Sumeet walking, perhaps walking in Angell Hall.
+- What, precisely, do I see?
+- One question: Do I see **Sumeet**, or just a bundle of properties that lets me, cognitively, non-perceptually, identify Sumeet.
+- Another question: Do I see walkingness as a property of Sumeet (at that time)? Do I see **that** Sumeet is walking?
+
+## Individuals and Universals
+
+- To see that Sumeet is walking, to see as it were Sumeet under the guise of walkingness, both the individual (Sumeet) and the property (walkingness) have to exist.
+- We might have metaphysical reasons for rejecting each of these.
+
+## No Individuals
+
+- If you have a strong no-self view, then perhaps Sumeet doesn't really exist, so he can't be seen.
+- Or perhaps you think only momentary individuals exist, and identifying any sequence of them with Sumeet is arbitrary.
+- I'm not going to go into the metaphysics of no-self theories; I struggle enough explaining Hindi theories to try and get Buddhist ones.
+
+## Modern European Philosophy
+
+- But this view, at least the perceptual version of it, becomes a really big deal in European philosophy from mid-C18 onwards, thanks to David Hume.
+- Who might, maybe, have been influenced by Buddhist thinking, though that's really a story for another class.
+
+## Nyāya vs Yogācāra
+
+The two schools that the SEP article focuses on though do not worry about individuals, but about properties.
+
+- Nyāya philosophers think that one really can perceive proposition like things, like that Sumeet is walking.
+- Yogācāra think that we just perceive objects, like Sumeet.
+- So they are really the opposite of the Buddhist/Humean position that we only perceive features, not individuals.
+
+## Persistence
+
+- To be sure, I'm not sure it's fair to say the Yogācāra think we perceive continuing things, like Sumeet.
+- We just perceive objects, and maybe by cognition (perhaps mistaken cognition) we put these things into continuants.
+
+## Realism vs Nominalism
+
+- One reason they don't want to say that we perceive things like walkingness is that they don't believe in properties.
+- They are what came to be called **nominalists**, they don't believe that properties are real.
+- Perhaps better is to call them **projectivists**; what we call properties are really patterns that we project onto the world.
+
+## Details
+
+But surely there is a difference between seeing Sumeet standing and seeing him sitting.
+
+- The Yogācāra need not deny that.
+- A natural move (no idea if they make it, but it would fit) is to adopt what became known as an **adverbial** position on perception.
+- We might see Sumeet "walkingly", where the adverb modifies the seeing, not the thing seen.
+
+## Two Questions for Nyāya
+
+But the Nyāya position is surely more natural. And it makes sense to focus on why we might give it up.
+
+1. Metaphysical scruples about properties/propositions.
+2. Whether the view can account for illusions.
+3. How we acquire the concepts we (allegedly) deploy in perception.
+
+## Illusion
+
+The picture here is simple; perception is good and pure, but upset by bad human cognition.
+
+- Perception is simple, but illusion is always complex.
+
+## Acquisition
+
+The Nyāya were not **nativists**, they did not think that concepts like **walking** were innate.
+
+- Instead, they thought that we had a handful of Yogācāra like perceptions as infants, and from those we directly acquired concepts like **walking**.
+
+
+## For Next Time
+
+- Other pramāṇa, with a little on forms of non-deductive knowledge, but the majority on whether testimony is a pramāṇa.
+
+
+
+
+
+

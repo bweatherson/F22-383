@@ -129,7 +129,7 @@ Topic
 :   Classical Indian Philosophy
 
 Required Reading
-:   Stephen Phillips, [*Epistemology in Classical Indian Philosophy*](Epistemology%20in%20Classical%20Indian%20Philosophy).
+:   Stephen Phillips, [*Epistemology in Classical Indian Philosophy*](https://plato.stanford.edu/entries/epistemology-india/).
 
 Suggested Reading
 :   None
@@ -223,7 +223,7 @@ Topic
 :   Modern Sceptical Arguments
 
 Required Reading
-:   Alex Byrne, [*How Hard are the Sceptical Paradoxes?*](10.1111/j.1468-0068.2004.00471.x).
+:   Alex Byrne, [*How Hard are the Sceptical Paradoxes?*](https://doi.org/10.1111/j.1468-0068.2004.00471.x).
 
 Suggested Reading
 :   Brian Weatherson, [*Scepticism, Rationalism and Externalism*](http://brian.weatherson.org/html-papers/posts/2021-01-08-scepticism-rationalism-and-externalism/)
@@ -386,7 +386,7 @@ Although team-work, and even co-authorship, is encouraged, plagiarism is strictl
 
 You are encouraged to discuss the course material, including assignments, with your classmates, but all written work that you hand in under your own name/ID number must be your own. If work is handed is as the work of two people, you are affirming that each person did a fair share of the work.
 
-You should also be familiar with the academic integrity policies of the College of Literature, Science & the Arts at the University of Michigan, which are available here: <http://www.lsa.umich.edu/academicintegrity/>. Violations of these policies will be reported to the Office of the Assistant Dean for Student Academic Affairs, and sanctioned with a course grade of F.
+You should also be familiar with the academic integrity policies of the College of Literature, Science & the Arts at the University of Michigan, which are available here: <https://lsa.umich.edu/lsa/academics/academic-integrity.html>. Violations of these policies will be reported to the Office of the Assistant Dean for Student Academic Affairs, and sanctioned with a course grade of F.
 
 # Disability
 
