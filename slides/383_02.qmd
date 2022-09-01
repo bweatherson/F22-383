@@ -86,8 +86,8 @@ format:
 ## Disjunctivism
 
 - In contemporary epistemology of perception, this kind of position is sometimes called **disjunctivism**.
-- The idea is that perceiving an apple and hallucinating an apple are fundamentally different kinds of experience, even if occasionally one may not be able to tell the difference.
-- What philosophers used to call "Having an apple-like experience" is a disjunction: you're either seeing an apple **or** hallucinating an apple.
+- Perceiving an apple and hallucinating an apple are fundamentally different (though indistinguishable!) kinds of experience.
+- "Having an apple-like experience" is a disjunction: either seeing an apple **or** hallucinating an apple.
 
 # Scepticism
 
@@ -149,7 +149,7 @@ There is another anti-sceptical argument around here.
 
 ## A Philosophical Strategy
 
-~[&nbsp;](../images/underpants.jpeg){height=60%)
+[~&nbsp;](../images/underpants.jpeg){height=60%)
 
 ## Academic Scepticism
 
@@ -219,8 +219,7 @@ The other option, which Nyāya philosophers take, is to simply deny step 1.
 
 ## Universals
 
-- Imagine I see Sumeet walking, perhaps walking in Angell Hall.
-- What, precisely, do I see?
+- Imagine I see Sumeet walking. What, precisely, do I see?
 - One question: Do I see **Sumeet**, or just a bundle of properties that lets me, cognitively, non-perceptually, identify Sumeet.
 - Another question: Do I see walkingness as a property of Sumeet (at that time)? Do I see **that** Sumeet is walking?
 
@@ -245,7 +244,7 @@ The other option, which Nyāya philosophers take, is to simply deny step 1.
 The two schools that the SEP article focuses on though do not worry about individuals, but about properties.
 
 - Nyāya philosophers think that one really can perceive proposition like things, like that Sumeet is walking.
-- Yogācāra think that we just perceive objects, like Sumeet.
+- Yogācāra think that we just perceive objects.
 - So they are really the opposite of the Buddhist/Humean position that we only perceive features, not individuals.
 
 ## Persistence
@@ -264,10 +263,10 @@ The two schools that the SEP article focuses on though do not worry about indivi
 But surely there is a difference between seeing Sumeet standing and seeing him sitting.
 
 - The Yogācāra need not deny that.
-- A natural move (no idea if they make it, but it would fit) is to adopt what became known as an **adverbial** position on perception.
+- A natural move would be to adopt what became known as an **adverbial** position on perception.
 - We might see Sumeet "walkingly", where the adverb modifies the seeing, not the thing seen.
 
-## Two Questions for Nyāya
+## Three Questions for Nyāya
 
 But the Nyāya position is surely more natural. And it makes sense to focus on why we might give it up.
 
