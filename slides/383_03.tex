@@ -1,0 +1,707 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+  handout]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 03},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 03}
+\author{Brian Weatherson}
+\date{2022-09-07}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, frame hidden, sharp corners, enhanced, interior hidden, boxrule=0pt, breakable]}{\end{tcolorbox}}\fi
+
+\hypertarget{review}{%
+\section{Review}\label{review}}
+
+\begin{frame}{Why Start With Indian Philosophy?}
+\protect\hypertarget{why-start-with-indian-philosophy}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  On this topic, it's the earliest instance of work that feels like
+  contemporary epistemology.
+\item
+  Get to see how many of questions arise across multiple traditions.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Pramāṇa}
+\protect\hypertarget{pramux101ux1e47a}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  All knowledge comes from some knowledge-generating method, or pramāṇa.
+\item
+  There only a handful of pramāṇas, and it's a central question to
+  identify and explain them.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pramāṇa and Proof}
+\protect\hypertarget{pramux101ux1e47a-and-proof}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The word `pramāṇa' literally means proof. So if you know something,
+  you have a proof of it.
+\item
+  This makes them sound infallibilist, and I think that's basically the
+  right way to read them.
+\item
+  But it's a very distinctive kind of infallibilism.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Scepticism}
+\protect\hypertarget{scepticism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Main response is pragmatic.
+\item
+  We know we know stuff, because we know we act sensibly, and sensible
+  action requires knowledge.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Academic Scepticism}
+\protect\hypertarget{academic-scepticism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But you could do the same thing, and have a false belief.
+\item
+  Response: No, you wouldn't do the same thing.
+\item
+  No false believer follows a pramāṇa.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pyrrhonian Scepticism}
+\protect\hypertarget{pyrrhonian-scepticism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This leads to a regress.
+\item
+  Response 1: Pramāṇa are self-certifying.
+\item
+  Response 2: Don't need to know that you're using a pramāṇa, just that
+  you are using one.
+\end{itemize}
+\end{frame}
+
+\hypertarget{perception}{%
+\section{Perception}\label{perception}}
+
+\begin{frame}{Perception}
+\protect\hypertarget{perception-1}{}
+I'm going to mostly break off the history here.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  What I want is to note some questions about perception.
+\item
+  And note that each of these were live questions in Classical Indian
+  philosophy, without getting into who was on what side.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Question One: Content}
+\protect\hypertarget{question-one-content}{}
+Do we see \textbf{that} things are true?
+\end{frame}
+
+\begin{frame}{Two Answers}
+\protect\hypertarget{two-answers}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Yes, and perceptual knowledge is when one simply accepts these
+  contents.
+\item
+  No, and that's why illusions are so prevalent; all `perceptual' belief
+  involves cognition, which is always fallible.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{A (C17-C20) Western Answer}
+\protect\hypertarget{a-c17-c20-western-answer}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Yes, and that gives us an analysis of what illusion is.
+\item
+  It's when the content is false.
+\item
+  I don't think that's available to most of the schools, since it would
+  be very close to a false pramāṇa.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Question Two}
+\protect\hypertarget{question-two}{}
+Assume the yes answer from now on, though we'll still talk about the
+no's.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Does the content include individuals?
+\item
+  Or is it just properties, which we might (cognitively) use to identify
+  individuals?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Question Three}
+\protect\hypertarget{question-three}{}
+Does the content include properties?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  I think this probably has to be yes if you think there's content, but
+  I'm including it here for completeness.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Question Four}
+\protect\hypertarget{question-four}{}
+Which properties can be contents of perception?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Presumably I can't simply \textbf{see} that someone is \emph{honest},
+  or \emph{the grand-nephew of a prince}.
+\item
+  Is perception really thin, just shapes and colors?
+\item
+  Or does it include things like \emph{being a policeman} or, for that
+  matter, \emph{being male}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cognition and Perception}
+\protect\hypertarget{cognition-and-perception}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Of course we can believe that someone is honest, a policeman, and the
+  grand-nephew of a prince.
+\item
+  But do we need to use cognition to form those beliefs, or can we just
+  take perception at face-value.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Question Five}
+\protect\hypertarget{question-five}{}
+How do we acquire concepts for these properties?
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Innate
+\item
+  Cognition
+\item
+  Perception
+\end{enumerate}
+\end{frame}
+
+\hypertarget{dattas-paper}{%
+\section{Datta's Paper}\label{dattas-paper}}
+
+\begin{frame}{Dhirendra Mohan Datta}
+\protect\hypertarget{dhirendra-mohan-datta}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  His name is, I'm fairly sure, misspelled in the \emph{Mind} article
+  you're reading.
+\item
+  Lots of reasons to think the author of this piece is the prominent 20C
+  Indian philosopher Dhirendra Mohan Datta, not ``Dhirendron Mohan
+  Datta''.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Dhirendra Mohan Datta}
+\protect\hypertarget{dhirendra-mohan-datta-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Has lots of books you can find through
+  \textless archive.org\textgreater.
+\item
+  These include a textbook on Indian philosophy, and a book on
+  epistemology that came out in two editions.
+\item
+  The first was in 1933, the second in 1960.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Dhirendra Mohan Datta}
+\protect\hypertarget{dhirendra-mohan-datta-2}{}
+That's a big gap. What happened?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Indian independence.
+\item
+  Datta took a long break from academic philosophy to work closely with
+  Ghandi from a fairly early stage in the movement.
+\item
+  And after it was done, he wrote a book on Ghandi's philosophy.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Festschrift}
+\protect\hypertarget{festschrift}{}
+I'm getting a bunch of this info from a festschrift for him that was
+published in 1960 as \emph{World Perspectives In Philosophy Religion And
+Culture}.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The volume includes a lot of prominent figures in English language
+  philosophy, including William Frankena, one of the most prominent
+  members of UM's philosophy department in the 20th century.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Dhirendra Mohan Datta}
+\protect\hypertarget{dhirendra-mohan-datta-3}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Datta was well known among people who worked on comparative philosophy
+  because he was so interested in connecting Western and Indian
+  philosophy.
+\item
+  But as far as I can tell, the results of going into comparative
+  philosophy was that he ended up more interested in Indian/Chinese work
+  than Indian/Western work.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Testimony as a Method of Knowledge}
+\protect\hypertarget{testimony-as-a-method-of-knowledge}{}
+Obviously the title is not literally ``Testimony is a pramāṇa''.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But it kind of means that.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Testimony as a Method of Knowledge}
+\protect\hypertarget{testimony-as-a-method-of-knowledge-1}{}
+One of my pandemic projects was using big data tools to build a model of
+what happened over time in leading philosophy journals.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  You can see the results at \textless lda.weatherson.org\textgreater.
+\item
+  And I was particularly interested in the history (since the 1870s) of
+  work in theory of knowledge.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Testimony as a Method of Knowledge}
+\protect\hypertarget{testimony-as-a-method-of-knowledge-2}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The model said there was precisely one (1) pre-WWII article (out of
+  6000) that it had real confidence (probability greater than 0.4) that
+  it should be put with modern work on knowledge.
+\item
+  It was Datta's.
+\end{itemize}
+\end{frame}
+
+\hypertarget{testimony}{%
+\section{Testimony}\label{testimony}}
+
+\begin{frame}{Is Testimony a Pramāṇa?}
+\protect\hypertarget{is-testimony-a-pramux101ux1e47a}{}
+Structure of the paper.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Float arguments for no.
+\item
+  Offer replies.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Thoughts}
+\protect\hypertarget{two-thoughts}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Not sure I see much of a positive argument here, but that's probably
+  ok.
+\item
+  Lots of appeal to \textbf{overgeneration} arguments.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{First Objection}
+\protect\hypertarget{first-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Need to double check what people say.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{First Reply (to First Objection)}
+\protect\hypertarget{first-reply-to-first-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We don't in fact double check.
+\item
+  But this isn't much good as a reply, since arguably we should.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Second Reply (to First Objection)}
+\protect\hypertarget{second-reply-to-first-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Anything might need double checking.
+\item
+  If this worked, perception, inference, etc would not be methods.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Third Reply}
+\protect\hypertarget{third-reply}{}
+I'm not sure I quite understand the move on page 2 (i.e., 355).
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Datta makes a distinction between knowledge of a fact and knowledge of
+  validity.
+\item
+  What exactly is that distinction?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Third Reply}
+\protect\hypertarget{third-reply-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  At times it seems like the difference between knowledge, and knowing
+  that one has knowledge.
+\item
+  At other times it seems like the `difference' between knowing
+  something, and knowing that thing is true.
+\item
+  And that seems bad to rely on; knowledge is knowledge of truth.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Second Objection}
+\protect\hypertarget{second-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Testimony isn't an independent source because it relies on some other
+  method for the speaker to get knowledge.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Reply to Second Objection}
+\protect\hypertarget{reply-to-second-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It might still be independent for the hearer.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Third Objection}
+\protect\hypertarget{third-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Testimony requires perception, since you have to use perception to
+  know what words are spoken.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Reply to Third Objection}
+\protect\hypertarget{reply-to-third-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  All knowledge is holistic.
+\item
+  When we say something is a method, we mean it can be the last step.
+\item
+  Relatedly, no one denies inference is a method though by definition it
+  has other inputs.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evaluation}
+\protect\hypertarget{evaluation}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This is a good thing to worry about, and sometimes gets ignored in the
+  recent discussion.
+\item
+  But it does make me worry that the whole talk about methods is on
+  shakier footing than it appears.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fourth Objection}
+\protect\hypertarget{fourth-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Testimony can't be ultimate, because sources sometimes conflict.
+\item
+  That is, different people will tell you different, and sometimes
+  inconsistent, things.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{First Reply to Fourth Objection}
+\protect\hypertarget{first-reply-to-fourth-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Any source may involve conflict.
+\item
+  Sometimes the same thing looks different from two angles.
+\item
+  So this also overgenerates.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Second Reply to Fourth Objection}
+\protect\hypertarget{second-reply-to-fourth-objection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Some knowledge from testimony is beyond dispute.
+\item
+  E.g., that a command was given.
+\item
+  I'm not sure this should count as genuinely testimonial though; feels
+  more perceptual.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{For Next Time}
+\protect\hypertarget{for-next-time}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We'll look at a (very) modern form of what Datta calls ``the ordinary
+  answer''.
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}

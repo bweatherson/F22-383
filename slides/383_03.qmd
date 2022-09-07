@@ -1,0 +1,259 @@
+---
+title: "Knowledge and Reality, Lecture 03"
+author: "Brian Weatherson"
+date: 2022-09-07
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Review
+
+## Why Start With Indian Philosophy?
+
+1. On this topic, it's the earliest instance of work that feels like contemporary epistemology.
+2. Get to see how many of questions arise across multiple traditions.
+
+## Pramāṇa
+
+- All knowledge comes from some knowledge-generating method, or pramāṇa.
+- There only a handful of pramāṇas, and it's a central question to identify and explain them.
+
+## Pramāṇa and Proof
+
+- The word 'pramāṇa' literally means proof. So if you know something, you have a proof of it.
+- This makes them sound infallibilist, and I think that's basically the right way to read them.
+- But it's a very distinctive kind of infallibilism.
+
+## Scepticism
+
+- Main response is pragmatic.
+- We know we know stuff, because we know we act sensibly, and sensible action requires knowledge.
+
+## Academic Scepticism
+
+- But you could do the same thing, and have a false belief.
+- Response: No, you wouldn't do the same thing.
+- No false believer follows a pramāṇa.
+
+## Pyrrhonian Scepticism
+
+- This leads to a regress.
+- Response 1: Pramāṇa are self-certifying.
+- Response 2: Don't need to know that you're using a pramāṇa, just that you are using one.
+
+# Perception
+
+## Perception
+
+I'm going to mostly break off the history here.
+
+- What I want is to note some questions about perception.
+- And note that each of these were live questions in Classical Indian philosophy, without getting into who was on what side.
+
+## Question One: Content
+
+Do we see **that** things are true?
+
+## Two Answers
+
+1. Yes, and perceptual knowledge is when one simply accepts these contents.
+2. No, and that's why illusions are so prevalent; all 'perceptual' belief involves cognition, which is always fallible.
+
+## A (C17-C20) Western Answer
+
+- Yes, and that gives us an analysis of what illusion is.
+- It's when the content is false.
+- I don't think that's available to most of the schools, since it would be very close to a false pramāṇa.
+
+## Question Two
+
+Assume the yes answer from now on, though we'll still talk about the no's.
+
+- Does the content include individuals?
+- Or is it just properties, which we might (cognitively) use to identify individuals?
+
+## Question Three
+
+Does the content include properties?
+
+- I think this probably has to be yes if you think there's content, but I'm including it here for completeness.
+
+## Question Four
+
+Which properties can be contents of perception?
+
+- Presumably I can't simply **see** that someone is _honest_, or _the grand-nephew of a prince_.
+- Is perception really thin, just shapes and colors?
+- Or does it include things like _being a policeman_ or, for that matter, _being male_.
+
+## Cognition and Perception
+
+- Of course we can believe that someone is honest, a policeman, and the grand-nephew of a prince.
+- But do we need to use cognition to form those beliefs, or can we just take perception at face-value.
+
+## Question Five
+
+How do we acquire concepts for these properties?
+
+1. Innate
+2. Cognition
+3. Perception
+
+# Datta's Paper
+
+## Dhirendra Mohan Datta
+
+- His name is, I'm fairly sure, misspelled in the _Mind_ article you're reading.
+- Lots of reasons to think the author of this piece is the prominent 20C Indian philosopher Dhirendra Mohan Datta, not "Dhirendron Mohan Datta".
+
+## Dhirendra Mohan Datta
+
+- Has lots of books you can find through <archive.org>.
+- These include a textbook on Indian philosophy, and a book on epistemology that came out in two editions.
+- The first was in 1933, the second in 1960.
+
+## Dhirendra Mohan Datta
+
+That's a big gap. What happened?
+
+- Indian independence.
+- Datta took a long break from academic philosophy to work closely with Ghandi from a fairly early stage in the movement.
+- And after it was done, he wrote a book on Ghandi's philosophy.
+
+## Festschrift
+
+I'm getting a bunch of this info from a festschrift for him that was published in 1960 as _World Perspectives In Philosophy Religion And Culture_.
+
+- The volume includes a lot of prominent figures in English language philosophy, including William Frankena, one of the most prominent members of UM's philosophy department in the 20th century.
+
+## Dhirendra Mohan Datta
+
+- Datta was well known among people who worked on comparative philosophy because he was so interested in connecting Western and Indian philosophy.
+- But as far as I can tell, the results of going into comparative philosophy was that he ended up more interested in Indian/Chinese work than Indian/Western work.
+
+## Testimony as a Method of Knowledge
+
+Obviously the title is not literally "Testimony is a pramāṇa".
+
+- But it kind of means that.
+
+## Testimony as a Method of Knowledge
+
+One of my pandemic projects was using big data tools to build a model of what happened over time in leading philosophy journals.
+
+- You can see the results at <lda.weatherson.org>.
+- And I was particularly interested in the history (since the 1870s) of work in theory of knowledge.
+
+## Testimony as a Method of Knowledge
+
+- The model said there was precisely one (1) pre-WWII article (out of 6000) that it had real confidence (probability greater than 0.4) that it should be put with modern work on knowledge.
+- It was Datta's.
+
+# Testimony
+
+## Is Testimony a Pramāṇa?
+
+Structure of the paper.
+
+- Float arguments for no.
+- Offer replies.
+
+## Two Thoughts
+
+- Not sure I see much of a positive argument here, but that's probably ok.
+- Lots of appeal to **overgeneration** arguments.
+
+## First Objection
+
+- Need to double check what people say.
+
+## First Reply (to First Objection)
+
+- We don't in fact double check.
+- But this isn't much good as a reply, since arguably we should.
+
+## Second Reply (to First Objection)
+
+- Anything might need double checking.
+- If this worked, perception, inference, etc would not be methods.
+
+## Third Reply 
+
+I'm not sure I quite understand the move on page 2 (i.e., 355).
+
+- Datta makes a distinction between knowledge of a fact and knowledge of validity.
+- What exactly is that distinction?
+
+## Third Reply
+
+- At times it seems like the difference between knowledge, and knowing that one has knowledge.
+- At other times it seems like the 'difference' between knowing something, and knowing that thing is true.
+- And that seems bad to rely on; knowledge is knowledge of truth.
+
+## Second Objection
+
+- Testimony isn't an independent source because it relies on some other method for the speaker to get knowledge.
+
+## Reply to Second Objection
+
+- It might still be independent for the hearer.
+
+## Third Objection
+
+- Testimony requires perception, since you have to use perception to know what words are spoken.
+
+## Reply to Third Objection
+
+- All knowledge is holistic.
+- When we say something is a method, we mean it can be the last step.
+- Relatedly, no one denies inference is a method though by definition it has other inputs.
+
+## Evaluation
+
+- This is a good thing to worry about, and sometimes gets ignored in the recent discussion.
+- But it does make me worry that the whole talk about methods is on shakier footing than it appears.
+
+## Fourth Objection
+
+- Testimony can't be ultimate, because sources sometimes conflict.
+- That is, different people will tell you different, and sometimes inconsistent, things.
+
+## First Reply to Fourth Objection
+
+- Any source may involve conflict.
+- Sometimes the same thing looks different from two angles.
+- So this also overgenerates.
+
+## Second Reply to Fourth Objection
+
+- Some knowledge from testimony is beyond dispute.
+- E.g., that a command was given.
+- I'm not sure this should count as genuinely testimonial though; feels more perceptual.
+
+## For Next Time
+
+- We'll look at a (very) modern form of what Datta calls "the ordinary answer".
