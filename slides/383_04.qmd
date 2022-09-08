@@ -83,6 +83,19 @@ Both those claims are true.
 
 ## Heuristics and Biases
 
+![Thinking Fast and Slow, by Daniel Kahneman](../images/kahneman.png){height=60%}
+
+## Heuristics and Biases
+
+- Work Kahneman did with Amos Tversky.
+- What looks like intelligent behavior is mostly a set of heuristics, i.e., short-cuts.
+
+## System 1 and System 2
+
+- Kahneman's own view is that there is a core of something like traditional rationality.
+- This is system 2, the slow of "Thinking Fast and Slow".
+- But most of what we do, and everything we do fast, is basically automatic.
+
 
 
 # Background
