@@ -96,14 +96,55 @@ Both those claims are true.
 - This is system 2, the slow of "Thinking Fast and Slow".
 - But most of what we do, and everything we do fast, is basically automatic.
 
+## More Radical Views
 
+- Drop, or minimise, the existence of system 2.
+- It's all just automatic heuristics that have evolved to be useful.
 
-# Background
+## Dan Gilbert
+
+![Daniel Gilbert](../images/gilbert.png){height=60%}
+
+## A Famous Experiment
+
+Show people a bunch of sentences for short amount of time each.
+
+- Tell them the ones in black will be true, and the ones in red false.
+- Make the content of each (black and red) plausible, but not something they know about.
+
+## Later that day...
+
+Show them the sentences again, and ask whether they are true or false.
+
+- They tend to say yes to both the ones in black and the ones in red.
+
+## What is Going On?
+
+Why do **you** think that we might see these results.
+
+## What is Going On?
+
+Gilbert's hypothesis (which he attributes to Spinoza):
+
+- Understanding language involves first taking something to be true, then (perhaps) questioning whether it is.
+- This is a really strong form of (psychological) anti-reductionism.
+
+## Pushback
+
+- We'll get to this in more detail, but the very short version is that the 'automatic' behavior might be sensible allocation of scarce cognitive resources. More on this to follow.
+
+# Cultural Evolution
 
 ## Two Theories of Cultural Evolution
 
 1. Copying
 2. Rational adoption
+
+## Two Theories of Cultural Evolution
+
+- These aren't exhaustive, plenty of other stories too.
+- The Australian philosopher of biology Kim Sterelny calls the schools that center these ideas the "California school" and the "Paris School".
+- This paper is an important text in the Paris school approach.
 
 ## Paris School
 
@@ -128,5 +169,75 @@ Both those claims are true.
 - The believers in replication know that people are not robots, and think for themselves.
 - The believers in rational adoption know that we make mistakes.
 - But there is a difference in emphasis, that is interesting.
+
+## Application to Misinformation
+
+- The replication approach makes misinformation seem like a big political problem.
+- And the evidence that people are bad at correcting misinformation might push you towards the replication approach.
+
+## Two Parisian Responses
+
+1. People don't actually believe that much misinformation, but pretend to do so as a social/political signal.
+2. Misinformation is a demand side problem; people (rationally!) want rationalisations for things they want to be true.
+
+## Citations
+
+- [Sterelny on the two schools](https://www.sciencedirect.com/science/article/pii/S1369848616301078#fn14)
+- [Mercier and colleagues on misinformation](https://www.cambridge.org/core/journals/american-political-science-review/article/analytical-democratic-theory-a-microfoundational-approach/739A9A928A99A47994E4585059B03398)
+- [Williams on the marketplace of rationalisations](https://www.cambridge.org/core/journals/economics-and-philosophy/article/marketplace-of-rationalizations/41FB096344BD344908C7C992D0C0C0DC)
+
+# Back to Testimony, and Fraud
+
+## Credit Card Fraud
+
+Credit card fraud is a multi-billion dollar problem, and the costs are largely borne by card issuers.
+
+- If you were a credit card issuer, what would you do about this?
+
+## Short Term Effects
+
+- Each genuine transaction makes you some money.
+- Each fraudulent transaction costs you much more money.
+
+## Long Term Effects
+
+- If fraud detection is too onerous, people will stop using your card.
+- If there is a kind of fraud you never catch, people will keep carrying out that fraud.
+
+## Four Kinds of Checks
+
+- User based 
+- Purchase based
+- Interaction of the two
+- Random
+
+## Optimal Amount of Fraud
+
+Should you be aiming for zero fraud?
+
+- No!
+
+## Basic Idea of Fraud Detection System
+
+- Really rough and ready check on each transaction.
+- More careful check on things that get red flagged.
+- But for trusted customers, even a few red flags can be ignored.
+
+## Vigilance
+
+Humans should be, and to some extent are, just like that.
+
+- Everything we hear gets a really rough check over.
+- Red flagged assertions get checked more closely.
+
+## Vigilance
+
+My favorite example: walking down a busy street or corridor.
+
+- We somehow track everyone, while attending to almost no one.
+
+## Vigilant Hearers
+
+
 
 
