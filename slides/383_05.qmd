@@ -1,0 +1,238 @@
+---
+title: "Knowledge and Reality, Lecture 05"
+author: "Brian Weatherson"
+date: 2022-09-14
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+ #   classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Review
+
+## Testimony
+
+- We spent the last two classes on testimony, and in particular on when it is rational to believe something on the basis of testimony.
+
+
+## Two Theories
+
+- Testimony is basic, and rationally believing testimony requires just an absence of reasons for doubt.
+- Testimonial belief is inferential, and rationally believing testimony requires reason to think the speaker is telling the truth.
+
+## Today
+
+- What kind of thing is rationality?
+
+## Terminology
+
+- The writers we'll look at move back and forth between talking about **rational** belief and **justified** belief.
+- I'm not going to get into whether these are different, or what the differences might be.
+- Treat them as the same, knowing that, as always, it might be more complicated than that.
+
+# Internalism and Externalism
+
+## What Does Rationality Depend on?
+
+Imagine that one person is rational, and another irrational.
+
+- How must they differ?
+- Could they be internally alike?
+
+## Internalism
+
+Rationality is a function of what's internal to the person.
+
+- Two people who are internally alike are either both rational, or both irrational.
+
+## Internal?
+
+What does 'internal' mean here? Two prominent options (which I'm stating but won't go into)
+
+1. Physical, e.g., brain states, sense organs, etc.
+2. Phenomenological, e.g., feelings, sensations, etc. This is sometimes called **access internalism**; rationality just depends on what the thinker has access to.
+
+## How Does It Depend?
+
+Again, two big theories, though these aren't exclusive or exhaustive.
+
+1. Evidential; rationality is a matter of having beliefs based in the right way in evidence, which (on this view) is a special kind of internal state. Sometimes this is called foundationalism.
+2. Coherence; rationality is a matter of internal states cohering.
+
+## How Does It Depend?
+
+We'll come back to this, because some of the objections to internalism target just one or the other theory.
+
+## Externalism
+
+Externalism is simply the denial of internalism.
+
+- It says that sometimes internal duplicates differ in rationality.
+
+## Strong Externalism
+
+A really strong form of externalism says that only external factors matter to rationality.
+
+- This is not a popular view, though the Srinivasan paper we'll read next comes very close to defending it.
+- But external here typically means "not exclusively internal".
+
+## Process Reliabilism
+
+The most popular form of externalism these days is **process reliabilism**. This has two parts.
+
+- In general, rational beliefs are those that are produced by reliable processes.
+- But there is an exception; beliefs that fail some internalist test might be 'defeated', and not rational.
+
+## Process Reliabilism
+
+Process reliabilism is most associated with Alvin Goldman, a former professor here at UM.
+
+- Indeed, I think some of the most important statements of it were from his time at UM.
+- Another important figure (who we'll read in a related context soon) is the Cuban-American philosopher Ernest Sosa.
+
+# Why Internalism
+
+## Three Reasons
+
+This is an enormous debate, but I'll pull out three reasons that I think are significant.
+
+1. Anti-luck.
+2. Cases.
+3. Evil Demons
+
+## Anti-Luck
+
+- Saying something is rational is a way of saying that it's not a lucky guess, and if it's false, it's unlucky.
+- External factors are basically matters of luck.
+- So rationality should depend only on internal factors.
+
+## Cases
+
+Lawrence BonJour introduced the following kind of case.
+
+- A person has (somehow) acquired clairvoyant powers.
+- They have these beliefs about distant parts of the world that just come to them.
+- And these beliefs are true.
+
+## Question
+
+1. Is simply trusting this new clairvoyant sense rational for the person?
+2. If not, is this a problem for reliabilists.
+
+## Evil Demon
+
+The evil demon usually comes into epistemology as part of an argument about scepticism.
+
+- E.g., you don't know you're not being deceived by an evil demon, so you don't know that you have hands.
+- But here is gets used for a debate about rationality.
+
+## Sympathy for the Devil (Victim)
+
+Imagine a person who seems, from the inside, to be just like an actually rational person.
+
+- But in fact they are the victim of an evil demon, so their beliefs are all false.
+- Reliabilists say they are irrational, but they are intuitively rational.
+
+## Question
+
+What should reliabilists say about this case?
+
+## Variant
+
+Imagine two evil demon victims.
+
+- A is, from the inside, a paradigm of rationality.
+- B is, from the inside, a conspiracy theorist who leaps to conclusions, believes everything he's told, etc., etc.
+
+## Question
+
+Can reliabilists say something about the intuitive differences between A and B?
+
+# Why Externalism
+
+## Three Arguments
+
+Again, there are many, but I'll just look at these three.
+
+1. Speckled hen
+2. Why care about rationality?
+3. Involuntarism
+
+## Speckled Hen
+
+![How many visible white speckles?](../images/hen.png){width=60%}
+
+## Speckled Hen
+
+- The right answer does just depend on your internal states.
+- But it seems that any number you came up with by just guessing would not be a rational belief.
+- So rationality requires more than internal states, it requires a reliable connection to the world.
+
+## Why Care?
+
+Rationality should be something we care about.
+
+- But if given a choice between being evidence-responsive, and being reliable, we should choose being reliable.
+- And same for coherent versus reliable.
+
+## Why Care?
+
+- Belief, in some sense, aims at the truth.
+- Rationality means something like doing well in believing.
+- So, being rational should mean something like doing well in getting to the truth.
+- That means reliability.
+
+## Why Care?
+
+Are there hand-wavy moves on the previous slide that might not hold up to strict scrutiny? Yes!
+
+## Voluntarism
+
+- We evaluate the voluntary parts of human behavior by whether they make sense, and the involuntary parts by whether they work.
+- Belief is involuntary.
+- So we should evaluate it by how well it works.
+
+## Somewhat Concessive
+
+- This argument concedes that if belief were voluntary, internalism would be plausible/correct.
+- But, it says, belief is involuntary.
+
+## Evaluation
+
+Whether someone has, say, a good or bad digestive system is not a strictly internal matter.
+
+- Having a good digestive system just is being good at digesting common foods.
+- And what the common foods are is external.
+- The involunarists say belief is the same.
+
+## Two Objections
+
+1. Belief really is voluntary.
+2. Enough things connected to belief are voluntary that we can use something like internalist criteria.
+
+## For Next Time
+
+We'll look at a very recent contribution to this debate, Amia Srinivasan's argument for externalism from cases involving oppression.
+
