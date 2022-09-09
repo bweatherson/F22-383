@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Knowledge and Reality, Lecture 04"
 author: "Brian Weatherson"
@@ -30,6 +31,8 @@ format:
        }
 ---
 
+=======
+>>>>>>> 3ae6255912ca0bdc89aa76335ff7057cb6ad3094
 # Review
 
 ## Is Testimony a Basic Knowledge Source
@@ -209,13 +212,20 @@ Gilbert's hypothesis (which he attributes to Spinoza):
 
 ## Two Parisian Responses
 
+<<<<<<< HEAD
 1. People don't actually believe that much misinformation, but pretend to do so as a social/political signal. E.g., almost no one really believed 'Pizzagate'.
+=======
+1. People don't actually believe that much misinformation, but pretend to do so as a social/political signal.
+>>>>>>> 3ae6255912ca0bdc89aa76335ff7057cb6ad3094
 2. Misinformation is a demand side problem; people (rationally!) want rationalisations for things they want to be true.
 
 ## Citations
 
+<<<<<<< HEAD
 The following bits of text link to the relevant papers.
 
+=======
+>>>>>>> 3ae6255912ca0bdc89aa76335ff7057cb6ad3094
 - [Sterelny on the two schools](https://www.sciencedirect.com/science/article/pii/S1369848616301078#fn14)
 - [Mercier and colleagues on misinformation](https://www.cambridge.org/core/journals/american-political-science-review/article/analytical-democratic-theory-a-microfoundational-approach/739A9A928A99A47994E4585059B03398)
 - [Williams on the marketplace of rationalisations](https://www.cambridge.org/core/journals/economics-and-philosophy/article/marketplace-of-rationalizations/41FB096344BD344908C7C992D0C0C0DC)
@@ -269,6 +279,7 @@ Humans should be, and to some extent are, just like that.
 My favorite example: walking down a busy street or corridor.
 
 - We somehow track everyone, while attending to almost no one.
+<<<<<<< HEAD
 - Really big question: How on earth do we do this, and can we invent a machine that does something similar?
 
 ## Vigilant Hearers
@@ -293,6 +304,11 @@ Is this plausible as a model of how human hearers operate?
 
 - The debate between "internalism" and "externalism" in epistemology.
 
+=======
+
+## Vigilant Hearers
+
+>>>>>>> 3ae6255912ca0bdc89aa76335ff7057cb6ad3094
 
 
 
