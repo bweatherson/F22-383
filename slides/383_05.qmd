@@ -182,7 +182,7 @@ Again, there are many, but I'll just look at these three.
 
 ## Speckled Hen
 
-![How many visible white speckles?](../images/hen.png){width=60%}
+![How many visible white speckles?](../images/hen.jpg){height=60%}
 
 ## Speckled Hen
 
