@@ -30,7 +30,7 @@ format:
        }
 ---
 
-# Review
+# Review (And Finishing Up)
 
 ## Testimony
 
@@ -41,6 +41,68 @@ format:
 
 - Testimony is basic, and rationally believing testimony requires just an absence of reasons for doubt.
 - Testimonial belief is inferential, and rationally believing testimony requires reason to think the speaker is telling the truth.
+
+## Two Theories
+
+Reductionism
+:    Rationally believing testimony requires reasons to accept.
+
+Anti-Reductionism
+:    Rationally believing testimony requires absence of reasons to reject.
+
+These come apart when there are no reasons to accept or reject.
+
+## Philosophy and Psychology
+
+General background assumption:
+
+- People are rational.
+- So which of the theories of rationality is correct is linked to empirical work on what people actually do.
+
+## Over-Intellectualisation
+
+Anti-reductionists think that reductionists **over-intellectualise** testimony reception.
+
+- They say their opponents add mental steps to what's a much simpler process.
+- This was a common late C20 response to philosophical views in many topics.
+
+## Paris School
+
+- A general response to over-intellectualisation objections in many domains.
+
+## Paris School
+
+People do have lots of rules, life hacks in 2010s lingo, to get around. But...
+
+- They don't apply them in high stakes cases.
+- And they don't apply them when it is obvious they would fail.
+- So they must be checking every time whether this is a high-stakes/obvious-fail situation.
+
+## Vigilance
+
+My favorite example: walking down a busy street or corridor.
+
+- We somehow track everyone, while attending to almost no one.
+- Really big question: How on earth do we do this, and can we invent a machine that does something similar?
+
+## Vigilant Hearers
+
+Sperber et al think that we are also vigilant in hearing.
+
+- Everything gets a rough check, almost always subconsciously.
+- Some things get more thorough check.
+
+## Red Flags
+
+- New informants
+- Surprising that info is either true or known
+- Reason to deceive
+- High stakes
+
+## Big Question
+
+Is this plausible as a model of how human hearers operate?
+
 
 ## Today
 
