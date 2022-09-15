@@ -1,0 +1,264 @@
+---
+title: "Knowledge and Reality, Lecture 06"
+author: "Brian Weatherson"
+date: 2022-09-19
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+ #   classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Review
+
+## Internalism
+
+Rationality is a function of what's internal to the person.
+
+- Two people who are internally alike are either both rational, or both irrational.
+
+## Externalism
+
+Externalism is simply the denial of internalism.
+
+- It says that sometimes internal duplicates differ in rationality.
+
+## Process Reliabilism
+
+The most popular form of externalism these days is **process reliabilism**. This has two parts.
+
+- In general, rational beliefs are those that are produced by reliable processes.
+- But there is an exception; beliefs that fail some internalist test might be 'defeated', and not rational.
+
+# Why Internalism
+
+## Three Reasons
+
+Many reasons, we'll focus on three. The first two were mentioned last time.
+
+1. Anti-luck.
+2. Cases.
+3. Evil Demons
+
+## Evil Demon
+
+The evil demon usually comes into epistemology as part of an argument about scepticism.
+
+- E.g., you don't know you're not being deceived by an evil demon, so you don't know that you have hands.
+- But here is gets used for a debate about rationality.
+
+## Sympathy for the Devil (Victim)
+
+Imagine a person who seems, from the inside, to be just like an actually rational person.
+
+- But in fact they are the victim of an evil demon, so their beliefs are all false.
+- Reliabilists say they are irrational, but they are intuitively rational.
+
+## Question
+
+What should reliabilists say about this case?
+
+## Variant
+
+Imagine two evil demon victims.
+
+- A is, from the inside, a paradigm of rationality.
+- B is, from the inside, a conspiracy theorist who leaps to conclusions, believes everything he's told, etc., etc.
+
+## Question
+
+Can reliabilists say something about the intuitive differences between A and B?
+
+# Why Externalism
+
+## Three Arguments
+
+Again, there are many, but I'll just look at these three.
+
+1. Speckled hen
+2. Why care about rationality?
+3. Involuntarism
+
+## Speckled Hen
+
+![How many visible white speckles?](../images/hen.jpg){height=60%}
+
+## Speckled Hen
+
+- The right answer does just depend on your internal states.
+- But it seems that any number you came up with by just guessing would not be a rational belief.
+- So rationality requires more than internal states, it requires a reliable connection to the world.
+
+## Why Care?
+
+Rationality should be something we care about.
+
+- But if given a choice between being evidence-responsive, and being reliable, we should choose being reliable.
+- And same for coherent versus reliable.
+
+## Why Care?
+
+- Belief, in some sense, aims at the truth.
+- Rationality means something like doing well in believing.
+- So, being rational should mean something like doing well in getting to the truth.
+- That means reliability.
+
+## Why Care?
+
+Are there hand-wavy moves on the previous slide that might not hold up to strict scrutiny? Yes!
+
+## Voluntarism
+
+- We evaluate the voluntary parts of human behavior by whether they make sense, and the involuntary parts by whether they work.
+- Belief is involuntary.
+- So we should evaluate it by how well it works.
+
+## Somewhat Concessive
+
+- This argument concedes that if belief were voluntary, internalism would be plausible/correct.
+- But, it says, belief is involuntary.
+
+## Evaluation
+
+Whether someone has, say, a good or bad digestive system is not a strictly internal matter.
+
+- Having a good digestive system just is being good at digesting common foods.
+- And what the common foods are is external.
+- The involunarists say belief is the same.
+
+## Two Objections
+
+1. Belief really is voluntary.
+2. Enough things connected to belief are voluntary that we can use something like internalist criteria.
+
+# Srinivasan
+
+## Short Version
+
+- In cases involving accurate beliefs under oppressive circumstances, reliability is enough for rationality.
+- So internalism is false as applied to these rather important actual cases.
+
+## Three Cases
+
+1. Instinctive correct belief.
+2. Instinctive correct belief which persists despite counter-evidence.
+3. False belief that matches lots of testimony.
+
+## Three Rival Theories
+
+- Internalism.
+- This is incompatible with all of the cases.
+
+## Three Rival Theories
+
+- Process reliabilism, with the defeater condition.
+- This is incompatible with the second case.
+
+## Three Rival Theories
+
+- I don't know of anyone who has this view, but the third case seems designed to oppose a view that someone probably should have.
+- Call it the generous view of rationality.
+
+## Three Rival Theories
+
+Here's how the 'generous' view (my term) works. A belief is rational iff it is:
+
+1. Formed by a reliable process; or
+2. Properly based in the evidence.
+
+## Three Rival Theories
+
+No one has this view, but it seems interesting because it gets a lot of cases right, especially evil demon cases.
+
+- But it gets the third of Srinivasan's cases wrong.
+
+## Case Judgments
+
+What do **you** think about the three cases?
+
+## Argument Structure
+
+What role do the cases play in Srinivasan's theory?
+
+1. Trigger snap reactions that theory is judged against?
+2. Make us reflect on what we want a theory of good belief for?
+
+## Argument Structure
+
+- My (idiosyncratic) view is that 1 isn't a very good reason to think about cases like these.
+- But 2 could be a good reason.
+
+## Cases and Principles
+
+What general lessons about belief can we draw from reflection on these kinds of cases?
+
+## Cues
+
+On the next slide is one kind of argument I think can be drawn from these cases (not sure if it's a fair reading of the paper though).
+
+## Cues
+
+1. Rational, justified belief is a matter of doing well in believing.
+2. Doing well in believing, for creatures like us, involves picking up on subtle cues.
+3. This is often something that is not available to consciousness, or available to reasoning.
+4. So rationality isn't just about reasoning from conscious states.
+
+## Racists and Clairvoyants
+
+To end, let's look at Srinivasan's argument that her examples generalise to promote a simple, or what she calls **radical** externalism.
+
+- I found this part of the argument rather odd.
+
+## Argument by Analogy
+
+1. Nour is justified in believing her host is racist.
+2. Nour's case is just like Bonjour's case of Norman.
+3. So Norman is justified in his clairvoyant beliefs.
+
+## Argument by Analogy
+
+- Why should we believe premise 2 here?
+- I know why an **internalist** should believe it, by stipulation the cases are pretty similar from the inside, but why should an **externalist** believe it?
+
+## Disanalogies
+
+- The Nour example is pretty realistic, the Norman case is totally not.
+- There is an explanation for why Nour could have this ability; there is no explanation for Norman.
+- Nour's ability is widespread; Norman's is idiosyncratic.
+
+## Group Externalism
+
+So here's a view that is untouched by Srinivasan's example, but agrees with Bonjour about Norman.
+
+- A belief is justified iff it is produced by a process that is reliable, and widely shared among similar people.
+
+## Group Externalism
+
+This could obviously do with some more care about the details - I literally just made it up - but it feels more natural given the Marxist motivations to think about groups than individual reliability.
+
+## For Next Time
+
+Onto the most notorious part of recent epistemology: The Gettier Problem
+
+
