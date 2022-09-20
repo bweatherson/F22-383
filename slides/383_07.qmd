@@ -1,0 +1,128 @@
+---
+title: "Knowledge and Reality, Lecture 07"
+author: "Brian Weatherson"
+date: 2022-09-21
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Review
+
+## Internalism and Externalism
+
+- Internalists say that rationality/justification is a matter of what one's internal states are like.
+- Externalists say that sometimes external facts, like the reliability of the connection between those states and the world, is also relevant.
+
+## Radical Externalism
+
+- Maybe the reliable connection is the only thing that matters.
+- Srinivasan suggests that this does the best job of explaining what's going on in some politically loaded cases.
+
+## Hints, Cues and Instincts
+
+Even outside of the political context, we need a theory of how to manage instinctive reactions to barely perceptible inputs.
+
+- The externalist has a simple answer here: those reactions are good if they typically get it right, and bad otherwise.
+- The internalist needs a story.
+
+# Analysis
+
+## What is Knowledge?
+
+Question: What conditions are both **necessary** and **sufficient** for knowledge.
+
+## Necessary Conditions
+
+- These conditions are needed for knowledge.
+- In any case of knowledge, these conditions obtain.
+
+## Sufficient Conditions
+
+- These conditions suffice for knowledge.
+- If you meet all of them, you know.
+
+## Dream
+
+Some conditions such that:
+
+- Each of them on their own is necessary.
+- Between them, they are sufficient.
+
+## Example
+
+The following are all necessary conditions on being a square, and between them they are sufficient.
+
+- Quadrilateral.
+- Equal sides.
+- Equal angles.
+
+## Analysis
+
+In this way we've analysed the concept of being a square, just like a chemist might analyse water into Hydrogen and Oxygen.
+
+- Can this kind of analysis, modelled on the great successes of early C20 chemistry, work for more concepts than geometric ones?
+- Can it work for knowledge?
+
+## Spoiler Alert
+
+No
+
+# The JTB Theory
+
+## A Theory Schema
+
+S knows that $p$ iff the following conditions are met:
+
+- S believes that $p$.
+- $p$ is true.
+- S's belief is rational/justified.
+
+## JTB
+
+In short, S has a Justified True Belief that $p$.
+
+- This became known as the JTB theory.
+
+## JTB
+
+- Fun fact: although it gets talked about a lot, it's not clear anyone ever held exactly that theory.
+- The terminology comes from Ed Gettier's 1963 paper "Is Justified True Belief Knowledge?".
+- But Gettier is using "justified" as a shorthand for a few different things that could go in place of third condition.
+
+## Gettier
+
+The short paper you've seen is one of the most cited in contemporary philosophy.
+
+- It launched the "Gettier problem", which was the problem of either adding to, or replacing, one of those three conditions to get the analysis right.
+- Nowadays the general view is that the problem can't be solved, but it was a big deal.
+
+## The Gettier Problem
+
+
+
+
+
