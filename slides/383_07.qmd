@@ -216,7 +216,7 @@ You'll often see people say that this was what epistemologists talked about in t
 
 ## Some Data
 
-![Percentage of epistemology articles each year that were on Gettier problem](../images/gettier-percent.png)
+![Percentage of epistemology articles each year that were on Gettier problem](../images/gettier-percent.png){height=60%}
 
 # Two Cases
 
@@ -288,7 +288,7 @@ Consider a theory that says S knows that $p$ just in case
 
 ## Zagzebski
 
-For any F whatsoever, you can do a Brown in Barcelona example.
+For almost F, there's a Brown in Barcelona example.
 
 - Make the belief that Brown is in Barcelona have feature F.
 - Make it be true (but completely unknown) that Brown is in Bordeaux.
