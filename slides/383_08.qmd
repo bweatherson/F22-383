@@ -1,0 +1,327 @@
+---
+title: "Knowledge and Reality, Lecture 08"
+author: "Brian Weatherson"
+date: 2022-09-26
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Review
+
+## Plan for Today
+
+- Two short sections: one on internalism/externalism, and one on the place of epistemology in philosophy.
+- Two long sections: one on "sensitivity" accounts of knowledge, and one on virtue.
+- Some of this might run on to Wednesday.
+
+## Internalism (Again)
+
+I want to go over two similar ways to understand internalism about rationality. (Or justification; you can replace the words throughout.)
+
+- These are going to be related; they are both ways to understand internalism.
+- But I don't think I did a good job of distinguishing them so far, which has led to confusion.
+
+## Internalism as an Argument
+
+Is this a valid argument?
+
+1. A is being rational.
+2. A and B are exactly alike on the inside; they are internal duplicates.
+3. So, B is being rational.
+
+## Internalism as an Argument
+
+- Internalists say it is; anyone who is internally like a rational person is rational.
+- Equivalently: Rationality never differs between internal duplicates.
+- Externalists say it is not; A and B might differ in how they are connected to the world.
+
+## An Example
+
+A and B both, without being consciously aware of it, or having given it much thought, have the habit of believing people who look them in the eye when telling them something.
+
+- To make it realistic, assume that they have some limits to this, but it's their general habit.
+
+## An Example
+
+A and B both, without being consciously aware of it, or having given it much thought, have the habit of believing people who look them in the eye when telling them something.
+
+- This will go well for A, but will go badly for B, since they live in a land of compulsive liars.
+
+## Internalism vs Externalism
+
+- Internalists differ on what to say about these folks, but they say A and B are alike: both rational or both irrational.
+- Externalists typically say that A is rational, because reliable, and B is irrational, because unreliable.
+
+## Internalism as an Explanation
+
+So that's take one; internalism accepts this A-to-B argument, and externalism rejects it.
+
+- But we can also distinguish the views by just looking at one person.
+
+## Internalism as an Explanation
+
+Consider any case where A is being rational.
+
+- We can always ask, what features of A make them rational?
+- It's never a brute fact that someone is rational; there is always some more underlying fact.
+
+## Internalism as an Explanation
+
+- Internalists say those underlying facts are all internal.
+- Externalists say that some of the underlying facts are (at least sometimes) external.
+- E.g., they include the reliability of the process that is being used.
+
+## Internalism as an Explanation
+
+If I say someone is rational, the internalist says I'm just talking about that person, the externalist says that I'm talking about how that person is related to the world.
+
+# Sensitivity
+
+## Zagzebski
+
+No viable theory of knowledge can say that knowledge consists of these three features:
+
+- S believes that $p$.
+- $p$ is true.
+- S's belief has feature F, where F (a) is preserved by logical inference, and (b) does not imply truth.
+
+## Two Ways Out
+
+1. Make F not be closed under logical inference.
+2. Make F imply truth.
+
+## Sensitivity
+
+This part of the lecture , is about an approach that takes the first option.
+
+- It is called a sensitivity theory.
+- The person most associated with this view is the late Harvard philosopher Robert Nozick.
+- I'm going to look at a greatly simplified version of Nozick's view.
+
+## Sensitivity Theory
+
+S knows that $p$ just in case.
+
+- S believes that $p$.
+- $p$ is true.
+- If $p$ were not true, S would not believe it.
+
+## Simple Knowledge
+
+Do I know I have hands? Yes, because all three clauses are met.
+
+1. I believe I have hands.
+2. I do in fact have hands.
+3. If I didn't have hands, I wouldn't believe it.
+
+## Weird Knowledge
+
+Say a HBIV is a handless brain in a vat, who is stimulated to have experiences as of working at UM.
+
+- Do I know I'm not a HBIV?
+
+## Weird Knowledge
+
+Say a HBIV is a handless brain in a vat, who is stimulated to have experiences as of working at UM.
+
+- No, because the following is false.
+- If I were a HBIV, I wouldn't believe I wasn't one. 
+- In fact the opposite is the case: If I were a HBIV, I **would** believe I wasn't one.
+
+
+## An Argument
+
+1. I have hands.
+2. So I'm not a handless brain in a vat.
+
+- This argument is valid, and clearly so.
+- But the sensitivity theory says I know the premise, and not the conclusion.
+
+## Logic and Knowledge
+
+Nozick argued this was a feature, and not a bug, of his theory.
+
+- It explained why we were so worried by sceptical scenarios like the HBIV.
+- And he thought it got a bunch of other cases intuitively right.
+
+## Potemkin's Actual Village
+
+But there's a problem with the view. And it's easiest to illustrate with a story.
+
+- Some of you will know of the story, almost certainly fictional, of Grigory Potemkin in Crimea.
+- He's meant to be overseeing rural development there, and Catherine the Great is going to come on a tour to see how it's going. (This part might be true enough.)
+
+## Potemkin's Actual Village
+
+- In the popular version of the story, there is very little development, so Potemkin puts these cutouts up along the river, so as Catherine sails past, it looks like there are villages.
+- In our version (also fictional!), Potemkin does get the villages built, and at the key moment, Catherine is looking at a nice, new, red house.
+
+## Potemkin's Actual Village
+
+- But Potemkin had a backup plan; if the house didn't get built, he would have put up a fake.
+- And the fake would have been white, not red, but it would have been convincing.
+
+## Catherine
+
+Does Catherine know there's a red house by the river?
+
+- Yes; there is, she believes there is, and if there weren't a red house, she wouldn't believe that there was one.
+
+## Catherine
+
+Does Catherine know there's a house by the river?
+
+- No! If there had been no house there, Catherine would still believe there was one, because the white fake would have fooled her.
+
+## Intuition Check
+
+Is it plausible that Catherine can know there's a red house by the river, and not know there's a house?
+
+- That seems very strange.
+
+## A More Complicated Case
+
+Nozick's theory implies one can never have knowledge of the following form:
+
+- I don't have the false belief that $p$.
+- E.g., I don't have the false belief that the moon is made of cheese.
+- But surely I do know that I don't have that false belief, because I don't even believe it.
+
+# The Place of Epistemology
+
+## Moral Philosophy /// Logic and Metaphysics
+
+![](../images/edgecliffe-doors.jpg)
+
+## Two Big Questions
+
+1. What is there?
+2. How to live?
+
+## The Place of Epistemology
+
+Which program does epistemology belong in?
+
+- Logic and Metaphysics?
+- Moral Philosophy?
+
+## Classical Traditions
+
+Mostly place it with moral philosophy.
+
+- How to believe well is a sub-question of how to live well.
+
+## Modern Traditions
+
+Note by 'modern' here we mean roughly 1640-1890. (Or to 1914 if you care more about world history than philosophy history.)
+
+## Modern Traditions
+
+- Epistemology becomes clearly part of the metaphysics side.
+- M&E becomes the shorthand for that part of philosophy.
+- Still reflected in name of this course.
+
+## Metaphysics and Epistemology in Modern
+
+- The main constraint on a metaphysical theory is that we have to be able to know about the world.
+- So epistemology and metaphysics are completely entwined.
+
+## Ethics and Epistemology in Contemporary
+
+In the last generation or so, epistemology has moved back towards its classical home in ethics.
+
+- "How to" questions have a unity to them.
+- Moral approaches are helpful in epistemology.
+
+# Virtue Epistemology
+
+## Virtue Epistemology
+
+Don't just talk about rational/irrational, justified/unjustified, knowledge/ignorance, etc, but talk about virtues/vices.
+
+## Examples of Virtues
+
+- Curiosity
+- Open-mindedness
+- Intellectual courage
+- Intellectual humility
+
+## Examples of Vices
+
+- Arrogance
+- Stubbornness
+- Closed-mindedness
+
+## Zagzebski
+
+Two (maybe related) claims.
+
+- Knowledge is belief that is true, justified, and (at least in part) justifed because it is true.
+- Justified beliefs are ones that flow from exercises of the virtues.
+
+## Sosa
+
+Three claims, in increasing order of strength.
+
+- Virtues are central to epistemology.
+- What makes something a virtue is that it reliably produces true beliefs.
+- Knowledge can be understood in terms of virtues.
+
+## AAA model
+
+- A belief is **accurate** iff it is true.
+- A belief is **adroit** iff it is skilfully produced.
+- A belief is **apt** iff it is accurate because adroit.
+
+## Belief and Achivements
+
+Can apply AAA model to any kind of goal-directed activity.
+
+- The account of accuracy will change, as will the theory of skill, but the structure will stay.
+
+## Gettier Cases
+
+- They are both accurate and adroit, but these facts are coincidences.
+- The accuracy is not explained by the adroitness.
+
+## Animal Knowledge and Reflective Knowledge
+
+- These three conditions give one **animal** knoweldge.
+- As the name suggests, these are conditions that Sosa thinks even (non-human) animals can readily attain.
+- Actually a tricky question here about which animals have beliefs, and what it means to say an animal has a belief, but assuming they do, they can have AAA beliefs.
+
+## Animal Knowledge and Reflective Knowledge
+
+Reflective knowledge is animal knowledge that one has animal knowledge.
+
+- It requires being able to reflect on one's own skills, and correctly judge that one has acquired true beliefs by the exercise of skill, in virtue of having skill at making this kind of judgment.
+- That's probably too much for non-humans!
+
+## For Next Time
+
+- A bit more on virtues and knowledge.
+- Onto scepticism!
