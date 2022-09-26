@@ -1,0 +1,819 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+  handout]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 08},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 08}
+\author{Brian Weatherson}
+\date{2022-09-26}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, interior hidden, boxrule=0pt, sharp corners, breakable, borderline west={3pt}{0pt}{shadecolor}, frame hidden]}{\end{tcolorbox}}\fi
+
+\hypertarget{review}{%
+\section{Review}\label{review}}
+
+\begin{frame}{Plan for Today}
+\protect\hypertarget{plan-for-today}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Two short sections: one on internalism/externalism, and one on the
+  place of epistemology in philosophy.
+\item
+  Two long sections: one on ``sensitivity'' accounts of knowledge, and
+  one on virtue.
+\item
+  Some of this might run on to Wednesday.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Internalism (Again)}
+\protect\hypertarget{internalism-again}{}
+I want to go over two similar ways to understand internalism about
+rationality. (Or justification; you can replace the words throughout.)
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  These are going to be related; they are both ways to understand
+  internalism.
+\item
+  But I don't think I did a good job of distinguishing them so far,
+  which has led to confusion.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Internalism as an Argument}
+\protect\hypertarget{internalism-as-an-argument}{}
+Is this a valid argument?
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  A is being rational.
+\item
+  A and B are exactly alike on the inside; they are internal duplicates.
+\item
+  So, B is being rational.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Internalism as an Argument}
+\protect\hypertarget{internalism-as-an-argument-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Internalists say it is; anyone who is internally like a rational
+  person is rational.
+\item
+  Equivalently: Rationality never differs between internal duplicates.
+\item
+  Externalists say it is not; A and B might differ in how they are
+  connected to the world.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An Example}
+\protect\hypertarget{an-example}{}
+A and B both, without being consciously aware of it, or having given it
+much thought, have the habit of believing people who look them in the
+eye when telling them something.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  To make it realistic, assume that they have some limits to this, but
+  it's their general habit.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An Example}
+\protect\hypertarget{an-example-1}{}
+A and B both, without being consciously aware of it, or having given it
+much thought, have the habit of believing people who look them in the
+eye when telling them something.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This will go well for A, but will go badly for B, since they live in a
+  land of compulsive liars.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Internalism vs Externalism}
+\protect\hypertarget{internalism-vs-externalism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Internalists differ on what to say about these folks, but they say A
+  and B are alike: both rational or both irrational.
+\item
+  Externalists typically say that A is rational, because reliable, and B
+  is irrational, because unreliable.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Internalism as an Explanation}
+\protect\hypertarget{internalism-as-an-explanation}{}
+So that's take one; internalism accepts this A-to-B argument, and
+externalism rejects it.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But we can also distinguish the views by just looking at one person.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Internalism as an Explanation}
+\protect\hypertarget{internalism-as-an-explanation-1}{}
+Consider any case where A is being rational.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We can always ask, what features of A make them rational?
+\item
+  It's never a brute fact that someone is rational; there is always some
+  more underlying fact.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Internalism as an Explanation}
+\protect\hypertarget{internalism-as-an-explanation-2}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Internalists say those underlying facts are all internal.
+\item
+  Externalists say that some of the underlying facts are (at least
+  sometimes) external.
+\item
+  E.g., they include the reliability of the process that is being used.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Internalism as an Explanation}
+\protect\hypertarget{internalism-as-an-explanation-3}{}
+If I say someone is rational, the internalist says I'm just talking
+about that person, the externalist says that I'm talking about how that
+person is related to the world.
+\end{frame}
+
+\hypertarget{sensitivity}{%
+\section{Sensitivity}\label{sensitivity}}
+
+\begin{frame}{Zagzebski}
+\protect\hypertarget{zagzebski}{}
+No viable theory of knowledge can say that knowledge consists of these
+three features:
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  S believes that \(p\).
+\item
+  \(p\) is true.
+\item
+  S's belief has feature F, where F (a) is preserved by logical
+  inference, and (b) does not imply truth.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Ways Out}
+\protect\hypertarget{two-ways-out}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Make F not be closed under logical inference.
+\item
+  Make F imply truth.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Sensitivity}
+\protect\hypertarget{sensitivity-1}{}
+This part of the lecture , is about an approach that takes the first
+option.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It is called a sensitivity theory.
+\item
+  The person most associated with this view is the late Harvard
+  philosopher Robert Nozick.
+\item
+  I'm going to look at a greatly simplified version of Nozick's view.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Sensitivity Theory}
+\protect\hypertarget{sensitivity-theory}{}
+S knows that \(p\) just in case.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  S believes that \(p\).
+\item
+  \(p\) is true.
+\item
+  If \(p\) were not true, S would not believe it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Simple Knowledge}
+\protect\hypertarget{simple-knowledge}{}
+Do I know I have hands? Yes, because all three clauses are met.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  I believe I have hands.
+\item
+  I do in fact have hands.
+\item
+  If I didn't have hands, I wouldn't believe it.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Weird Knowledge}
+\protect\hypertarget{weird-knowledge}{}
+Say a HBIV is a handless brain in a vat, who is stimulated to have
+experiences as of working at UM.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Do I know I'm not a HBIV?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Weird Knowledge}
+\protect\hypertarget{weird-knowledge-1}{}
+Say a HBIV is a handless brain in a vat, who is stimulated to have
+experiences as of working at UM.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  No, because the following is false.
+\item
+  If I were a HBIV, I wouldn't believe I wasn't one.
+\item
+  In fact the opposite is the case: If I were a HBIV, I \textbf{would}
+  believe I wasn't one.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An Argument}
+\protect\hypertarget{an-argument}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  I have hands.
+\item
+  So I'm not a handless brain in a vat.
+\end{enumerate}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This argument is valid, and clearly so.
+\item
+  But the sensitivity theory says I know the premise, and not the
+  conclusion.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Logic and Knowledge}
+\protect\hypertarget{logic-and-knowledge}{}
+Nozick argued this was a feature, and not a bug, of his theory.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It explained why we were so worried by sceptical scenarios like the
+  HBIV.
+\item
+  And he thought it got a bunch of other cases intuitively right.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Potemkin's Actual Village}
+\protect\hypertarget{potemkins-actual-village}{}
+But there's a problem with the view. And it's easiest to illustrate with
+a story.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Some of you will know of the story, almost certainly fictional, of
+  Grigory Potemkin in Crimea.
+\item
+  He's meant to be overseeing rural development there, and Catherine the
+  Great is going to come on a tour to see how it's going. (This part
+  might be true enough.)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Potemkin's Actual Village}
+\protect\hypertarget{potemkins-actual-village-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  In the popular version of the story, there is very little development,
+  so Potemkin puts these cutouts up along the river, so as Catherine
+  sails past, it looks like there are villages.
+\item
+  In our version (also fictional!), Potemkin does get the villages
+  built, and at the key moment, Catherine is looking at a nice, new, red
+  house.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Potemkin's Actual Village}
+\protect\hypertarget{potemkins-actual-village-2}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But Potemkin had a backup plan; if the house didn't get built, he
+  would have put up a fake.
+\item
+  And the fake would have been white, not red, but it would have been
+  convincing.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Catherine}
+\protect\hypertarget{catherine}{}
+Does Catherine know there's a red house by the river?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Yes; there is, she believes there is, and if there weren't a red
+  house, she wouldn't believe that there was one.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Catherine}
+\protect\hypertarget{catherine-1}{}
+Does Catherine know there's a house by the river?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  No! If there had been no house there, Catherine would still believe
+  there was one, because the white fake would have fooled her.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Intuition Check}
+\protect\hypertarget{intuition-check}{}
+Is it plausible that Catherine can know there's a red house by the
+river, and not know there's a house?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  That seems very strange.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A More Complicated Case}
+\protect\hypertarget{a-more-complicated-case}{}
+Nozick's theory implies one can never have knowledge of the following
+form:
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  I don't have the false belief that \(p\).
+\item
+  E.g., I don't have the false belief that the moon is made of cheese.
+\item
+  But surely I do know that I don't have that false belief, because I
+  don't even believe it.
+\end{itemize}
+\end{frame}
+
+\hypertarget{the-place-of-epistemology}{%
+\section{The Place of Epistemology}\label{the-place-of-epistemology}}
+
+\begin{frame}{Moral Philosophy /// Logic and Metaphysics}
+\protect\hypertarget{moral-philosophy-logic-and-metaphysics}{}
+\includegraphics{../images/edgecliffe-doors.jpg}
+\end{frame}
+
+\begin{frame}{Two Big Questions}
+\protect\hypertarget{two-big-questions}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  What is there?
+\item
+  How to live?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{The Place of Epistemology}
+\protect\hypertarget{the-place-of-epistemology-1}{}
+Which program does epistemology belong in?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Logic and Metaphysics?
+\item
+  Moral Philosophy?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Classical Traditions}
+\protect\hypertarget{classical-traditions}{}
+Mostly place it with moral philosophy.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  How to believe well is a sub-question of how to live well.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Modern Traditions}
+\protect\hypertarget{modern-traditions}{}
+Note by `modern' here we mean roughly 1640-1890. (Or to 1914 if you care
+more about world history than philosophy history.)
+\end{frame}
+
+\begin{frame}{Modern Traditions}
+\protect\hypertarget{modern-traditions-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Epistemology becomes clearly part of the metaphysics side.
+\item
+  M\&E becomes the shorthand for that part of philosophy.
+\item
+  Still reflected in name of this course.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Metaphysics and Epistemology in Modern}
+\protect\hypertarget{metaphysics-and-epistemology-in-modern}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The main constraint on a metaphysical theory is that we have to be
+  able to know about the world.
+\item
+  So epistemology and metaphysics are completely entwined.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ethics and Epistemology in Contemporary}
+\protect\hypertarget{ethics-and-epistemology-in-contemporary}{}
+In the last generation or so, epistemology has moved back towards its
+classical home in ethics.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  ``How to'' questions have a unity to them.
+\item
+  Moral approaches are helpful in epistemology.
+\end{itemize}
+\end{frame}
+
+\hypertarget{virtue-epistemology}{%
+\section{Virtue Epistemology}\label{virtue-epistemology}}
+
+\begin{frame}{Virtue Epistemology}
+\protect\hypertarget{virtue-epistemology-1}{}
+Don't just talk about rational/irrational, justified/unjustified,
+knowledge/ignorance, etc, but talk about virtues/vices.
+\end{frame}
+
+\begin{frame}{Examples of Virtues}
+\protect\hypertarget{examples-of-virtues}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Curiosity
+\item
+  Open-mindedness
+\item
+  Intellectual courage
+\item
+  Intellectual humility
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Examples of Vices}
+\protect\hypertarget{examples-of-vices}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Arrogance
+\item
+  Stubbornness
+\item
+  Closed-mindedness
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Zagzebski}
+\protect\hypertarget{zagzebski-1}{}
+Two (maybe related) claims.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Knowledge is belief that is true, justified, and (at least in part)
+  justifed because it is true.
+\item
+  Justified beliefs are ones that flow from exercises of the virtues.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Sosa}
+\protect\hypertarget{sosa}{}
+Three claims, in increasing order of strength.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Virtues are central to epistemology.
+\item
+  What makes something a virtue is that it reliably produces true
+  beliefs.
+\item
+  Knowledge can be understood in terms of virtues.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{AAA model}
+\protect\hypertarget{aaa-model}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A belief is \textbf{accurate} iff it is true.
+\item
+  A belief is \textbf{adroit} iff it is skilfully produced.
+\item
+  A belief is \textbf{apt} iff it is accurate because adroit.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Belief and Achivements}
+\protect\hypertarget{belief-and-achivements}{}
+Can apply AAA model to any kind of goal-directed activity.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The account of accuracy will change, as will the theory of skill, but
+  the structure will stay.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gettier Cases}
+\protect\hypertarget{gettier-cases}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  They are both accurate and adroit, but these facts are coincidences.
+\item
+  The accuracy is not explained by the adroitness.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Animal Knowledge and Reflective Knowledge}
+\protect\hypertarget{animal-knowledge-and-reflective-knowledge}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  These three conditions give one \textbf{animal} knoweldge.
+\item
+  As the name suggests, these are conditions that Sosa thinks even
+  (non-human) animals can readily attain.
+\item
+  Actually a tricky question here about which animals have beliefs, and
+  what it means to say an animal has a belief, but assuming they do,
+  they can have AAA beliefs.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Animal Knowledge and Reflective Knowledge}
+\protect\hypertarget{animal-knowledge-and-reflective-knowledge-1}{}
+Reflective knowledge is animal knowledge that one has animal knowledge.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It requires being able to reflect on one's own skills, and correctly
+  judge that one has acquired true beliefs by the exercise of skill, in
+  virtue of having skill at making this kind of judgment.
+\item
+  That's probably too much for non-humans!
+\end{itemize}
+\end{frame}
+
+\begin{frame}{For Next Time}
+\protect\hypertarget{for-next-time}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A bit more on virtues and knowledge.
+\item
+  Onto scepticism!
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
