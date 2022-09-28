@@ -1,0 +1,644 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 09},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 09}
+\author{Brian Weatherson}
+\date{2022-09-28}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, sharp corners, borderline west={3pt}{0pt}{shadecolor}, frame hidden, breakable, interior hidden, enhanced]}{\end{tcolorbox}}\fi
+
+\hypertarget{review}{%
+\section{Review}\label{review}}
+
+\begin{frame}{A Dilemma}
+\protect\hypertarget{a-dilemma}{}
+If there is some feature of true belief that suffices for knowledge, it
+must either
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Not survive under logical reasoning; or
+\item
+  Imply truth
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Option 1}
+\protect\hypertarget{option-1}{}
+Nozick defended a sensitivity theory that says that the good making
+feature of belief - counterfactual sensitivity - did not survive under
+logical reasoning.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But it gave us strange results in many cases.
+\item
+  And it left it hard to say what the point of logical reasoning is.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Option 2}
+\protect\hypertarget{option-2}{}
+So a lot of people moved to option 2.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Goal: Find some good-making feature of belief that implies truth, and
+  which might be enough for knowledge.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Intuitive Idea}
+\protect\hypertarget{intuitive-idea}{}
+The good beliefs are not just justified \textbf{and} true, they are
+justified \textbf{because} true.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The explanation of the success of the inquiry, i.e., that it resulted
+  in a true belief, is that it was carried out in a skilful way, i.e.,
+  the belief was justified.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Plan for Today}
+\protect\hypertarget{plan-for-today}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Basics of Virtue Epistemology
+\item
+  Sosa on Virtue and Knowledge
+\item
+  Sosa on Scepticism
+\end{enumerate}
+\end{frame}
+
+\hypertarget{virtue-epistemology}{%
+\section{Virtue Epistemology}\label{virtue-epistemology}}
+
+\begin{frame}{Ethics and Epistemology}
+\protect\hypertarget{ethics-and-epistemology}{}
+This is part of a big trend towards making ethics and epistemology more
+entwined.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This goes in both directions: a lot of work in contemporary ethics is
+  on the nature of moral reasons, and this work draws on what
+  epistemologists have said about reasons and reasoning.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ethics and Epistemology}
+\protect\hypertarget{ethics-and-epistemology-1}{}
+At least five big trends.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  What kinds of things epistemic evaluations are.
+\item
+  What connections there are between knowledge and proper action.
+\item
+  Whether there is a proper/forgivable distinction in epistemology.
+\item
+  Whether epistemic consequentialism makes sense.
+\item
+  Whether epistemic virtues make sense.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Virtue Epistemology}
+\protect\hypertarget{virtue-epistemology-1}{}
+Traditional (i.e., pre-circa-1995) epistemology had a mistaken focus in
+two ways.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Too much attention to belief, i.e., the end of inquiry, as opposed to
+  the process of inquiry.
+\item
+  Too much attention to very big picture evaluations, like rational,
+  justified, knowledge, rather than more specific things like
+  open-mindedness, curiosity, humility.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Vice Epistemology}
+\protect\hypertarget{vice-epistemology}{}
+In the last few years (i.e., since-circa-2015), there has been a small
+uptick in thinking that we should start with the negative side, i.e.,
+epistemic vices.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Stubbornness
+\item
+  Closed-mindedness
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Models of Virtue}
+\protect\hypertarget{two-models-of-virtue}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Reliabilist: virtues are things that reliably get you to truth (or
+  some other desires end)
+\item
+  Responsible: virtues are things that responsible believers/inquirers
+  do.
+\end{enumerate}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  First is clearly externalist; second could be either internalist or
+  externalist.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Virtues as Skills}
+\protect\hypertarget{virtues-as-skills}{}
+Some virtue epistemologists (not all, I think) equate epistemic virtues
+with having \textbf{skills}.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This naturally goes with linking epistemic notions to notions of
+  \textbf{achivement}.
+\item
+  Sosa in particular is fond of these equations, but he is hardly the
+  only one.
+\end{itemize}
+\end{frame}
+
+\hypertarget{sosa-on-virtue-and-knowledge}{%
+\section{Sosa on Virtue and
+Knowledge}\label{sosa-on-virtue-and-knowledge}}
+
+\begin{frame}{Sosa}
+\protect\hypertarget{sosa}{}
+Three claims, in increasing order of strength.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Virtues are central to epistemology.
+\item
+  What makes something a virtue is that it reliably produces true
+  beliefs.
+\item
+  Knowledge can be understood in terms of virtues.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{AAA model}
+\protect\hypertarget{aaa-model}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A belief is \textbf{accurate} iff it is true.
+\item
+  A belief is \textbf{adroit} iff it is skilfully produced.
+\item
+  A belief is \textbf{apt} iff it is accurate because adroit.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Belief and Achivements}
+\protect\hypertarget{belief-and-achivements}{}
+Can apply AAA model to any kind of goal-directed activity.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The account of accuracy will change, as will the theory of skill, but
+  the structure will stay.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Achivements}
+\protect\hypertarget{achivements}{}
+What is it for a result to be an achievement?
+\end{frame}
+
+\begin{frame}{Achievements}
+\protect\hypertarget{achievements}{}
+Toy theory. S's action is an achievement iff:
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  It causes a good result.
+\item
+  It involves an exercise in the kind of skill that typically produces
+  that good result.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Gettier Cases For Achievements}
+\protect\hypertarget{gettier-cases-for-achievements}{}
+Imagine a case where someone has a skill, and causes the outcome that
+skill usually causes, but there is a lot of luck involved.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  E.g., a skilled baker is baking a cake, and they make a rare slip and
+  put in too much baking powder.
+\item
+  But the baking powder had gone somewhat stale, so it didn't have too
+  much effect on the cake.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gettier Cases for Achievements}
+\protect\hypertarget{gettier-cases-for-achievements-1}{}
+Even if the cake works out well, it doesn't make the cake an
+\textbf{achivement}.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  And this tells us something interesting about the nature of
+  achievement.
+\item
+  It requires not just success and skill, but something like success
+  \textbf{because of} skill.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Philosophical Significance}
+\protect\hypertarget{philosophical-significance}{}
+A lot of authors (Pasnau is sort of going to be an example) think that
+the focus on Gettier type cases is overdone.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Who cares precisely how the English word `knows' gets applied?
+\item
+  Sosa is making an interesting reply here.
+\item
+  Gettier cases reveal something very general about the structure of
+  achievements.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gettier Cases in Epistemology}
+\protect\hypertarget{gettier-cases-in-epistemology}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The beliefs are both accurate and adroit, but these facts are
+  coincidences.
+\item
+  The accuracy is not explained by the adroitness.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Animal Knowledge and Reflective Knowledge}
+\protect\hypertarget{animal-knowledge-and-reflective-knowledge}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  These three conditions give one \textbf{animal} knoweldge.
+\item
+  As the name suggests, these are conditions that Sosa thinks even
+  (non-human) animals can readily attain.
+\item
+  Actually a tricky question here about which animals have beliefs, and
+  what it means to say an animal has a belief, but assuming they do,
+  they can have AAA beliefs.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Animal Knowledge and Reflective Knowledge}
+\protect\hypertarget{animal-knowledge-and-reflective-knowledge-1}{}
+Reflective knowledge is animal knowledge that one has animal knowledge.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It requires being able to reflect on one's own skills, and correctly
+  judge that one has acquired true beliefs by the exercise of skill, in
+  virtue of having skill at making this kind of judgment.
+\item
+  That's probably too much for non-humans!
+\end{itemize}
+\end{frame}
+
+\hypertarget{sosa-on-scepticism}{%
+\section{Sosa on Scepticism}\label{sosa-on-scepticism}}
+
+\begin{frame}{Three Stages}
+\protect\hypertarget{three-stages}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Sensitivity
+\item
+  Safety
+\item
+  Aptness
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Sensitivity}
+\protect\hypertarget{sensitivity}{}
+If \(p\) weren't true, S wouldn't believe it.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Leads to problems in things like the Potemkin village case.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Safety}
+\protect\hypertarget{safety}{}
+Sosa's version: If S believed \(p\), it would be true.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  I don't know really how to make sense of that, given that S does
+  actually believe it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Safety}
+\protect\hypertarget{safety-1}{}
+Better version: There is no easy possibility where S falsely believes
+\(p\).
+\end{frame}
+
+\begin{frame}{Problem}
+\protect\hypertarget{problem}{}
+Dreaming.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Evil demon, BIV possibilities are far-fetched. (Or so we non-sceptics
+  say.)
+\item
+  But dreaming scenarios are not far-fetched; they happen all the time.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{About a Dream}
+\protect\hypertarget{about-a-dream}{}
+Two kinds of responses.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  We don't really form \textbf{beliefs} in dreams. This is what Sosa
+  defends in chapter 1 of this book (which we didn't read).
+\item
+  Beliefs are so distinctive - they have a \textbf{dreamlike} quality -
+  that we can tell when we're awake that we're not in them.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Sosa's Ch 2 Response}
+\protect\hypertarget{sosas-ch-2-response}{}
+Aptness is a matter of whether what S is doing works well in the
+situation S is in.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It isn't the same as doing well in a range of cases.
+\item
+  A goalkeeper might be good at saving a very particular kind of shot,
+  even if they are bad at saving other shots.
+\item
+  Skills in general can be very fine-grained.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Sosa's Ch 2 Response}
+\protect\hypertarget{sosas-ch-2-response-1}{}
+Our skills at navigating the world \textbf{when awake} could be real
+skills, even if they misfire when we're asleep.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  What makes an action skillful is that it is the right kind of thing to
+  do \textbf{in that situation}.
+\item
+  And the same for a belief forming process.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{For Next Time}
+\protect\hypertarget{for-next-time}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We'll keep looking at scepticism.
+\item
+  Including looking at other arguments that we don't know we're not in
+  sceptical scenarios.
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
