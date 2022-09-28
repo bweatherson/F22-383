@@ -1,0 +1,188 @@
+---
+title: "Knowledge and Reality, Lecture 09"
+author: "Brian Weatherson"
+date: 2022-09-28
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Review
+
+## A Dilemma
+
+If there is some feature of true belief that suffices for knowledge, it must either
+
+1. Not survive under logical reasoning; or
+2. Imply truth
+
+## Option 1
+
+Nozick defended a sensitivity theory that says that the good making feature of belief - counterfactual sensitivity - did not survive under logical reasoning.
+
+- But it gave us strange results in many cases.
+- And it left it hard to say what the point of logical reasoning is.
+
+## Option 2
+
+So a lot of people moved to option 2.
+
+- Goal: Find some good-making feature of belief that implies truth, and which might be enough for knowledge.
+
+## Intuitive Idea
+
+The good beliefs are not just justified **and** true, they are justified **because** true.
+
+- The explanation of the success of the inquiry, i.e., that it resulted in a true belief, is that it was carried out in a skilful way, i.e., the belief was justified.
+
+## Plan for Today
+
+1. Basics of Virtue Epistemology
+2. Sosa on Virtue and Knowledge
+3. Sosa on Scepticism
+
+# Virtue Epistemology
+
+## Ethics and Epistemology
+
+This is part of a big trend towards making ethics and epistemology more entwined.
+
+- This goes in both directions: a lot of work in contemporary ethics is on the nature of moral reasons, and this work draws on what epistemologists have said about reasons and reasoning.
+
+## Ethics and Epistemology
+
+At least five big trends.
+
+1. What kinds of things epistemic evaluations are.
+2. What connections there are between knowledge and proper action.
+3. Whether there is a proper/forgivable distinction in epistemology.
+4. Whether epistemic consequentialism makes sense.
+5. Whether epistemic virtues make sense.
+
+## Virtue Epistemology
+
+Traditional (i.e., pre-circa-1995) epistemology had a mistaken focus in two ways.
+
+1. Too much attention to belief, i.e., the end of inquiry, as opposed to the process of inquiry.
+2. Too much attention to very big picture evaluations, like rational, justified, knowledge, rather than more specific things like open-mindedness, curiosity, humility.
+
+## Vice Epistemology
+
+In the last few years (i.e., since-circa-2015), there has been a small uptick in thinking that we should start with the negative side, i.e., epistemic vices.
+
+- Stubbornness
+- Closed-mindedness
+
+## Two Models of Virtue
+
+1. Reliabilist: virtues are things that reliably get you to truth (or some other desires end)
+2. Responsible: virtues are things that responsible believers/inquirers do.
+
+- First is clearly externalist; second could be either internalist or externalist.
+
+## Virtues as Skills
+
+Some virtue epistemologists (not all, I think) equate epistemic virtues with having **skills**.
+
+- This naturally goes with linking epistemic notions to notions of **achivement**.
+- Sosa in particular is fond of these equations, but he is hardly the only one.
+
+
+# Sosa on Virtue and Knowledge
+
+## Sosa
+
+Three claims, in increasing order of strength.
+
+- Virtues are central to epistemology.
+- What makes something a virtue is that it reliably produces true beliefs.
+- Knowledge can be understood in terms of virtues.
+
+## AAA model
+
+- A belief is **accurate** iff it is true.
+- A belief is **adroit** iff it is skilfully produced.
+- A belief is **apt** iff it is accurate because adroit.
+
+## Belief and Achivements
+
+Can apply AAA model to any kind of goal-directed activity.
+
+- The account of accuracy will change, as will the theory of skill, but the structure will stay.
+
+## Achivements
+
+What is it for a result to be an achievement?
+
+## Achievements
+
+Toy theory. S's action is an achievement iff:
+
+1. It causes a good result.
+2. It involves an exercise in the kind of skill that typically produces that good result.
+
+## Gettier Cases For Achievements
+
+Imagine a case where someone has a skill, and causes the outcome that skill usually causes, but there is a lot of luck involved.
+
+- E.g., a skilled baker is baking a cake, and they make a rare slip and put in too much baking powder.
+- But the baking powder had gone somewhat stale, so it didn't have too much effect on the cake.
+
+## Gettier Cases for Achievements
+
+Even if the cake works out well, it doesn't make the cake an **achivement**.
+
+- And this tells us something interesting about the nature of achievement.
+- It requires not just success and skill, but something like success **because of** skill.
+
+## Philosophical Significance
+
+A lot of authors (Pasnau is sort of going to be an example) think that the focus on Gettier type cases is overdone.
+
+- Who cares precisely how the English word 'knows' gets applied?
+- Sosa is making an interesting reply here.
+- Gettier cases reveal something very general about the structure of achievements.
+
+## Gettier Cases in Epistemology
+
+- The beliefs are both accurate and adroit, but these facts are coincidences.
+- The accuracy is not explained by the adroitness.
+
+## Animal Knowledge and Reflective Knowledge
+
+- These three conditions give one **animal** knoweldge.
+- As the name suggests, these are conditions that Sosa thinks even (non-human) animals can readily attain.
+- Actually a tricky question here about which animals have beliefs, and what it means to say an animal has a belief, but assuming they do, they can have AAA beliefs.
+
+## Animal Knowledge and Reflective Knowledge
+
+Reflective knowledge is animal knowledge that one has animal knowledge.
+
+- It requires being able to reflect on one's own skills, and correctly judge that one has acquired true beliefs by the exercise of skill, in virtue of having skill at making this kind of judgment.
+- That's probably too much for non-humans!
+
+# Sosa on Scepticism
+
