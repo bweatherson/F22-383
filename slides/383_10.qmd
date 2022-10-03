@@ -1,0 +1,214 @@
+---
+title: "Knowledge and Reality, Lecture 09"
+author: "Brian Weatherson"
+date: 2022-10-03
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Two Sceptical Arguments
+
+## Two Sceptical Arguments
+
+1. Pyrrhonian scepticism
+2. Academic scepticism
+
+## Pyrrhonian scepticism
+
+1. All knowledge is by some method or other.
+2. A method only produces knowledge if the user knows it is reliable.
+3. So there can be no first knowledge.
+4. So there is no knowledge.
+
+## Academic Scepticism
+
+1. To have ordinary knowledge, we must know that disaster scenarios can't obtain.
+2. We can't know that disaster scenarios don't obtain.
+3. So we don't have ordinary knowledge.
+
+## Three Kinds of Response
+
+1. Dismissive
+2. Objecting to premises/steps
+3. Supplying positive argument for knowledge
+
+# Dismissive
+
+## Dismissive
+
+A popular mid-20C response, often associated with Wittgenstein.
+
+- We should ignore scepticism because it is obviously ridiculous.
+
+## Dismissive
+
+An 18C variant, associated with David Hume (though really not Hume's own view.)
+
+- We should ignore scepticism because we are incapable of taking it seriously.
+
+## A Reply
+
+There are things we should be sceptical about, such as claims made on behalf of new technologies.
+
+- It is easy for that kind of scepticism to go too far.
+- One reason (my reason) to carefully formulate arguments for global scepticism is to see which premises are out of bounds in everyday sceptical reasoning.
+
+## A Reply
+
+If a reason to be sceptical of a person/method/claim/theory would generalise to be a reason to be sceptical of the external world, then it's a bad reason.
+
+- This turns out to be a surprisingly powerful principle.
+
+## Two Targets
+
+1. People who argue for scepticism in a particular domain.
+2. People who argue for positive theories on the grounds that all other theories would lead to scepticism in that domain.
+
+- In both cases, asking whether their arguments would imply global scepticism is a worthwhile question.
+
+# Pyrrhonian scepticism
+
+## Pyrrhonian scepticism - Responses
+
+1. Self-defeating
+2. Deny premise 2
+3. Deny inference from 1 and 2 to 3.
+4. Deny inference from 3 to 4.
+
+## Pyrrhonian scepticism - Self-defeating
+
+- The premises of the argument can't be known, since nothing can be known.
+- So we have no reason to believe what the Pyrrhonian says.
+
+## Pyrrhonian scepticism - P2
+
+- Reliabilists say that it is enough that the method is actually reliable; it doesn't have to be known to be reliable.
+
+## Pyrrhonian scepticism - Step 3
+
+- Some Indian traditions deny the move from 1, 2 to 3.
+- They say that you can come to know that the method you are using is reliable at the same time you use it.
+- What they deny is that the knowledge of reliability has to come before the use of it; it could be simultaneous.
+- In those cases, the output of the method and the knowledge it is reliable would be 'equal first' knowledge.
+
+## Infinitism
+
+- Maybe there can be no first knowledge, but we have an infinite amount of knowledge.
+- It's not clear to me exactly how this is supposed to work, but for completeness I should note that infinitism is one of the options here.
+
+# Academic Scepticism
+
+## Limits of Academic Scepticism
+
+It can only show us that we don't know things that are false in plausible 'disaster scenarios'.
+
+- So it can't be used to defeat knowledge that 2+2=4, or that we have minds.
+
+## Disaster Scenarios
+
+A disaster scenario is one in which
+
+1. We have the same evidence we actually do; but
+2. Some things we ordinarily take to be true are not true.
+
+- So it turns a lot on what counts as evidence.
+
+## Evidence
+
+Most sceptics assume that evidence is something like phenomenology.
+
+- This is very much up for debate.
+- The Indian realists (especially Nyāya) rejected it, and we'll see lots of reasons to reject it going forward.
+
+## Disaster Scenario
+
+Sceptics normally don't care about whether the scenarios they use are realistic.
+
+- As we'll hopefully touch on at the end, anti-sceptics sometimes do care about that.
+
+## Why Believe Premise 2
+
+1. Raw intuition
+2. Sensitivity
+3. Defensibility
+4. Method
+
+## Raw Intuition
+
+Problems:
+
+1. Not everyone has the intuition.
+2. The intuitions that (a) we know we have hands, and (b) if we know we have hands we can deduce that we are not, e.g., HBIVs, are stronger.
+
+## Sensitivity
+
+We talked about this already.
+
+- The belief that I'm not in a disaster scenario is not sensitive.
+- But sensitivity leads to weird results in things like the Potemkin village case.
+
+## Defensibility
+
+The sceptic's idea here is that we only know something if we can defend that belief to a critic.
+
+- But this is a very strong claim.
+- Try defending the view that there are some reasons (for beliefs, actions, whatever) to a reasons sceptic.
+- Taken seriously, this would turn academic scepticism into the less plausible Pyrrhonian scepticism.
+
+## Method
+
+Lots of (western) philosophers have thought that everything we know comes from one of two methods.
+
+1. Observation
+2. Pure Reason
+
+- Question: By which of these do we know we're not in a disaster scenario?
+
+## A Better Sceptical Argument
+
+1. If we know we're not in a disaster scenario, we know this by observation or pure reason.
+2. We can't know this by observation, since observation doesn't distinguish normal from disaster scenarios.
+3. We can't know this by pure reason, since the only things we can rule out by pure reason are impossibilities.
+4. So we don't know we're not in a disaster scenario.
+
+## A Better Sceptical Argument
+
+- Every premise there is debatable.
+- But unlike other sceptical arguments, it isn't clear just which premise fails.
+
+# Positive Arguments for Anti-Scepticism
+
+## Two Positive Arguments
+
+1. Inference to the Best Explanation
+2. Reliable Observation
+
+## IBE
+
+- We have a bunch of evidence, let's say along with the sceptic that it's 
+
+
