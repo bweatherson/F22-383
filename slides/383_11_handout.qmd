@@ -1,0 +1,252 @@
+---
+title: "Knowledge and Reality, Lecture 11"
+author: "Brian Weatherson"
+date: 2022-10-05
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# The Aim of Epistemology
+
+## Three Projects
+
+1. Ideal
+2. Threshold
+3. Improvements
+
+## Not Just Epistemology
+
+In ethics you can do all three.
+
+1. Ideal, e.g., the perfect person.
+2. Threshold, e.g., not a moral failing.
+3. Improvements, e.g., better ways to live.
+
+## An Important Threshold
+
+In criminal law, the difference between _is a crime_ and _is not a crime_ is very important.
+
+- This is a threshold concept.
+- Not being a criminal is a long way from ideal.
+- But it's a very important threshold.
+
+## Pasnau's Big Picture
+
+- We use to care about 1, the ideal.
+- We now (or at least in C20) care about 2, the threshold.
+- This has been a bad change, and we should go back to the old ways.
+
+## Other Details
+
+There are two other features of Pasnau's picture of C20 epistemology.
+
+- It is closely connected to language.
+- It is connected to standards people already internalise.
+
+- I think all of these are mistaken claims about C20 epistemology, but arguing for that would take us too far afield.
+
+## Knowledge as a Threshold
+
+So here's one way to do epistemology.
+
+- Work out what's good enough for knowledge/rationality/justification.
+- Try to get above that 'good enough' line as often as possible.
+- Pasnau thinks that's too modest a goal, we should aim higher.
+
+## Missing Option 3
+
+But even if you think threshold epistemology (project 2) is bad, it doesn't follow that you should do ideal epistemology (project 1).
+
+- There's the project of just trying to get better over time (project 3).
+
+## Ideals and Improvements
+
+I think Pasnau would say that projects 1 and 3 are too connected to just do project 3 (improvement) without project 1 (ideal). Two possible connections.
+
+1. You can't improve unless you know what you're improving towards, the ideal.
+2. Getting more like the ideal is a way of improving.
+
+## What Would Jesus Do?
+
+There is (or at least was until recently) a kind of pop Christianity that goes along with this picture.
+
+- Idea is to guide your action by asking _What would Jesus do?_.
+- That is, you try to get better by trying to imitate the ideal. (Or at least what you take to be the ideal.)
+
+## Objection
+
+This seems dubious as an approach to ethics, and I suspect to epistemology as well.
+
+- The ideal person never apologises.
+- I'm trying to be more like the ideal.
+- So I'm not going to ever apologise.
+- Wait - that can't be right!!
+
+## Ideals and Improvements
+
+I think there's a deep problem here for people who think about using ideals to generate improvements.
+
+- But I'm going to set that aside for the most part.
+
+# Aristotle
+
+## Three Aristotelian Theses
+
+1. Objects have essences.
+2. These essences necessitate, cause, and explain, the object's actions.
+3. Having episteme requires understanding why the thing is necessary.
+
+## Aristotle as a Sceptic
+
+It is easy to read the third claim as implying that Aristotle is basically a sceptic.
+
+- We can't have episteme of contingencies.
+- If episteme just is knowledge, then we can't have knowledge of contingencies.
+- And that's a pretty sweeping sceptical claim.
+
+## Aristotle as an Ideal Epistemologist
+
+Pasnau wants to reject that interpretation.
+
+- I'm _really_ not going to get into interpretative disputes here.
+- Do note that a lot of the claims he makes here about interpretation are disputed.
+- Also note how often the argument is _It would make more sense if [philosopher X] meant..._.
+
+## Aristotle as an Ideal Epistemologist
+
+Pasnau: The theory in _Posterior Analytics_ is a theory of what's ideal.
+
+- It's not sceptical because knowledge doesn't require ideals.
+
+## An Example
+
+Imagine that I stole the cookies, but you don't know this.
+
+- You're trying to figure out who stole the cookies.
+- Fortunately, Sumeet saw me steal them.
+- Even better, he tells you that I stole them.
+
+## An Example
+
+At this point, you know I stole the cookies, but you do not have episteme of it.
+
+- In fact, you couldn't have episteme of it, for two reasons.
+- Only generalisations can be episteme; not particular claims like _Brian_ stole the cookies.
+- Only necessitations can be episteme; and it's presumably contingent that I stole the cookies.
+
+## Aristotle
+
+Why should we agree with Aristotle that this isn't episteme?
+
+- Because you could do better.
+- It would be better to know _why_ I stole the cookies.
+
+## Aristotle and the Classical Indians
+
+It's interesting to compare Aristotle to classical Indian philosophers.
+
+- They also cared about ideals, about _proofs_.
+- But most of them would say that you're in an ideal position.
+- You have a proof (via testimony) that I stole the cookies.
+
+## Aristotle and the Classical Indians
+
+Question: What happens when you learn _why_ I stole the cookies.
+
+- For Aristotle, your position on _Brian stole the cookies_ improves; you now understand it (better).
+- For the Indian philosophers, you get a proof of a **different** question: _Why did Brian steal the cookies?_.
+
+## Aristotle
+
+Let's wrap up Pasnau's interpretation.
+
+- Episteme requires not being able to do better.
+- That means it requires optimal understanding.
+- That, given Aristotle's metaphysics, requires deriving the result from essences.
+
+## Aristotle
+
+The distinctive features of episteme follow from this (plus Aristotle's views on other parts of philosophy).
+
+- Only have episteme of necessities because essences are necessary.
+- Only have episteme of generalisations because derivations are via syllogism, and syllogisms involve generalities.
+- And so on, but that's enough Aristotle for now.
+
+# Modern Science
+
+## Two Anti-Aristotelian Moves
+
+1. Reject that we should aim for ideals.
+2. Reject his account of ideals.
+
+- Sometimes it will be hard to tell whether someone is doing 1 or 2.
+
+## Aristotle's Metaphysics
+
+Since his account of the ideal involves his distinctive metaphsyics, in particular the account of essences, you might think that rejecting it would involve rejecting the ideals.
+
+- But Hobbes and Locke rejected the metaphysics, accepted the ideals, and inferred a pessimistic conclusion.
+
+## Newton
+
+As the last thing I'm going to have slides about, I want to see how we think about these moves in the context of Newtonian physics.
+
+## Newton
+
+Think about the theory of planetary orbits you get from Newton.
+
+- Given some very general principles (basically the principles of inertia and of gravitational attraction), you can derive the planetary orbits (more or less).
+- Kepler had earlier done pretty good derivations of them from his laws of planetary motion.
+
+## Newton
+
+But Newton did a couple more things than Kepler.
+
+- He showed how to derive these Kepler's laws from even more general principles.
+- And he showed that the same principles could do other things, like explain the tides.
+
+## Two (Related) Objections
+
+But there are still two reasons to be sceptical of Newton's achievements.
+
+1. Action at a distance.
+2. The laws themselves still aren't explained. Why do massive bodies attract?
+
+## A Few Responses
+
+1. Sweeping generalisations are ideal, even if they aren't Aristotelian explanations. (Hempel, Kitcher)
+2. This is ideal for humans, because it's as good as humans can do, and that's all that ideals should ever be (maybe Newton?).
+3. This isn't ideal, and it's not really a step towards the ideal, and that's too bad because (as in 2), it's the best we can do (maybe Locke?)
+
+## For Next Time
+
+We will look more at the notion of the ideal, and something that was quite left out of today - how the epistemic ideal relates to certainty.
+
+
+
+
+1. To argue that the great epistemologists of 

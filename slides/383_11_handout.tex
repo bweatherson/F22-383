@@ -1,0 +1,645 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+  handout]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 11},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 11}
+\author{Brian Weatherson}
+\date{2022-10-05}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, sharp corners, interior hidden, borderline west={3pt}{0pt}{shadecolor}, frame hidden, enhanced, breakable]}{\end{tcolorbox}}\fi
+
+\hypertarget{the-aim-of-epistemology}{%
+\section{The Aim of Epistemology}\label{the-aim-of-epistemology}}
+
+\begin{frame}{Three Projects}
+\protect\hypertarget{three-projects}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Ideal
+\item
+  Threshold
+\item
+  Improvements
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Not Just Epistemology}
+\protect\hypertarget{not-just-epistemology}{}
+In ethics you can do all three.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Ideal, e.g., the perfect person.
+\item
+  Threshold, e.g., not a moral failing.
+\item
+  Improvements, e.g., better ways to live.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{An Important Threshold}
+\protect\hypertarget{an-important-threshold}{}
+In criminal law, the difference between \emph{is a crime} and \emph{is
+not a crime} is very important.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This is a threshold concept.
+\item
+  Not being a criminal is a long way from ideal.
+\item
+  But it's a very important threshold.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pasnau's Big Picture}
+\protect\hypertarget{pasnaus-big-picture}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We use to care about 1, the ideal.
+\item
+  We now (or at least in C20) care about 2, the threshold.
+\item
+  This has been a bad change, and we should go back to the old ways.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Other Details}
+\protect\hypertarget{other-details}{}
+There are two other features of Pasnau's picture of C20 epistemology.
+
+\begin{itemize}[<+->]
+\item
+  It is closely connected to language.
+\item
+  It is connected to standards people already internalise.
+\item
+  I think all of these are mistaken claims about C20 epistemology, but
+  arguing for that would take us too far afield.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Knowledge as a Threshold}
+\protect\hypertarget{knowledge-as-a-threshold}{}
+So here's one way to do epistemology.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Work out what's good enough for knowledge/rationality/justification.
+\item
+  Try to get above that `good enough' line as often as possible.
+\item
+  Pasnau thinks that's too modest a goal, we should aim higher.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Missing Option 3}
+\protect\hypertarget{missing-option-3}{}
+But even if you think threshold epistemology (project 2) is bad, it
+doesn't follow that you should do ideal epistemology (project 1).
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There's the project of just trying to get better over time (project
+  3).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ideals and Improvements}
+\protect\hypertarget{ideals-and-improvements}{}
+I think Pasnau would say that projects 1 and 3 are too connected to just
+do project 3 (improvement) without project 1 (ideal). Two possible
+connections.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  You can't improve unless you know what you're improving towards, the
+  ideal.
+\item
+  Getting more like the ideal is a way of improving.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{What Would Jesus Do?}
+\protect\hypertarget{what-would-jesus-do}{}
+There is (or at least was until recently) a kind of pop Christianity
+that goes along with this picture.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Idea is to guide your action by asking \emph{What would Jesus do?}.
+\item
+  That is, you try to get better by trying to imitate the ideal. (Or at
+  least what you take to be the ideal.)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Objection}
+\protect\hypertarget{objection}{}
+This seems dubious as an approach to ethics, and I suspect to
+epistemology as well.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The ideal person never apologises.
+\item
+  I'm trying to be more like the ideal.
+\item
+  So I'm not going to ever apologise.
+\item
+  Wait - that can't be right!!
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Ideals and Improvements}
+\protect\hypertarget{ideals-and-improvements-1}{}
+I think there's a deep problem here for people who think about using
+ideals to generate improvements.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But I'm going to set that aside for the most part.
+\end{itemize}
+\end{frame}
+
+\hypertarget{aristotle}{%
+\section{Aristotle}\label{aristotle}}
+
+\begin{frame}{Three Aristotelian Theses}
+\protect\hypertarget{three-aristotelian-theses}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Objects have essences.
+\item
+  These essences necessitate, cause, and explain, the object's actions.
+\item
+  Having episteme requires understanding why the thing is necessary.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Aristotle as a Sceptic}
+\protect\hypertarget{aristotle-as-a-sceptic}{}
+It is easy to read the third claim as implying that Aristotle is
+basically a sceptic.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We can't have episteme of contingencies.
+\item
+  If episteme just is knowledge, then we can't have knowledge of
+  contingencies.
+\item
+  And that's a pretty sweeping sceptical claim.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aristotle as an Ideal Epistemologist}
+\protect\hypertarget{aristotle-as-an-ideal-epistemologist}{}
+Pasnau wants to reject that interpretation.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  I'm \emph{really} not going to get into interpretative disputes here.
+\item
+  Do note that a lot of the claims he makes here about interpretation
+  are disputed.
+\item
+  Also note how often the argument is \emph{It would make more sense if
+  {[}philosopher X{]} meant\ldots{}}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aristotle as an Ideal Epistemologist}
+\protect\hypertarget{aristotle-as-an-ideal-epistemologist-1}{}
+Pasnau: The theory in \emph{Posterior Analytics} is a theory of what's
+ideal.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It's not sceptical because knowledge doesn't require ideals.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An Example}
+\protect\hypertarget{an-example}{}
+Imagine that I stole the cookies, but you don't know this.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  You're trying to figure out who stole the cookies.
+\item
+  Fortunately, Sumeet saw me steal them.
+\item
+  Even better, he tells you that I stole them.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An Example}
+\protect\hypertarget{an-example-1}{}
+At this point, you know I stole the cookies, but you do not have
+episteme of it.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  In fact, you couldn't have episteme of it, for two reasons.
+\item
+  Only generalisations can be episteme; not particular claims like
+  \emph{Brian} stole the cookies.
+\item
+  Only necessitations can be episteme; and it's presumably contingent
+  that I stole the cookies.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aristotle}
+\protect\hypertarget{aristotle-1}{}
+Why should we agree with Aristotle that this isn't episteme?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Because you could do better.
+\item
+  It would be better to know \emph{why} I stole the cookies.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aristotle and the Classical Indians}
+\protect\hypertarget{aristotle-and-the-classical-indians}{}
+It's interesting to compare Aristotle to classical Indian philosophers.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  They also cared about ideals, about \emph{proofs}.
+\item
+  But most of them would say that you're in an ideal position.
+\item
+  You have a proof (via testimony) that I stole the cookies.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aristotle and the Classical Indians}
+\protect\hypertarget{aristotle-and-the-classical-indians-1}{}
+Question: What happens when you learn \emph{why} I stole the cookies.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  For Aristotle, your position on \emph{Brian stole the cookies}
+  improves; you now understand it (better).
+\item
+  For the Indian philosophers, you get a proof of a \textbf{different}
+  question: \emph{Why did Brian steal the cookies?}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aristotle}
+\protect\hypertarget{aristotle-2}{}
+Let's wrap up Pasnau's interpretation.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Episteme requires not being able to do better.
+\item
+  That means it requires optimal understanding.
+\item
+  That, given Aristotle's metaphysics, requires deriving the result from
+  essences.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aristotle}
+\protect\hypertarget{aristotle-3}{}
+The distinctive features of episteme follow from this (plus Aristotle's
+views on other parts of philosophy).
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Only have episteme of necessities because essences are necessary.
+\item
+  Only have episteme of generalisations because derivations are via
+  syllogism, and syllogisms involve generalities.
+\item
+  And so on, but that's enough Aristotle for now.
+\end{itemize}
+\end{frame}
+
+\hypertarget{modern-science}{%
+\section{Modern Science}\label{modern-science}}
+
+\begin{frame}{Two Anti-Aristotelian Moves}
+\protect\hypertarget{two-anti-aristotelian-moves}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Reject that we should aim for ideals.
+\item
+  Reject his account of ideals.
+\end{enumerate}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Sometimes it will be hard to tell whether someone is doing 1 or 2.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aristotle's Metaphysics}
+\protect\hypertarget{aristotles-metaphysics}{}
+Since his account of the ideal involves his distinctive metaphsyics, in
+particular the account of essences, you might think that rejecting it
+would involve rejecting the ideals.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But Hobbes and Locke rejected the metaphysics, accepted the ideals,
+  and inferred a pessimistic conclusion.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton}
+\protect\hypertarget{newton}{}
+As the last thing I'm going to have slides about, I want to see how we
+think about these moves in the context of Newtonian physics.
+\end{frame}
+
+\begin{frame}{Newton}
+\protect\hypertarget{newton-1}{}
+Think about the theory of planetary orbits you get from Newton.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Given some very general principles (basically the principles of
+  inertia and of gravitational attraction), you can derive the planetary
+  orbits (more or less).
+\item
+  Kepler had earlier done pretty good derivations of them from his laws
+  of planetary motion.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newton}
+\protect\hypertarget{newton-2}{}
+But Newton did a couple more things than Kepler.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  He showed how to derive these Kepler's laws from even more general
+  principles.
+\item
+  And he showed that the same principles could do other things, like
+  explain the tides.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two (Related) Objections}
+\protect\hypertarget{two-related-objections}{}
+But there are still two reasons to be sceptical of Newton's
+achievements.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Action at a distance.
+\item
+  The laws themselves still aren't explained. Why do massive bodies
+  attract?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{A Few Responses}
+\protect\hypertarget{a-few-responses}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Sweeping generalisations are ideal, even if they aren't Aristotelian
+  explanations. (Hempel, Kitcher)
+\item
+  This is ideal for humans, because it's as good as humans can do, and
+  that's all that ideals should ever be (maybe Newton?).
+\item
+  This isn't ideal, and it's not really a step towards the ideal, and
+  that's too bad because (as in 2), it's the best we can do (maybe
+  Locke?)
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{For Next Time}
+\protect\hypertarget{for-next-time}{}
+We will look more at the notion of the ideal, and something that was
+quite left out of today - how the epistemic ideal relates to certainty.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  To argue that the great epistemologists of
+\end{enumerate}
+\end{frame}
+
+
+
+\end{document}

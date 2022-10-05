@@ -1,5 +1,5 @@
 ---
-title: "Knowledge and Reality, Lecture 09"
+title: "Knowledge and Reality, Lecture 10"
 author: "Brian Weatherson"
 date: 2022-10-03
 format: 
@@ -209,6 +209,38 @@ Lots of (western) philosophers have thought that everything we know comes from o
 
 ## IBE
 
-- We have a bunch of evidence, let's say along with the sceptic that it's 
+- We have a bunch of evidence, let's say along with the sceptic that it's phenomenal.
+- What's the best explanation for this evidence?
+- Arguably, the existence of an external world.
+
+## Problems
+
+- Well, there are simpler explanations, like God created you and you alone.
+- And maybe there are more complicated but more plausible ones, like that you're a video game character.
+
+## Reliable Observation
+
+- As a matter of fact I know things, because as a matter of fact my senses are reliable.
+- Of course, how I know this is a hard question.
+
+## Reliable Observations
+
+Two moves at this point:
+
+- Deny that it matters whether I know that I know; knowledge is enough.
+- Say that I'm also pretty good at telling reliable from unreliable observers apart, and using that skill I can tell that I'm one of the reliable ones.
+
+## Problem
+
+I'm not actually that reliable; I dream a lot.
+
+## Responses
+
+- Dreams aren't really beliefs, so my belief forming capacities are reliable.
+- I'm reliable when I'm awake, and that's enough. Compare an athlete who can do one very specific thing well; they might be reliably successful even if they would fail were circumstances different.
+
+## For Next Time
+
+- We'll move onto Pasnau's book.
 
 
