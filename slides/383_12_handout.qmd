@@ -1,0 +1,281 @@
+---
+title: "Knowledge and Reality, Lecture 12"
+author: "Brian Weatherson"
+date: 2022-10-10
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Compulsion
+
+## Compulsion
+
+Especially in the first half of chapter 2, it was striking how much focus there was on compulsion.
+
+- There was for a long time a real focus on things one can't help believe, or inferences one can't help but follow.
+
+## Compulsion
+
+Sometimes this is the goal of a theory.
+
+- See, for example, the discussion of how the existence of disagreement is a sign things are bad, because you haven't come up with **compelling** reasons.
+
+## Compulsion
+
+But it's always taken to be something good.
+
+- Having **indubitable**, literally, cannot be doubted, reasons is taken to be a good thing.
+
+## Epistemology as Normative
+
+This is an interesting contrast with a view of epistemology where it is something that people do better or worse at.
+
+- If the good steps are ones that literally everyone will be compelled to do, that picture that some people are good at reasoning feels mistaken.
+
+## Compelling Inferences
+
+But there is something to do the idea that really strong inferences are compelling. Consider this inference.
+
+1. *x* equals 22 times 18.
+2. 22 times 18 equals 396.
+3. Therefore, *x* equals 396.
+
+- It is really hard to doubt this!
+
+## Compulsion and Necessity
+
+Note that this inference is dubitable, even though given the premise, the conclusion has to be true.
+
+1. *x* equals 22 times 18.
+2. Therefore, *x* equals 396.
+
+## Compulsion
+
+- Maybe there is something to the idea that we want all our reasoning to be like the first one.
+
+# Perfection
+
+## Two Notions of Perfection
+
+1. Global perfection. Being an epistemic god.
+2. Local perfection. Having the same relation to a particular proposition that a god does.
+
+## Local Traffic Only?
+
+Question
+
+- Is it possible to be locally perfect without being globally perfect?
+
+## Local Traffic Only?
+
+Some traditions say yes.
+
+- A pramana, after all, is a proof.
+- Whoever believes *p* on the basis of a pramana is, locally, perfect.
+- Though note this isn't something you'd expect all Indian philosophers to accept.
+
+## Global Priority
+
+But other traditions say no.
+
+- If a person believes anything on the basis of less than perfect reasons, that shows they are unreliable.
+- Both Aristotle and Descartes, in very different ways, made it hard to be locally but not globally perfect.
+
+## Global Priority
+
+And note that whatever is common ground to Aristotle and Descartes ends up being very important to the kind of tradition we're mostly in.
+
+- The things they agree on can seem not even up for debate sometimes.
+- But whether one can be locally perfect without being globally perfect should be up for debate.
+
+# Moral Certainty
+
+## Moral Certainty
+
+There is a lot to say here, and I could spend literally weeks going over just this notion.
+
+- But that wouldn't be fun for anyone, so I'll just note two points about it.
+
+## Variable Standards
+
+How much evidence do you need for moral certainty?
+
+- Answer: It depends on the question.
+- To have moral certainty that someone is guilty of murder, a huge amount.
+- To have moral certainty that it is about to rain, not so much.
+
+## Practicality
+
+- What is moral certainty for?
+- What is certainty for?
+- What is knowledge for?
+
+- If you start epistemology with moral certainty, it naturally becomes a very practical subject. That's very different to what happens if you start with Aristotelian episteme.
+
+# The Trilemma
+
+## Stating the Trilemma
+
+1. Proportionality
+2. Pessimism
+3. Absolute Belief
+
+## Proportionality
+
+The strength of one's belief should be proportional to the evidence.
+
+- So if one gets better evidence, one's belief should be stronger.
+
+## Pessimism
+
+It is never possible to get certainty.
+
+- So it is always possible to get evidence that puts us in a better position, i.e., closer to certainty.
+
+## Absolute Belief
+
+We often have absolute belief, or full belief, in propositions.
+
+- We don't just think that it's very likely October right now, we simply take it as a fixed point in our reasoning that it is.
+- Even when we have probabilistic beliefs, these have to be based on something, and things like _It's October_ are among those things.
+
+## The Challenge
+
+- Start with something we have absolute belief in. (By **Absolute belief** such a thing exists.)
+- By **pessimism** we could get better evidence for it. So imagine we do.
+- We can't strengthen our belief in it, because it was already absolute.
+- So we'll violate **proportionality**.
+
+## Another Challenge
+
+- Weaken **pessimism** so it doesn't say we never get certainty, but that we rarely do.
+- Strengthen **absolute belief** so it says that there are more than a few things we believe absolutely.
+- The contradiction still goes through.
+
+## Two Virtues
+
+I think this is a great framing of a key problem.
+
+- It's really interesting to think through how different thinkers over time navigated it. (Even if they didn't put it this way.)
+- And it's really interesting to think how we should navigate it.
+
+## Anti-Proportionists
+
+- Orthodox 20C Anglophone epistemologists.
+- It's fine to absolutely believe that it's raining in downtown AA iff we can see rain from the window here.
+- But we could get even better evidence for that.
+- Is this a new view in 17C Western Europe? Maybe! (Though I'd want to know more about Chinese traditions to be sure.)
+
+## Anti-Pessimists
+
+- Descartes! (Eventually, but only for people who have read and accepted Descartes.)
+- Most classic Indian philosophers; a pramana is an absolute proof.
+- Some contemporary western philosophers, especially about direct perception.
+
+## Anti-Absolutists
+
+- Bayesians!
+- And maybe, though they didn't have the math to make it rigorous, most Western pre-modern epistemologists.
+
+# Anti-Proportionality
+
+## The Big Challenges
+
+- When is it ok to fully believe?
+- How can the line be anything more than an arbitrary boundary?
+- Should be boundary be relevant to practical concerns, like with moral certainty, or not.
+
+## Bernoulli
+
+There is something absurd about the idea that absolute belief is warranted at 99 out of 100.
+
+- Problem one: lotteries.
+- Problem two: long-shot dangers. Don't cross roads you have a 199 in 200 chance of crossing; you'll be dead within a month.
+- Problem three: not practically sensitive.
+
+# Anti-Absolute
+
+## Challenge One
+
+It would be good to have a mathematical model of what belief looks like on this picture.
+
+- Happily we now have one: the probability calculus.
+- Is this a good enough model? Eh, it's not bad.
+
+## Challenge Two
+
+What are conversations like on this picture?
+
+- A asks "Where is the cat?"
+- B says "Probability 0.98 that she's on the mat, probability 0.01 that she's run under the couch, probability 0.09 that she's run downstairs, probability something that she's vanished into thin air, ..."
+
+## Challenge Two
+
+You need something that licences "She's on the mat".
+
+- And that will recreate all the problems from anti-proportionality.
+
+## Challenge Three
+
+How do you update?
+
+- The Bayesians have a mathematical theory of what to do when you get evidence *E*.
+- But what does that even mean?
+- If we can't get certainty, why think we can get evidence? 
+
+## Compulsion
+
+One possible answer.
+
+- We get evidence *E* when we are compelled to treat it as fixed.
+
+## For Next Time
+
+We'll come back to that last question, so I'll leave it with that dangling thought for now.
+
+- Next time, chapter 3.
+
+Pasnau, Robert. After Certainty . OUP Oxford. Kindle Edition. 
+
+The trilemma 
+- the three things to focus on
+- Describe 
+- Why are they at issue
+- Examples of violations of each
+
+Full belief
+- when is it ok
+- Problem of arbitrariness 
+- Practical or impractical
+- See Bernoulli on probabilities 
+
+No full belief
+- need a mathematical model
+- We now have one the probability calculus
+- How do you talk?
+- How do you update?
+- One option: compulsion 
