@@ -1,0 +1,195 @@
+---
+title: "Knowledge and Reality, Lecture 13"
+author: "Brian Weatherson"
+date: 2022-10-12
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# The Trilemma
+
+## Stating the Trilemma
+
+1. Proportionality
+2. Pessimism
+3. Absolute Belief
+
+## Proportionality
+
+The strength of one's belief should be proportional to the evidence.
+
+- So if one gets better evidence, one's belief should be stronger.
+
+## Pessimism
+
+It is never possible to get certainty.
+
+- So it is always possible to get evidence that puts us in a better position, i.e., closer to certainty.
+
+## Absolute Belief
+
+We often have absolute belief, or full belief, in propositions.
+
+- We don't just think that it's very likely October right now, we simply take it as a fixed point in our reasoning that it is.
+- Even when we have probabilistic beliefs, these have to be based on something, and things like _It's October_ are among those things.
+
+## Ways Out
+
+- Create a theory that (somehow!) meets all three.
+- Argue that it's fine to have full belief without maximal certainty (the 20C way).
+- Argue that we don't need full certainty (the Bayesian way).
+- Argue for optimism.
+
+## An In Between Way
+
+- Optimism about just enough things to get by.
+- One option, optimism about introspection; that will be for next week.
+- Another option, optimism about math and logic; but then how do you get knowledge of contingencies?
+- Another option, optimism about perception; that's for today.
+
+# Two Distinctions
+
+## Two Distinctions
+
+- Sentences vs Presentation
+- Content vs Inference
+
+## Sentences vs Presentation
+
+Perception, at least intuitively, lets us do two things.
+
+1. It lets us affirm various sentences, such as that there is a red light in front of me.
+2. It shows us how things are, that red (for example) is like _that_.
+
+## Priority
+
+Which of these two things, if either, is more fundamental?
+
+- Good question, that people have answered differently over the years.
+- Just note for now that we'd like both.
+
+## Content vs Inference
+
+A common, but not universal, view is that perceptions have contents.
+
+- When you see the world, you see that it is a certain way.
+- Making sense of this idea will be the central question for this course the rest of the way.
+- Because it is at once very intuitive, and very mysterious.
+
+## Motivation One
+
+Sometimes things are the way they appear, and sometimes they are not.
+
+- What's the difference between these cases?
+- Possible answer: In the first case, the content of the perception, the way it shows the world to be, is true, and in the second case it is false.
+
+## Motivation Two
+
+If we can get down to what's solely given in perception, as opposed to the things that we spontaneously infer from perception, we'll find a realm of infallible truth.
+
+- Theological motivation: And this will validate the claim that it was good of God to give us these senses.
+- Secular motivation: And this will be a foundation for our beliefs, a realm where optimism holds.
+
+## A Problem
+
+- These motivations are flatly inconsistent!
+- The first requires that perceptual contents are sometimes false, the second that they never are.
+
+## A Problem?
+
+- Maybe that's not a problem; we could just abandon one motivation.
+- But it's a suggestion that perceptual content is an attempt to solve multiple philosophical problems, and maybe we're going to have to choose which one it solves.
+
+# Perceptual Content
+
+## What Goes In
+
+Pasnau notes briefly that everyone in the period he's looking at, both medievals and moderns, rejected (out of hand) the idea that individuals go into perceptual content.
+
+- So the content of my perception can't be _Sumeet is here_.
+- At most it's something like _Someone with such-and-such appearance (which I happen to know is Sumeet's appearance) is here_.
+
+## But Wait!
+
+Just to place this in context, note that at least some contemporary writers think these _singular_ contents, i.e., contents about a particular individual can be perceived.
+
+- Indeed, they think these have a role to play.
+
+## An Example
+
+Imagine that there are two indistinguishable twins, Fred and George.
+
+- Alice sees one of them, let's say Fred, on a train. He is being a jerk.
+- Alice doesn't know either of them, and doesn't even know that the person she sees has a twin.
+- Later she thinks back about the train ride, and thinks _He is a jerk_.
+
+## What's Going On
+
+Alice's thought is about Fred. When she says to herself "He's a jerk", she is criticising Fred, not George.
+
+- But how is this possible?
+- One answer: Her original perception did not just have in its content Fred's appearance (which he shares with George), but Fred himself.
+- That allows her to later have thoughts about Fred.
+
+## Back to History
+
+Set that aside, at least for now. Because no one thought that way in C14-C18.
+
+- The contents we get are all properties.
+- Or, maybe, properties as they stand in relation to me.
+
+## Which Properties
+
+Two big options.
+
+1. Appearances: colors, smells, sounds, etc.
+2. Physical characteristics: shape, size, distance, motion, etc.
+
+## Both Have Problems
+
+Appearances would be natural, that's how things appear.
+
+- But what even is an appearance?
+- How do we handle the fact, important since Democritus's time, that things appear differently to different people?
+- Putting together both these things: are the appearance claims even true.
+
+## Both Have Problems
+
+So what if we take the physical features to be central?
+
+- We really make mistakes about them; sizes, shapes, even motion are all things we get wrong.
+- And colors don't look like physical things.
+
+## Color
+
+I'll end by talking a lot about this, but really worth stressing the point here. There are two things we might want a theory of, say, redness to do.
+
+1. Typically, when something appears red, it is in fact red.
+2. Typically, when something appears red, it has the property that redness looks like.
+
+
+
