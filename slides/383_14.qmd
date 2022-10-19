@@ -1,13 +1,35 @@
-Pasnau Ch. 4
+---
+title: "Knowledge and Reality, Lecture 14"
+author: "Brian Weatherson"
+date: 2022-10-19
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
 
-One extreme view - it's just causation all the way through
-Another extreme view - this one new in C17 - inner states are the objects of perception
-The old view (still common!) - contentful (inner) states are involved in perception, but they have as their object external objects.
-
-The last two views have in common that there is some important inner state.
-  - But the first 
-  
-  
 # Two Questions about Perception
 
 ## Pasnau's Two Questions
@@ -141,7 +163,7 @@ Kendall Walton (a prominent philosopher of art now emiritus here at UM) has argu
 
 ## Case 6: An Artwork
 
-![A prominent poster from the 2008 election.](../images/obama.jpg){height=60%}
+![A prominent poster from the 2008 election.](../images/obama.jpg){height=50%}
 
 Do you see Obama or the artwork?
 
@@ -199,7 +221,7 @@ We're going to mostly talk about option 3, that's the focus of the chapter, but 
 3. Fidelity.
 4. Slippery Slope.
 
-- Pasnau rejects the first two as causally explatory, and doesn't consider the fourth (which I think is fair; it doesn't look like why the C17 folks moved), to argue for the third.
+- Pasnau rejects the first two as causally explatory, and doesn't consider the fourth (it's not historically relevant I think), to argue for the third.
 
 ## Pasnau's Positive Story
 

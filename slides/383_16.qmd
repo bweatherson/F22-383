@@ -1,0 +1,122 @@
+---
+title: "Knowledge and Reality, Lecture 16"
+author: "Brian Weatherson"
+date: 2022-10-26
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Retreating from the Ideal
+
+## Where Do We Go Now but Nowhere?
+
+I liked this book a lot, but didn't love the last chapter as much.
+
+- So I wanted to spend today talking about three things that I (mostly) disagreed with.
+- Hopefully giving you a couple of views will let you triangulate between them!
+
+## Two Retreats
+
+1. To probabilism
+2. To quietism
+
+## Probabilism
+
+- Nothing is certain.
+- But everything has a probability.
+- What we can do is try to make sure the things we accept are as probable as possible.
+
+## Two Problems (Among Many!)
+
+1. What is the probability that God is a deceiver, or you're a brain in a vat?
+2. How do we update these probabilities?
+
+## Probabilism
+
+- This kind of view is very popular, and I've often used it.
+- But I mostly want to stress here that it isn't the only way to retreat from the ideal.
+
+## Quietism
+
+Another view, perhaps best represented by 20th century Austrian philosopher Ludwig Wittgenstein, is that we should simply ignore sceptical scenarios.
+
+- To know something isn't to know that it's probable.
+- Rather it's to know that it must be the case, given our evidence, unless something really weird happened.
+
+## Advantages
+
+1. Doesn't have to say what probability sceptical scenarios get; they are simply ignored.
+2. We can update when we come to know something new (where this knowledge means it's certain unless weird stuff happens).
+3. Logic still works.
+
+## An Annoying Fact about Probability
+
+You can have both of the following things true.
+
+- Each of $p_1, p_2, \dots p_n$ is highly probable.
+- The conjunction $p_1 \wedge p_2 \wedge \dots \wedge p_n$ is not very probable.
+
+## No Weirdness
+
+But you can't have these things true.
+
+- Each of $p_1, p_2, \dots p_n$ is true unless something weird happens.
+- The conjunction $p_1 \wedge p_2 \wedge \dots \wedge p_n$ is true without anything weird happening.
+- So the "Believe what's true unless something weird happens" is more compatible with basic logic.
+
+## A Problem
+
+What does it mean for something to be 'weird' in the relevant sense?
+
+- There are some interesting ideas here, but I want to briefly mention one from British philosopher Crispin Wright.
+
+## Scepticism and Inquiry
+
+Here are some striking facts about things like brain-in-vat scenarios, evil demons, etc.
+
+- We can't figure out if they obtain.
+- And no better inquiry will help us do this.
+- And we know this in advance; we know inquiry will be pointless.
+
+## Don't Do Pointless Stuff
+
+This is Wright's key idea.
+
+- We are **entitled** to assume the truth of things that we know in advance it would be pointless to inquire into.
+- We want a very demanding standard of pointlessness here, so it covers brain-in-vat scenarios, but not too much.
+
+## Further Reading
+
+I don't know if this idea works in full generality, but it's an interesting option, and one that Pasnau slides over when he moves quickly from the ideal case to the probabilist one.
+
+- Wright's view is set out in his 2004 Aristotelian Society paper "Warrant for Nothing (And Foudnations for Free)".
+
+# Question-Begging
+
+
+
+# Belief-Credence Dualism

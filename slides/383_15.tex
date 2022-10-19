@@ -1,0 +1,716 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 15},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 15}
+\author{Brian Weatherson}
+\date{2022-10-24}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, interior hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, sharp corners, frame hidden, enhanced]}{\end{tcolorbox}}\fi
+
+\hypertarget{themes}{%
+\section{Themes}\label{themes}}
+
+\begin{frame}{Two Big Themes}
+\protect\hypertarget{two-big-themes}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  What's the importance of the ``Anselmian glance'', the ability to hold
+  an entire argument in view at once?
+\item
+  Is there anything epistemologically special about first-personal
+  reasoning, and if so what is it?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Hypothesis}
+\protect\hypertarget{hypothesis}{}
+These two questions are connected.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The glance is special because it allows this special kind of
+  first-personal reasoning.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A Step Back}
+\protect\hypertarget{a-step-back}{}
+But why is that?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The end of the chapter goes over several reasons why we might not care
+  about first-personal reasoning.
+\item
+  Here's one case where that seems like the right thing to say.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fermat's Last Theorem}
+\protect\hypertarget{fermats-last-theorem}{}
+A famous mathematical problem. Are there positive integers
+\(x, y, z, n\), with \(n > 2\), such that
+
+\[
+x^n + y^n = z^n
+\]
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A few years back, Andrew Wiles (then at Princeton) proved that the
+  answer is no.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fermat's Last Theorem}
+\protect\hypertarget{fermats-last-theorem-1}{}
+The proof is surprisingly complicated, going through some parts of math
+that don't look like they have anything to do with the result.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  I haven't made much effort to follow it, and I'm pretty sure I would
+  fail.
+\item
+  But I now know the theorem is true; people I trust say the proof
+  works.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fermat's Last Theorem}
+\protect\hypertarget{fermats-last-theorem-2}{}
+Imagine Wiles himself forgets key parts of the proof, and could only
+reconstruct it by looking back over his notes.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Question: Is Wiles (in this example, not in reality!) any better
+  placed with respect to Fermat's Last Theorem than the rest of us?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Fermat's Last Theorem}
+\protect\hypertarget{fermats-last-theorem-3}{}
+Pasnau (as I read the end of Ch. 5) wants to say no.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The fact that he, long ago, did the proof is of no epistemological
+  significance.
+\item
+  He knows that someone, his younger self, did a proof; but we know that
+  too.
+\item
+  And there are no other relevant differences between him now, and us
+  now.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Mathematics and Morality}
+\protect\hypertarget{mathematics-and-morality}{}
+That seems kind of plausible to me at first glance, at least for this
+case.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But I want to talk us through a couple of other cases where it is more
+  plausible that the Anselmian glance matters.
+\end{itemize}
+\end{frame}
+
+\hypertarget{moral-testimony}{%
+\section{Moral Testimony}\label{moral-testimony}}
+
+\begin{frame}{An Example}
+\protect\hypertarget{an-example}{}
+Alice and her work colleague Bob are setting down to dinner. Bob says
+he's thinking of ordering a hambuger, but it's sure whether it is
+morally ok. Alice says no, meat eating is wrong. Bob has known Alice for
+a long time, and has a high opinion of her moral judgments. So he orders
+a salad.
+\end{frame}
+
+\begin{frame}{An Example}
+\protect\hypertarget{an-example-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Did that seem strange?
+\item
+  If so, what was the strangeness?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{One Hypothesis}
+\protect\hypertarget{one-hypothesis}{}
+Moral knowledge only comes from moral reasoning/experience/empathy.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The problem is that Bob can't know that meat eating is wrong this way.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Problems for That Hypothesis}
+\protect\hypertarget{problems-for-that-hypothesis}{}
+Why couldn't Bob get knowledge that way?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Alice is a reliable testifier, and reliable testimony is a source of
+  knowledge.
+\item
+  Maybe there is an answer here, but it isn't obvious what it is.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Another Hypothesis}
+\protect\hypertarget{another-hypothesis}{}
+It's just because this is an extreme case.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It's weird to not have opinions about meat-eating.
+\item
+  But we can probably do the same thing with more obscure topics, and
+  it's still a bit weird.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Oysters}
+\protect\hypertarget{oysters}{}
+Imagine that Carla and Dave are both vegetarians, and Dave trusts
+Carla's judgments. At dinner one night, Dave sees Carla eating oysters.
+He asks her if it's morally ok to eat oysters, and she says yes. Without
+any more details, he orders oysters.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Is that weird?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Third Hypothesis: Understanding}
+\protect\hypertarget{third-hypothesis-understanding}{}
+An interesting idea to steer between these views was put forward in the
+2000s by Oxford philosopher Alison Hills.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  What goes wrong is that Bob doesn't get moral \textbf{understanding}.
+\item
+  Bob can know this way that meat-eating is wrong (assuming it is!), but
+  can't understand why.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Mathematics and Morality}
+\protect\hypertarget{mathematics-and-morality-1}{}
+At one level, Hills takes mathematics and morality to be alike in these
+respects.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Testimony can give you mathematical knowledge (e.g., that Fermat's
+  Last Theorem is true) without mathematical understanding.
+\item
+  And it can give you moral knowledge without moral understanding.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Mathematics and Morality}
+\protect\hypertarget{mathematics-and-morality-2}{}
+The difference is in how much we (typically) care about these things.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There is something - though it's hard to say what - sub-optimal about
+  a person who acts on moral knowledge they don't really understand.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Mathematics and Morality}
+\protect\hypertarget{mathematics-and-morality-3}{}
+The difference is in how much we (typically) care about these things.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But unless you're a math prof, it is fine to know/use/repeat a lot of
+  mathematical claims that you don't understand.
+\end{itemize}
+\end{frame}
+
+\hypertarget{first-person-and-the-glance}{%
+\section{First Person and the
+Glance}\label{first-person-and-the-glance}}
+
+\begin{frame}{About a Glance}
+\protect\hypertarget{about-a-glance}{}
+In math cases, it is a bit intuitive that the glance is linked to
+understanding.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Here's a real-life case (similar to what I've been doing elsewhere in
+  my job) that might help explain it.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Preference Matching}
+\protect\hypertarget{preference-matching}{}
+Here's one thing you have to do in a university department.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Each year, you work out which courses have to be taught, which rooms
+  are available to teach them in, and which people are available at
+  which times to teach which courses (and how many courses they can
+  teach).
+\item
+  There are a lot of variables, and there are too many to get a computer
+  to easily scroll through all the options.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Preference Matching}
+\protect\hypertarget{preference-matching-1}{}
+So we sit down with some combination of pen-and-paper, and computers, to
+try to get everything to slot into place.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This usually involves doing something arbritrary for the first few
+  slots (e.g., repeat some things from last year) and fitting the other
+  pieces around like a jigsaw.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Preference Matching}
+\protect\hypertarget{preference-matching-2}{}
+Imagine one year, we do this, and the last few choices are forced; it
+looks like there is only one assignment that meets all the constraints.
+(This is a good year; usually there are 0 and panic ensues.)
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We try it a few different ways, and it's the same result.
+\item
+  At this point, we know there is only one arrangement of
+  classes/people/times/rooms that works.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Preference Matching}
+\protect\hypertarget{preference-matching-3}{}
+But that's not the same as \textbf{understanding} why there is only one
+that works.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If I go back over and see ``Oh, Brian has these absurd constraints,
+  and they intersect in weird ways with other constraints, and that's
+  what rules most things out,'', now I might understand why there is
+  only one.
+\item
+  This requires the Anselmian glance.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Back to Pasnau}
+\protect\hypertarget{back-to-pasnau}{}
+Working through these two cases makes me think Pasnau is on to
+something, though I think I disagree a bit about what he's on to.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Both the glance, and the first-personal privilege, are related to
+  \textbf{understanding}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Understanding}
+\protect\hypertarget{understanding}{}
+With that in mind, let's look at his six way division of options.
+\end{frame}
+
+\hypertarget{the-six-cases}{%
+\section{The Six Cases}\label{the-six-cases}}
+
+\begin{frame}{Cases A-C}
+\protect\hypertarget{cases-a-c}{}
+\begin{enumerate}[<+->]
+[A.]
+\tightlist
+\item
+  Holding a whole argument in mind at once.
+\item
+  Holding the conclusion in mind and being able to produce the
+  supporting argument at will.
+\item
+  Holding the conclusion in mind and being able to produce the
+  supporting argument with effort.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Cases D-F}
+\protect\hypertarget{cases-d-f}{}
+\begin{enumerate}[<+->]
+[A.]
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Holding the conclusion in mind and remembering that the supporting
+  argument was once grasped, but no longer being able to produce that
+  argument, even with effort.
+\item
+  Holding the conclusion in mind without any memory of its evidential
+  basis.
+\item
+  Having forgotten both the conclusion and its supporting argument.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Two Easy Cases}
+\protect\hypertarget{two-easy-cases}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A is obviously understanding.
+\item
+  F is obviously not.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Mathematics and Morality}
+\protect\hypertarget{mathematics-and-morality-4}{}
+I want to spend the rest of the time today going over case from both
+math and ethics that are between B and E, and asking which of them are
+really cases of understanding.
+\end{frame}
+
+\begin{frame}{Math Case}
+\protect\hypertarget{math-case}{}
+We already discussed this: Fermat's Last Theorem.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But I don't care just about Wiles here.
+\item
+  Anyone who ever followed the proof, and had something like the
+  Anselmian glance of it, will do.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Morality Case}
+\protect\hypertarget{morality-case}{}
+Rather than talking about meat-eating in general, imagine someone who
+basically accepts the argument for ethical vegetarianism, but isn't sure
+how far it goes.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  In particular, they aren't sure whether oysters are animals in the
+  relevant sense.
+\item
+  After much research, they decide oysters are not; they are plant-like
+  enough to be ethically eaten.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Morality Case}
+\protect\hypertarget{morality-case-1}{}
+And then the later states of them will involve having forgotten, either
+temporarily or permanently, in whole or in part, the argument for why it
+was ok to eat oysters.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  When are they just like someone who learns it's ok to eat oysters from
+  a reliable friend?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{My (Tentative) View}
+\protect\hypertarget{my-tentative-view}{}
+The big gap is between C and D.
+
+C. Holding the conclusion in mind and being able to produce the
+supporting argument with effort. D. Holding the conclusion in mind and
+remembering that the supporting argument was once grasped, but no longer
+being able to produce that argument, even with effort.
+\end{frame}
+
+\begin{frame}{Case C}
+\protect\hypertarget{case-c}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  In the math case, this person can tell us the proof, but it takes some
+  time. Still, I think they more-or-less understand why the theorem is
+  true.
+\item
+  In the morality case, this person can recall which features of oysters
+  make them ok to eat, and why those features matter. That's a big
+  difference from the testimony case.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Case D}
+\protect\hypertarget{case-d}{}
+Is this enough for understanding in either case.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Doesn't seem close to it in the math case; I'd say in that case I used
+  to understand it.
+\item
+  But maybe, maybe, the morality case is different.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Oyster Examples}
+\protect\hypertarget{two-oyster-examples}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Dave doesn't know anything about oysters, but trusts Carla and takes
+  her word for it that it's ok to eat them.
+\item
+  Carla had thought about it, and decided it was ok to eat them, but now
+  can't even remember if it was something unexpected about their
+  biology, or a moral distinction she hadn't considered, that made her
+  think that.
+\item
+  Are these the same?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Summary}
+\protect\hypertarget{summary}{}
+Summary of this class:
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The distinctions that Pasnau starts Ch 5 with are really interesting -
+  as is (as always) the history of them.
+\item
+  But I think he's a bit negative about their relevance to epistemology.
+\item
+  They might not be relevant to \textbf{knowledge}, but they are
+  relevant to \textbf{understanding}.
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
