@@ -1,0 +1,286 @@
+---
+title: "Knowledge and Reality, Lecture 14"
+author: "Brian Weatherson"
+date: 2022-10-19
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Two Questions about Perception
+
+## Pasnau's Two Questions
+
+1. Simple or Dual?
+2. Mediated or Diaphonus?
+
+## Simple or Dual
+
+Simple
+:    The perceptual act alone represents external things, without any need for some further, distinct internal representation.
+
+Dual
+:    Perception should be analyzed into the act and a distinct internal representation.
+
+## Mediated or Diaphonus
+
+Mediated
+:    We perceive external objects—if we do at all—only in virtue of perceiving something within ourselves.
+
+Diaphonus
+:    Whatever internal intermediaries there may be [in perception] are not themselves the objects of perception.
+
+## Two Contemporary Questions
+
+1. Does perception have content?
+2. Do we perceive the world by perceiving internal states?
+
+## The Same Questions
+
+- Not exactly; the weird 'simple but mediated' view does not go the same way.
+- But close enough for current purposes.
+
+# Object and Content
+
+## Content
+
+We talked last time about perceptual content, with questions like.
+
+- Are individuals parts of the contents of perception, or just their properties?
+- Are the properties perceived things like colors and sounds, things like shape and size, or something else?
+
+## Object
+
+But that's a slightly different question from asking what it is we see when we see.
+
+- Hopefully they are related, and Pasnau will eventually argue they are closely related, but they are separate.
+
+## Some Examples
+
+I want to build up to the question by thinking about some cases.
+
+- Assume, for now, that when you look at a person, say Barack Obama, standing directly in front of you, in broad daylight, what you see is that person.
+
+## Assumptions
+
+1. I've said you see Obama, not just his qualities. If you prefer, substitute Obama's shape, size, appearance, etc for the object of perception in whatever I say going forward.
+2. I've said you see Obama, not your mental representation of him (a la Descartes, Locke, etc). That's a substantive assumption, and we'll come back to it.
+
+## Case 1: Window
+
+You look towards Obama, and get a clear sight of him through a (clear, clean) window. What do you see?
+
+1. Obama?
+2. The window?
+
+## Case 1: Window
+
+I assume here the answer is Obama, not the window.
+
+- The window is causally relevant; vision works by detecting light bouncing off a distal object, and that light passes through (and is affected by) the window.
+- But that doesn't mean you see the window; you see Obama.
+
+## Case 2: Binoculars
+
+You have a pair of binoculars, and you point them at a distant stage. On that stage is Obama, and you can make him out clearly after adjusting the focus of the binoculars. What do you see?
+
+1. Obama?
+2. The image in the binoculars?
+
+## Case 2: Binoculars
+
+I'm still inclined to say it's Obama here, but it turns out to be a useful case to consider.
+
+- If you say 'binoculars', do people who wear glasses only ever see their glasses?
+
+## Case 2: Binoculars
+
+I'm still inclined to say it's Obama here, but it turns out to be a useful case to consider.
+
+- If you say Obama, what do you say is being seen while the focus is being adjusted? If it is the picture, when do you stop seeing it?
+- And we might want to revisit that after some other cases.
+
+## Case 3: Live TV
+
+You're facing a TV that is showing a live speech by Obama, and concentrating on him. What do you see?
+
+1. Obama?
+2. The TV?
+
+## Case 3: Live TV
+
+I don't have anything useful here; it's a really tricky case.
+
+- Note that the test Pasnau gives at the end of chapter 4 says that Obama, not the TV, is the object of perception. I'm not sure it's so clear-cut.
+
+## Case 4: Recorded TV
+
+You're facing a TV that is showing a replay of a debate Obama took part in before the 2008 election. What do you see?
+
+1. Obama?
+2. The TV?
+
+## Case 4: Recorded TV
+
+I guess the TV here, but who knows?
+
+## Case 5: A Photograph
+
+You're facing a photograph of Obama, taken during the 2008 election campaign. What do you see?
+
+1. Obama?
+2. The photo?
+
+## Case 5: A Photograph
+
+Kendall Walton (a prominent philosopher of art now emiritus here at UM) has argued that photographs involve directly seeing the thing photographed.
+
+- This is a very unpopular view!
+- But maybe worth thinking about where it differs from the binoculars case.
+
+## Case 6: An Artwork
+
+![A prominent poster from the 2008 election.](../images/obama.jpg){height=50%}
+
+Do you see Obama or the artwork?
+
+## Case 6: An Artwork
+
+Here, if not before, we have a case where perception is mediated.
+
+- If looking at this picture is a way of seeing Obama, it is only by seeing something else, namely the artwork.
+
+## The Six Cases
+
+1. Window
+2. Binoculars
+3. Live TV
+4. Recorded TV
+5. Photo
+6. Artwork
+
+## The Six Cases
+
+- All of these are cases of causal mediation; something is part of the causal chain connecting Obama to you.
+- And in each case, the causal intermediator could mess something up; windows could be tinted, the picture could be out of focus, etc.
+
+## The Six Cases
+
+- But the standard (pre-C17, post-C18) view is that somewhere on this list, a break occurs.
+- Somewhere we go from seeing an external object, to seeing a mediator.
+- But where?
+
+## Three Reactions
+
+1. Find a line!
+2. Say that the idea of objects of perception is a mistake; perception is a purely causal process.
+3. Say that the idea of unmediated perception is a mistake; perception always goes via internal mediators that are themselves the objects of perception.
+
+## Option 2
+
+We're going to mostly talk about option 3, that's the focus of the chapter, but a brief word on option 2.
+
+- The external world can effect thoughts without going via representations.
+- If I don't eat, I get hungry, and I think/write more negative lecture notes.
+
+## Option 2
+
+- That's not because there is any intermediating representation between my lack of food and my negative views; it's just a causal force.
+- Maybe perception no more involves representation than those kind of external effects on mood.
+- That's certainly not how it seems though.
+
+# Why Mediators
+
+## Four Possible Reasons
+
+1. Introspection.
+2. Illusion.
+3. Fidelity.
+4. Slippery Slope.
+
+- Pasnau rejects the first two as causally explatory, and doesn't consider the fourth (it's not historically relevant I think), to argue for the third.
+
+## Pasnau's Positive Story
+
+Combines (true?) philosophical claim with (false) empirical claim.
+
+1. Fidelity Constraint: The item that is tracked with greater fidelity is that which is most properly the object of perception.
+2. Empirical Claim: Perceptions are a higher fidelity representation of our minds than of the external world.
+
+## Pasnau's Positive Story
+
+He doesn't believe 2; it's not like our minds are splashed with color, or are loud, or smelly.
+
+- But he claims that C17 folks did believe (something like) 1 and 2.
+- I couldn't tell how enthusiastic he is about 1, as opposed to saying it's part of what the long ago folks believed.
+
+## Introspection
+
+I found this a bit odd, though probably right on the history.
+
+- Question: Why motivate internal objects of perception by introspection?
+
+## Introspection
+
+Two part answer
+
+1. Introspection is a reliable means of understanding the mind.
+2. It seems like we see internal states.
+
+- On reflection, both parts seem wrong.
+
+## Why Not Introspection
+
+- Pasnau focuses on 1, the general unreliability of introspection. And fair enough too; it's really unreliable.
+- But 2 is just as bad; it really doesn't seem like we see internal states.
+
+## An Argument from Illusion
+
+1. Whenever we see, we see something.
+2. Whatever we see, we see accurately.
+3. We don't see external objects accurately (in all cases).
+4. We see the same kinds of things in accurate and inaccurate perception.
+C. Seeing involves seeing internal things.
+
+## An Argument from Illusion
+
+I guess step 3 is very plausible, but everything else seems dubious.
+
+## An Argument from Hallucination
+
+1. Whenever we see, we see something.
+2. Whatever we see, exists.
+3. In hallucinations, the thing we see does not exist externally.
+4. We see the same kinds of things in perception and hallucination.
+C. Seeing involves seeing internal things.
+
+## An Argument from Hallucination
+
+Here it's trickier to say what's wrong, and the disjunctivist position - reject 4 - has some promise.
+
+## For Next Time
+
+We'll go on to the importance of keeping a whole argument in mind at a moment.

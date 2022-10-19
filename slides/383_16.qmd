@@ -115,8 +115,5 @@ I don't know if this idea works in full generality, but it's an interesting opti
 
 - Wright's view is set out in his 2004 Aristotelian Society paper "Warrant for Nothing (And Foudnations for Free)".
 
-# Question-Begging
-
-
 
 # Belief-Credence Dualism

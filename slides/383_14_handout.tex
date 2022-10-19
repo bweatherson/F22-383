@@ -1,0 +1,735 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 14},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 14}
+\author{Brian Weatherson}
+\date{2022-10-19}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners, breakable, frame hidden]}{\end{tcolorbox}}\fi
+
+\hypertarget{two-questions-about-perception}{%
+\section{Two Questions about
+Perception}\label{two-questions-about-perception}}
+
+\begin{frame}{Pasnau's Two Questions}
+\protect\hypertarget{pasnaus-two-questions}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Simple or Dual?
+\item
+  Mediated or Diaphonus?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Simple or Dual}
+\protect\hypertarget{simple-or-dual}{}
+\begin{description}[<+->]
+\tightlist
+\item[Simple]
+The perceptual act alone represents external things, without any need
+for some further, distinct internal representation.
+\item[Dual]
+Perception should be analyzed into the act and a distinct internal
+representation.
+\end{description}
+\end{frame}
+
+\begin{frame}{Mediated or Diaphonus}
+\protect\hypertarget{mediated-or-diaphonus}{}
+\begin{description}[<+->]
+\tightlist
+\item[Mediated]
+We perceive external objects---if we do at all---only in virtue of
+perceiving something within ourselves.
+\item[Diaphonus]
+Whatever internal intermediaries there may be {[}in perception{]} are
+not themselves the objects of perception.
+\end{description}
+\end{frame}
+
+\begin{frame}{Two Contemporary Questions}
+\protect\hypertarget{two-contemporary-questions}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Does perception have content?
+\item
+  Do we perceive the world by perceiving internal states?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{The Same Questions}
+\protect\hypertarget{the-same-questions}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Not exactly; the weird `simple but mediated' view does not go the same
+  way.
+\item
+  But close enough for current purposes.
+\end{itemize}
+\end{frame}
+
+\hypertarget{object-and-content}{%
+\section{Object and Content}\label{object-and-content}}
+
+\begin{frame}{Content}
+\protect\hypertarget{content}{}
+We talked last time about perceptual content, with questions like.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Are individuals parts of the contents of perception, or just their
+  properties?
+\item
+  Are the properties perceived things like colors and sounds, things
+  like shape and size, or something else?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Object}
+\protect\hypertarget{object}{}
+But that's a slightly different question from asking what it is we see
+when we see.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Hopefully they are related, and Pasnau will eventually argue they are
+  closely related, but they are separate.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Some Examples}
+\protect\hypertarget{some-examples}{}
+I want to build up to the question by thinking about some cases.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Assume, for now, that when you look at a person, say Barack Obama,
+  standing directly in front of you, in broad daylight, what you see is
+  that person.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Assumptions}
+\protect\hypertarget{assumptions}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  I've said you see Obama, not just his qualities. If you prefer,
+  substitute Obama's shape, size, appearance, etc for the object of
+  perception in whatever I say going forward.
+\item
+  I've said you see Obama, not your mental representation of him (a la
+  Descartes, Locke, etc). That's a substantive assumption, and we'll
+  come back to it.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Case 1: Window}
+\protect\hypertarget{case-1-window}{}
+You look towards Obama, and get a clear sight of him through a (clear,
+clean) window. What do you see?
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Obama?
+\item
+  The window?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Case 1: Window}
+\protect\hypertarget{case-1-window-1}{}
+I assume here the answer is Obama, not the window.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The window is causally relevant; vision works by detecting light
+  bouncing off a distal object, and that light passes through (and is
+  affected by) the window.
+\item
+  But that doesn't mean you see the window; you see Obama.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Case 2: Binoculars}
+\protect\hypertarget{case-2-binoculars}{}
+You have a pair of binoculars, and you point them at a distant stage. On
+that stage is Obama, and you can make him out clearly after adjusting
+the focus of the binoculars. What do you see?
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Obama?
+\item
+  The image in the binoculars?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Case 2: Binoculars}
+\protect\hypertarget{case-2-binoculars-1}{}
+I'm still inclined to say it's Obama here, but it turns out to be a
+useful case to consider.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If you say `binoculars', do people who wear glasses only ever see
+  their glasses?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Case 2: Binoculars}
+\protect\hypertarget{case-2-binoculars-2}{}
+I'm still inclined to say it's Obama here, but it turns out to be a
+useful case to consider.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If you say Obama, what do you say is being seen while the focus is
+  being adjusted? If it is the picture, when do you stop seeing it?
+\item
+  And we might want to revisit that after some other cases.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Case 3: Live TV}
+\protect\hypertarget{case-3-live-tv}{}
+You're facing a TV that is showing a live speech by Obama, and
+concentrating on him. What do you see?
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Obama?
+\item
+  The TV?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Case 3: Live TV}
+\protect\hypertarget{case-3-live-tv-1}{}
+I don't have anything useful here; it's a really tricky case.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Note that the test Pasnau gives at the end of chapter 4 says that
+  Obama, not the TV, is the object of perception. I'm not sure it's so
+  clear-cut.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Case 4: Recorded TV}
+\protect\hypertarget{case-4-recorded-tv}{}
+You're facing a TV that is showing a replay of a debate Obama took part
+in before the 2008 election. What do you see?
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Obama?
+\item
+  The TV?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Case 4: Recorded TV}
+\protect\hypertarget{case-4-recorded-tv-1}{}
+I guess the TV here, but who knows?
+\end{frame}
+
+\begin{frame}{Case 5: A Photograph}
+\protect\hypertarget{case-5-a-photograph}{}
+You're facing a photograph of Obama, taken during the 2008 election
+campaign. What do you see?
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Obama?
+\item
+  The photo?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Case 5: A Photograph}
+\protect\hypertarget{case-5-a-photograph-1}{}
+Kendall Walton (a prominent philosopher of art now emiritus here at UM)
+has argued that photographs involve directly seeing the thing
+photographed.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This is a very unpopular view!
+\item
+  But maybe worth thinking about where it differs from the binoculars
+  case.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Case 6: An Artwork}
+\protect\hypertarget{case-6-an-artwork}{}
+\begin{figure}
+
+{\centering \includegraphics[width=\textwidth,height=0.5\textheight]{../images/obama.jpg}
+
+}
+
+\caption{A prominent poster from the 2008 election.}
+
+\end{figure}
+
+Do you see Obama or the artwork?
+\end{frame}
+
+\begin{frame}{Case 6: An Artwork}
+\protect\hypertarget{case-6-an-artwork-1}{}
+Here, if not before, we have a case where perception is mediated.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If looking at this picture is a way of seeing Obama, it is only by
+  seeing something else, namely the artwork.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Six Cases}
+\protect\hypertarget{the-six-cases}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Window
+\item
+  Binoculars
+\item
+  Live TV
+\item
+  Recorded TV
+\item
+  Photo
+\item
+  Artwork
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{The Six Cases}
+\protect\hypertarget{the-six-cases-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  All of these are cases of causal mediation; something is part of the
+  causal chain connecting Obama to you.
+\item
+  And in each case, the causal intermediator could mess something up;
+  windows could be tinted, the picture could be out of focus, etc.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{The Six Cases}
+\protect\hypertarget{the-six-cases-2}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But the standard (pre-C17, post-C18) view is that somewhere on this
+  list, a break occurs.
+\item
+  Somewhere we go from seeing an external object, to seeing a mediator.
+\item
+  But where?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Three Reactions}
+\protect\hypertarget{three-reactions}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Find a line!
+\item
+  Say that the idea of objects of perception is a mistake; perception is
+  a purely causal process.
+\item
+  Say that the idea of unmediated perception is a mistake; perception
+  always goes via internal mediators that are themselves the objects of
+  perception.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Option 2}
+\protect\hypertarget{option-2}{}
+We're going to mostly talk about option 3, that's the focus of the
+chapter, but a brief word on option 2.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The external world can effect thoughts without going via
+  representations.
+\item
+  If I don't eat, I get hungry, and I think/write more negative lecture
+  notes.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Option 2}
+\protect\hypertarget{option-2-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  That's not because there is any intermediating representation between
+  my lack of food and my negative views; it's just a causal force.
+\item
+  Maybe perception no more involves representation than those kind of
+  external effects on mood.
+\item
+  That's certainly not how it seems though.
+\end{itemize}
+\end{frame}
+
+\hypertarget{why-mediators}{%
+\section{Why Mediators}\label{why-mediators}}
+
+\begin{frame}{Four Possible Reasons}
+\protect\hypertarget{four-possible-reasons}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Introspection.
+\item
+  Illusion.
+\item
+  Fidelity.
+\item
+  Slippery Slope.
+\end{enumerate}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Pasnau rejects the first two as causally explatory, and doesn't
+  consider the fourth (it's not historically relevant I think), to argue
+  for the third.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pasnau's Positive Story}
+\protect\hypertarget{pasnaus-positive-story}{}
+Combines (true?) philosophical claim with (false) empirical claim.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Fidelity Constraint: The item that is tracked with greater fidelity is
+  that which is most properly the object of perception.
+\item
+  Empirical Claim: Perceptions are a higher fidelity representation of
+  our minds than of the external world.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Pasnau's Positive Story}
+\protect\hypertarget{pasnaus-positive-story-1}{}
+He doesn't believe 2; it's not like our minds are splashed with color,
+or are loud, or smelly.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But he claims that C17 folks did believe (something like) 1 and 2.
+\item
+  I couldn't tell how enthusiastic he is about 1, as opposed to saying
+  it's part of what the long ago folks believed.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Introspection}
+\protect\hypertarget{introspection}{}
+I found this a bit odd, though probably right on the history.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Question: Why motivate internal objects of perception by
+  introspection?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Introspection}
+\protect\hypertarget{introspection-1}{}
+Two part answer
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Introspection is a reliable means of understanding the mind.
+\item
+  It seems like we see internal states.
+\end{enumerate}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  On reflection, both parts seem wrong.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Why Not Introspection}
+\protect\hypertarget{why-not-introspection}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Pasnau focuses on 1, the general unreliability of introspection. And
+  fair enough too; it's really unreliable.
+\item
+  But 2 is just as bad; it really doesn't seem like we see internal
+  states.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An Argument from Illusion}
+\protect\hypertarget{an-argument-from-illusion}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Whenever we see, we see something.
+\item
+  Whatever we see, we see accurately.
+\item
+  We don't see external objects accurately (in all cases).
+\item
+  We see the same kinds of things in accurate and inaccurate perception.
+  C. Seeing involves seeing internal things.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{An Argument from Illusion}
+\protect\hypertarget{an-argument-from-illusion-1}{}
+I guess step 3 is very plausible, but everything else seems dubious.
+\end{frame}
+
+\begin{frame}{An Argument from Hallucination}
+\protect\hypertarget{an-argument-from-hallucination}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Whenever we see, we see something.
+\item
+  Whatever we see, exists.
+\item
+  In hallucinations, the thing we see does not exist externally.
+\item
+  We see the same kinds of things in perception and hallucination. C.
+  Seeing involves seeing internal things.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{An Argument from Hallucination}
+\protect\hypertarget{an-argument-from-hallucination-1}{}
+Here it's trickier to say what's wrong, and the disjunctivist position -
+reject 4 - has some promise.
+\end{frame}
+
+\begin{frame}{For Next Time}
+\protect\hypertarget{for-next-time}{}
+We'll go on to the importance of keeping a whole argument in mind at a
+moment.
+\end{frame}
+
+
+
+\end{document}
