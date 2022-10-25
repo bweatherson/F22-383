@@ -263,7 +263,7 @@ Two part answer
 2. Whatever we see, we see accurately.
 3. We don't see external objects accurately (in all cases).
 4. We see the same kinds of things in accurate and inaccurate perception.
-C. Seeing involves seeing internal things.
+C.  Seeing involves seeing internal things.
 
 ## An Argument from Illusion
 
@@ -275,7 +275,7 @@ I guess step 3 is very plausible, but everything else seems dubious.
 2. Whatever we see, exists.
 3. In hallucinations, the thing we see does not exist externally.
 4. We see the same kinds of things in perception and hallucination.
-C. Seeing involves seeing internal things.
+C.  Seeing involves seeing internal things.
 
 ## An Argument from Hallucination
 

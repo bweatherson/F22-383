@@ -1,0 +1,632 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+  handout]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 17},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 17}
+\author{Brian Weatherson}
+\date{2022-11-01}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, interior hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, sharp corners, frame hidden, enhanced]}{\end{tcolorbox}}\fi
+
+\hypertarget{retreating-from-the-ideal}{%
+\section{Retreating from the Ideal}\label{retreating-from-the-ideal}}
+
+\begin{frame}{Where Do We Go Now but Nowhere?}
+\protect\hypertarget{where-do-we-go-now-but-nowhere}{}
+I liked this book a lot, but didn't love the last chapter as much.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  So I wanted to spend today talking about three things that I (mostly)
+  disagreed with.
+\item
+  Hopefully giving you a couple of views will let you triangulate
+  between them!
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Retreats}
+\protect\hypertarget{two-retreats}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  To probabilism
+\item
+  To quietism
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Probabilism}
+\protect\hypertarget{probabilism}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Nothing is certain.
+\item
+  But everything has a probability.
+\item
+  What we can do is try to make sure the things we accept are as
+  probable as possible.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Problems (Among Many!)}
+\protect\hypertarget{two-problems-among-many}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  What is the probability that God is a deceiver, or you're a brain in a
+  vat?
+\item
+  How do we update these probabilities?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Probabilism}
+\protect\hypertarget{probabilism-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This kind of view is very popular, and I've often used it.
+\item
+  But I mostly want to stress here that it isn't the only way to retreat
+  from the ideal.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Quietism}
+\protect\hypertarget{quietism}{}
+Another view, perhaps best represented by 20th century Austrian
+philosopher Ludwig Wittgenstein, is that we should simply ignore
+sceptical scenarios.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  To know something isn't to know that it's probable.
+\item
+  Rather it's to know that it must be the case, given our evidence,
+  unless something really weird happened.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Advantages}
+\protect\hypertarget{advantages}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Doesn't have to say what probability sceptical scenarios get; they are
+  simply ignored.
+\item
+  We can update when we come to know something new (where this knowledge
+  means it's certain unless weird stuff happens).
+\item
+  Logic still works.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{An Annoying Fact about Probability}
+\protect\hypertarget{an-annoying-fact-about-probability}{}
+You can have both of the following things true.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Each of \(p_1, p_2, \dots p_n\) is highly probable.
+\item
+  The conjunction \(p_1 \wedge p_2 \wedge \dots \wedge p_n\) is not very
+  probable.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{No Weirdness}
+\protect\hypertarget{no-weirdness}{}
+But you can't have these things true.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Each of \(p_1, p_2, \dots p_n\) is true unless something weird
+  happens.
+\item
+  The conjunction \(p_1 \wedge p_2 \wedge \dots \wedge p_n\) is true
+  without anything weird happening.
+\item
+  So the ``Believe what's true unless something weird happens'' is more
+  compatible with basic logic.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A Problem}
+\protect\hypertarget{a-problem}{}
+What does it mean for something to be `weird' in the relevant sense?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There are some interesting ideas here, but I want to briefly mention
+  one from British philosopher Crispin Wright.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Scepticism and Inquiry}
+\protect\hypertarget{scepticism-and-inquiry}{}
+Here are some striking facts about things like brain-in-vat scenarios,
+evil demons, etc.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We can't figure out if they obtain.
+\item
+  And no better inquiry will help us do this.
+\item
+  And we know this in advance; we know inquiry will be pointless.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Don't Do Pointless Stuff}
+\protect\hypertarget{dont-do-pointless-stuff}{}
+This is Wright's key idea.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We are \textbf{entitled} to assume the truth of things that we know in
+  advance it would be pointless to inquire into.
+\item
+  We want a very demanding standard of pointlessness here, so it covers
+  brain-in-vat scenarios, but not too much.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Further Reading}
+\protect\hypertarget{further-reading}{}
+I don't know if this idea works in full generality, but it's an
+interesting option, and one that Pasnau slides over when he moves
+quickly from the ideal case to the probabilist one.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Wright's view is set out in his 2004 Aristotelian Society paper
+  ``Warrant for Nothing (And Foudnations for Free)''.
+\end{itemize}
+\end{frame}
+
+\hypertarget{belief-credence-dualism}{%
+\section{Belief-Credence Dualism}\label{belief-credence-dualism}}
+
+\begin{frame}{Positive View}
+\protect\hypertarget{positive-view}{}
+If I'm reading him right, Pasnau's positive vision at the end is a
+version of what's called \textbf{belief-credence dualism}. Three plans.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  What is belief-credence dualism?
+\item
+  What is distinctive about Pasnau's version?
+\item
+  Is it a plausible view?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Belief}
+\protect\hypertarget{belief}{}
+Beliefs are off-on; you either believe something or you don't.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Belief, in the way philosophers talk about it, is a fairly strong
+  state.
+\item
+  To believe \emph{p} is to take \emph{p} as settled.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Credence}
+\protect\hypertarget{credence}{}
+Credences are degrees of confidence.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There are a variety of arguments that these should behave like
+  probabilities.
+\item
+  So to have credence 0.75 in something is to treat it as three times as
+  likely as not.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Credences and Bets}
+\protect\hypertarget{credences-and-bets}{}
+There is often taken to be a tight connection between credences and
+betting behavior.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Having credence \emph{x} in \emph{p} is connected to being willing to
+  pay \$x for a bet that pays \$1 if \emph{p} and pays nothing if
+  \emph{p} is false.
+\item
+  In mid-C20 this was occasionally treated as a definition; that's
+  absurd, but there's a connnection of some kind.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Two Kinds of Reductionism}
+\protect\hypertarget{two-kinds-of-reductionism}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Reduce beliefs to credences.
+\item
+  Reduce credences to beliefs.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Reduce Beliefs to Credences}
+\protect\hypertarget{reduce-beliefs-to-credences}{}
+\begin{description}[<+->]
+\tightlist
+\item[Simple reduction]
+To believe just is to have credence greater than 0.99 (or something like
+that)
+\item[Complicated reduction]
+To believe just is to have credence higher than any salient alternative.
+\end{description}
+\end{frame}
+
+\begin{frame}{Reduce Credence to Belief}
+\protect\hypertarget{reduce-credence-to-belief}{}
+To have a credence just is to have a belief about probabilities.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This isn't unheard of, but it's much less common than the previous
+  reduction.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Doing Without}
+\protect\hypertarget{doing-without}{}
+Two other views:
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Beliefs are an important part of philosophical psychology; credences
+  are a myth.
+\item
+  Credences are an important part of philosophical psychology; beliefs
+  are a myth.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Four options}
+\protect\hypertarget{four-options}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Both are real, but beliefs are really just credences.
+\item
+  Both are real, but credences are really just beliefs.
+\item
+  Only credences are real.
+\item
+  Only beliefs are real.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Dualism}
+\protect\hypertarget{dualism}{}
+None of these things are right!
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Beliefs and credences are both real, and they play separate roles in
+  psychology, such that neither can be reduced to the other.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Historical Motivation}
+\protect\hypertarget{historical-motivation}{}
+Think about Descartes's idea that you should, for the sake of doxastic
+hygeine, temporarily suspend all believing.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If you follow Descartes's directions, does it change any credences?
+\item
+  I think not; you still act the same way, including in betting
+  behavior.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Contemporary Motivation}
+\protect\hypertarget{contemporary-motivation}{}
+Both things seem important.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Credences play an important role in explaining behavior under
+  uncertainty.
+\item
+  But it doesn't feel like we have purely probabilistic attitudes
+  towards things like the existence of chairs and tables.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Contemporary Motivation}
+\protect\hypertarget{contemporary-motivation-1}{}
+I'm not going to go over them all, but there are problems with every one
+of the proposed reductions on the market.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  So maybe reductionism fails.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pasnau's Motivation}
+\protect\hypertarget{pasnaus-motivation}{}
+Beliefs are sensitive to one's ``personality'', but credences are not.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A hopeful person can believe \emph{p} even though they can't rule all
+  alternatives to \emph{p} out.
+\item
+  A pessimistic person won't believe \emph{p} even though it's very
+  probable.
+\item
+  And that's fine; beliefs should be sensitive to personality like this.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pasnau's Dualism}
+\protect\hypertarget{pasnaus-dualism}{}
+This strikes me as similar to what I was saying about Descartes.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Descartes doesn't want people to lose confidence while they are going
+  through the meditation process.
+\item
+  He just thinks that they should be pessimistic for a while.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pasnau's Dualism}
+\protect\hypertarget{pasnaus-dualism-1}{}
+But it comes at things from the opposite direction.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Since the Cartesian project fails, and we know it fails, we have to
+  decide what to do next.
+\item
+  And the healthiest decision is to not worry about absurdly sceptical
+  options.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Is This Plausible}
+\protect\hypertarget{is-this-plausible}{}
+A couple of questions.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Are there limits to hope? Is hoping that our senses are reliable
+  within that hope?
+\item
+  What is the probability that we're not brains in vats? How does the
+  positive theory avoid answering that question?
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{For Next Time}
+\protect\hypertarget{for-next-time}{}
+Onto Siegel's \emph{The Rationality of Perception}.
+\end{frame}
+
+
+
+\end{document}

@@ -1,0 +1,240 @@
+---
+title: "Knowledge and Reality, Lecture 17"
+author: "Brian Weatherson"
+date: 2022-11-01
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Retreating from the Ideal
+
+## Where Do We Go Now but Nowhere?
+
+I liked this book a lot, but didn't love the last chapter as much.
+
+- So I wanted to spend today talking about three things that I (mostly) disagreed with.
+- Hopefully giving you a couple of views will let you triangulate between them!
+
+## Two Retreats
+
+1. To probabilism
+2. To quietism
+
+## Probabilism
+
+- Nothing is certain.
+- But everything has a probability.
+- What we can do is try to make sure the things we accept are as probable as possible.
+
+## Two Problems (Among Many!)
+
+1. What is the probability that God is a deceiver, or you're a brain in a vat?
+2. How do we update these probabilities?
+
+## Probabilism
+
+- This kind of view is very popular, and I've often used it.
+- But I mostly want to stress here that it isn't the only way to retreat from the ideal.
+
+## Quietism
+
+Another view, perhaps best represented by 20th century Austrian philosopher Ludwig Wittgenstein, is that we should simply ignore sceptical scenarios.
+
+- To know something isn't to know that it's probable.
+- Rather it's to know that it must be the case, given our evidence, unless something really weird happened.
+
+## Advantages
+
+1. Doesn't have to say what probability sceptical scenarios get; they are simply ignored.
+2. We can update when we come to know something new (where this knowledge means it's certain unless weird stuff happens).
+3. Logic still works.
+
+## An Annoying Fact about Probability
+
+You can have both of the following things true.
+
+- Each of $p_1, p_2, \dots p_n$ is highly probable.
+- The conjunction $p_1 \wedge p_2 \wedge \dots \wedge p_n$ is not very probable.
+
+## No Weirdness
+
+But you can't have these things true.
+
+- Each of $p_1, p_2, \dots p_n$ is true unless something weird happens.
+- The conjunction $p_1 \wedge p_2 \wedge \dots \wedge p_n$ is true without anything weird happening.
+- So the "Believe what's true unless something weird happens" is more compatible with basic logic.
+
+## A Problem
+
+What does it mean for something to be 'weird' in the relevant sense?
+
+- There are some interesting ideas here, but I want to briefly mention one from British philosopher Crispin Wright.
+
+## Scepticism and Inquiry
+
+Here are some striking facts about things like brain-in-vat scenarios, evil demons, etc.
+
+- We can't figure out if they obtain.
+- And no better inquiry will help us do this.
+- And we know this in advance; we know inquiry will be pointless.
+
+## Don't Do Pointless Stuff
+
+This is Wright's key idea.
+
+- We are **entitled** to assume the truth of things that we know in advance it would be pointless to inquire into.
+- We want a very demanding standard of pointlessness here, so it covers brain-in-vat scenarios, but not too much.
+
+## Further Reading
+
+I don't know if this idea works in full generality, but it's an interesting option, and one that Pasnau slides over when he moves quickly from the ideal case to the probabilist one.
+
+- Wright's view is set out in his 2004 Aristotelian Society paper "Warrant for Nothing (And Foudnations for Free)".
+
+
+# Belief-Credence Dualism
+
+## Positive View
+
+If I'm reading him right, Pasnau's positive vision at the end is a version of what's called **belief-credence dualism**. Three plans.
+
+- What is belief-credence dualism?
+- What is distinctive about Pasnau's version?
+- Is it a plausible view?
+
+## Belief
+
+Beliefs are off-on; you either believe something or you don't.
+
+- Belief, in the way philosophers talk about it, is a fairly strong state.
+- To believe *p* is to take *p* as settled.
+
+## Credence
+
+Credences are degrees of confidence.
+
+- There are a variety of arguments that these should behave like probabilities.
+- So to have credence 0.75 in something is to treat it as three times as likely as not.
+
+## Credences and Bets
+
+There is often taken to be a tight connection between credences and betting behavior.
+
+- Having credence *x* in *p* is connected to being willing to pay $x for a bet that pays $1 if *p* and pays nothing if *p* is false.
+- In mid-C20 this was occasionally treated as a definition; that's absurd, but there's a connnection of some kind.
+
+## Two Kinds of Reductionism
+
+1. Reduce beliefs to credences.
+2. Reduce credences to beliefs.
+
+## Reduce Beliefs to Credences
+
+Simple reduction
+:    To believe just is to have credence greater than 0.99 (or something like that)
+
+Complicated reduction
+:    To believe just is to have credence higher than any salient alternative.
+
+## Reduce Credence to Belief
+
+To have a credence just is to have a belief about probabilities.
+
+- This isn't unheard of, but it's much less common than the previous reduction.
+
+## Doing Without
+
+Two other views:
+
+1. Beliefs are an important part of philosophical psychology; credences are a myth.
+2. Credences are an important part of philosophical psychology; beliefs are a myth.
+
+## Four options
+
+- Both are real, but beliefs are really just credences.
+- Both are real, but credences are really just beliefs.
+- Only credences are real.
+- Only beliefs are real.
+
+## Dualism
+
+None of these things are right!
+
+- Beliefs and credences are both real, and they play separate roles in psychology, such that neither can be reduced to the other.
+
+## Historical Motivation
+
+Think about Descartes's idea that you should, for the sake of doxastic hygeine, temporarily suspend all believing.
+
+- If you follow Descartes's directions, does it change any credences?
+- I think not; you still act the same way, including in betting behavior.
+
+## Contemporary Motivation
+
+Both things seem important.
+
+- Credences play an important role in explaining behavior under uncertainty.
+- But it doesn't feel like we have purely probabilistic attitudes towards things like the existence of chairs and tables.
+
+## Contemporary Motivation
+
+I'm not going to go over them all, but there are problems with every one of the proposed reductions on the market.
+
+- So maybe reductionism fails.
+
+## Pasnau's Motivation
+
+Beliefs are sensitive to one's "personality", but credences are not.
+
+- A hopeful person can believe *p* even though they can't rule all alternatives to *p* out.
+- A pessimistic person won't believe *p* even though it's very probable.
+- And that's fine; beliefs should be sensitive to personality like this.
+
+## Pasnau's Dualism
+
+This strikes me as similar to what I was saying about Descartes.
+
+- Descartes doesn't want people to lose confidence while they are going through the meditation process.
+- He just thinks that they should be pessimistic for a while.
+
+## Pasnau's Dualism
+
+But it comes at things from the opposite direction.
+
+- Since the Cartesian project fails, and we know it fails, we have to decide what to do next.
+- And the healthiest decision is to not worry about absurdly sceptical options.
+
+## Is This Plausible
+
+A couple of questions.
+
+1. Are there limits to hope? Is hoping that our senses are reliable within that hope?
+2. What is the probability that we're not brains in vats? How does the positive theory avoid answering that question?
+
+## For Next Time
+
+Onto Siegel's _The Rationality of Perception_.

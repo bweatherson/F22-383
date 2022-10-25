@@ -30,200 +30,243 @@ format:
        }
 ---
 
-# Retreating from the Ideal
+# Themes
 
-## Where Do We Go Now but Nowhere?
+## Two Big Themes
 
-I liked this book a lot, but didn't love the last chapter as much.
+1. What's the importance of the "Anselmian glance", the ability to hold an entire argument in view at once?
+2. Is there anything epistemologically special about first-personal reasoning, and if so what is it?
 
-- So I wanted to spend today talking about three things that I (mostly) disagreed with.
-- Hopefully giving you a couple of views will let you triangulate between them!
+## Hypothesis
 
-## Two Retreats
+These two questions are connected.
 
-1. To probabilism
-2. To quietism
+- The glance is special because it allows this special kind of first-personal reasoning.
 
-## Probabilism
+## A Step Back
 
-- Nothing is certain.
-- But everything has a probability.
-- What we can do is try to make sure the things we accept are as probable as possible.
+But why is that?
 
-## Two Problems (Among Many!)
+- The end of the chapter goes over several reasons why we might not care about first-personal reasoning.
+- Here's one case where that seems like the right thing to say.
 
-1. What is the probability that God is a deceiver, or you're a brain in a vat?
-2. How do we update these probabilities?
+## Fermat's Last Theorem
 
-## Probabilism
+A famous mathematical problem. Are there positive integers $x, y, z, n$, with $n > 2$, such that
 
-- This kind of view is very popular, and I've often used it.
-- But I mostly want to stress here that it isn't the only way to retreat from the ideal.
+$$
+x^n + y^n = z^n
+$$
 
-## Quietism
+- A few years back, Andrew Wiles (then at Princeton) proved that the answer is no.
 
-Another view, perhaps best represented by 20th century Austrian philosopher Ludwig Wittgenstein, is that we should simply ignore sceptical scenarios.
+## Fermat's Last Theorem
 
-- To know something isn't to know that it's probable.
-- Rather it's to know that it must be the case, given our evidence, unless something really weird happened.
+The proof is surprisingly complicated, going through some parts of math that don't look like they have anything to do with the result.
 
-## Advantages
+- I haven't made much effort to follow it, and I'm pretty sure I would fail.
+- But I now know the theorem is true; people I trust say the proof works.
 
-1. Doesn't have to say what probability sceptical scenarios get; they are simply ignored.
-2. We can update when we come to know something new (where this knowledge means it's certain unless weird stuff happens).
-3. Logic still works.
+## Fermat's Last Theorem
 
-## An Annoying Fact about Probability
+Imagine Wiles himself forgets key parts of the proof, and could only reconstruct it by looking back over his notes.
 
-You can have both of the following things true.
+- Question: Is Wiles (in this example, not in reality!) any better placed with respect to Fermat's Last Theorem than the rest of us?
 
-- Each of $p_1, p_2, \dots p_n$ is highly probable.
-- The conjunction $p_1 \wedge p_2 \wedge \dots \wedge p_n$ is not very probable.
+## Fermat's Last Theorem
 
-## No Weirdness
+Pasnau (as I read the end of Ch. 5) wants to say no.
 
-But you can't have these things true.
+- The fact that he, long ago, did the proof is of no epistemological significance.
+- He knows that someone, his younger self, did a proof; but we know that too.
+- And there are no other relevant differences between him now, and us now.
 
-- Each of $p_1, p_2, \dots p_n$ is true unless something weird happens.
-- The conjunction $p_1 \wedge p_2 \wedge \dots \wedge p_n$ is true without anything weird happening.
-- So the "Believe what's true unless something weird happens" is more compatible with basic logic.
+## Mathematics and Morality
 
-## A Problem
+That seems kind of plausible to me at first glance, at least for this case.
 
-What does it mean for something to be 'weird' in the relevant sense?
+- But I want to talk us through a couple of other cases where it is more plausible that the Anselmian glance matters.
 
-- There are some interesting ideas here, but I want to briefly mention one from British philosopher Crispin Wright.
+# Moral Testimony
 
-## Scepticism and Inquiry
+## An Example
 
-Here are some striking facts about things like brain-in-vat scenarios, evil demons, etc.
+Alice and her work colleague Bob are setting down to dinner. Bob says he's thinking of ordering a hambuger, but it's sure whether it is morally ok. Alice says no, meat eating is wrong. Bob has known Alice for a long time, and has a high opinion of her moral judgments. So he orders a salad.
 
-- We can't figure out if they obtain.
-- And no better inquiry will help us do this.
-- And we know this in advance; we know inquiry will be pointless.
+## An Example
 
-## Don't Do Pointless Stuff
+- Did that seem strange?
+- If so, what was the strangeness?
 
-This is Wright's key idea.
+## One Hypothesis
 
-- We are **entitled** to assume the truth of things that we know in advance it would be pointless to inquire into.
-- We want a very demanding standard of pointlessness here, so it covers brain-in-vat scenarios, but not too much.
+Moral knowledge only comes from moral reasoning/experience/empathy.
 
-## Further Reading
+- The problem is that Bob can't know that meat eating is wrong this way.
 
-I don't know if this idea works in full generality, but it's an interesting option, and one that Pasnau slides over when he moves quickly from the ideal case to the probabilist one.
+## Problems for That Hypothesis
 
-- Wright's view is set out in his 2004 Aristotelian Society paper "Warrant for Nothing (And Foudnations for Free)".
+Why couldn't Bob get knowledge that way?
 
+- Alice is a reliable testifier, and reliable testimony is a source of knowledge.
+- Maybe there is an answer here, but it isn't obvious what it is.
 
-# Belief-Credence Dualism
+## Another Hypothesis
 
-## Positive View
+It's just because this is an extreme case.
 
-If I'm reading him right, Pasnau's positive vision at the end is a version of what's called **belief-credence dualism**. Three plans.
+- It's weird to not have opinions about meat-eating.
+- But we can probably do the same thing with more obscure topics, and it's still a bit weird.
 
-- What is belief-credence dualism?
-- What is distinctive about Pasnau's version?
-- Is it a plausible view?
+## Oysters
 
-## Belief
+Imagine that Carla and Dave are both vegetarians, and Dave trusts Carla's judgments. At dinner one night, Dave sees Carla eating oysters. He asks her if it's morally ok to eat oysters, and she says yes. Without any more details, he orders oysters.
 
-Beliefs are off-on; you either believe something or you don't.
+- Is that weird?
 
-- Belief, in the way philosophers talk about it, is a fairly strong state.
-- To believe *p* is to take *p* as settled.
+## Third Hypothesis: Understanding
 
-## Credence
+An interesting idea to steer between these views was put forward in the 2000s by Oxford philosopher Alison Hills.
 
-Credences are degrees of confidence.
+- What goes wrong is that Bob doesn't get moral **understanding**.
+- Bob can know this way that meat-eating is wrong (assuming it is!), but can't understand why.
 
-- There are a variety of arguments that these should behave like probabilities.
-- So to have credence 0.75 in something is to treat it as three times as likely as not.
+## Mathematics and Morality
 
-## Credences and Bets
+At one level, Hills takes mathematics and morality to be alike in these respects.
 
-There is often taken to be a tight connection between credences and betting behavior.
+- Testimony can give you mathematical knowledge (e.g., that Fermat's Last Theorem is true) without mathematical understanding.
+- And it can give you moral knowledge without moral understanding.
 
-- Having credence *x* in *p* is connected to being willing to pay $x for a bet that pays $1 if *p* and pays nothing if *p* is false.
-- In mid-C20 this was occasionally treated as a definition; that's absurd, but there's a connnection of some kind.
+## Mathematics and Morality
 
-## Two Kinds of Reductionism
+The difference is in how much we (typically) care about these things.
 
-1. Reduce beliefs to credences.
-2. Reduce credences to beliefs.
+- There is something - though it's hard to say what - sub-optimal about a person who acts on moral knowledge they don't really understand.
 
-## Reduce Beliefs to Credences
+## Mathematics and Morality
 
-Simple reduction
-:    To believe just is to have credence greater than 0.99 (or something like that)
+The difference is in how much we (typically) care about these things.
 
-Complicated reduction
-:    To believe just is to have credence higher than any salient alternative.
+- But unless you're a math prof, it is fine to know/use/repeat a lot of mathematical claims that you don't understand.
 
-## Reduce Credence to Belief
+# First Person and the Glance
 
-To have a credence just is to have a belief about probabilities.
+## About a Glance
 
-- This isn't unheard of, but it's much less common than the previous reduction.
+In math cases, it is a bit intuitive that the glance is linked to understanding.
 
-## Doing Without
+- Here's a real-life case (similar to what I've been doing elsewhere in my job) that might help explain it.
 
-Two other views:
+## Preference Matching
 
-1. Beliefs are an important part of philosophical psychology; credences are a myth.
-2. Credences are an important part of philosophical psychology; beliefs are a myth.
+Here's one thing you have to do in a university department.
 
-## Four options
+- Each year, you work out which courses have to be taught, which rooms are available to teach them in, and which people are available at which times to teach which courses (and how many courses they can teach).
+- There are a lot of variables, and there are too many to get a computer to easily scroll through all the options.
 
-- Both are real, but beliefs are really just credences.
-- Both are real, but credences are really just beliefs.
-- Only credences are real.
-- Only beliefs are real.
+## Preference Matching
 
-## Dualism
+So we sit down with some combination of pen-and-paper, and computers, to try to get everything to slot into place.
 
-None of these things are right!
+- This usually involves doing something arbritrary for the first few slots (e.g., repeat some things from last year) and fitting the other pieces around like a jigsaw.
 
-- Beliefs and credences are both real, and they play separate roles in psychology, such that neither can be reduced to the other.
+## Preference Matching
 
-## Historical Motivation
+Imagine one year, we do this, and the last few choices are forced; it looks like there is only one assignment that meets all the constraints. (This is a good year; usually there are 0 and panic ensues.)
 
-Think about Descartes's idea that you should, for the sake of doxastic hygeine, temporarily suspend all believing.
+- We try it a few different ways, and it's the same result.
+- At this point, we know there is only one arrangement of classes/people/times/rooms that works.
 
-- If you follow Descartes's directions, does it change any credences?
-- I think not; you still act the same way, including in betting behavior.
+## Preference Matching
 
-## Contemporary Motivation
+But that's not the same as **understanding** why there is only one that works.
 
-Both things seem important.
+- If I go back over and see "Oh, Brian has these absurd constraints, and they intersect in weird ways with other constraints, and that's what rules most things out,", now I might understand why there is only one.
+- This requires the Anselmian glance.
 
-- Credences play an important role in explaining behavior under uncertainty.
-- But it doesn't feel like we have purely probabilistic attitudes towards things like the existence of chairs and tables.
+## Back to Pasnau
 
-## Contemporary Motivation
+Working through these two cases makes me think Pasnau is on to something, though I think I disagree a bit about what he's on to.
 
-I'm not going to go over them all, but there are problems with every one of the proposed reductions on the market.
+- Both the glance, and the first-personal privilege, are related to **understanding**.
 
-- So maybe reductionism fails.
+## Understanding
 
-## Pasnau's Motivation
+With that in mind, let's look at his six way division of options.
 
-Beliefs are sensitive to one's "personality", but credences are not.
+# The Six Cases
 
-- A hopeful person can believe *p* even though they can't rule all alternatives to *p* out.
-- A pessimistic person won't believe *p* even though it's very probable.
-- And that's fine; beliefs should be sensitive to personality like this.
+## Cases A-C
 
-## Pasnau's Dualism
+A.  Holding a whole argument in mind at once. 
+B.  Holding the conclusion in mind and being able to produce the supporting argument at will. 
+C.  Holding the conclusion in mind and being able to produce the supporting argument with effort. 
 
-This strikes me as similar to what I was saying about Descartes.
+## Cases D-F
 
-- Descartes doesn't want people to lose confidence while they are going through the meditation process.
-- He just thinks that they should be pessimistic for a while.
+D.  Holding the conclusion in mind and remembering that the supporting argument was once grasped, but no longer being able to produce that argument, even with effort.
+E.  Holding the conclusion in mind without any memory of its evidential basis. 
+F.  Having forgotten both the conclusion and its supporting argument.
 
-## Pasnau's Dualism
+## Two Easy Cases
 
-But it comes at things from the opposite direction.
+- A is obviously understanding.
+- F is obviously not.
 
-- Since the Cartesian project fails, and we know it fails, we have to decide what to do next.
-- And the healthiest decision is to not worry about absurdly sceptical options.
+## Mathematics and Morality
+
+I want to spend the rest of the time today going over case from both math and ethics that are between B and E, and asking which of them are really cases of understanding.
+
+## Math Case
+
+We already discussed this: Fermat's Last Theorem.
+
+- But I don't care just about Wiles here.
+- Anyone who ever followed the proof, and had something like the Anselmian glance of it, will do.
+
+## Morality Case
+
+Rather than talking about meat-eating in general, imagine someone who basically accepts the argument for ethical vegetarianism, but isn't sure how far it goes.
+
+- In particular, they aren't sure whether oysters are animals in the relevant sense.
+- After much research, they decide oysters are not; they are plant-like enough to be ethically eaten.
+
+## Morality Case
+
+And then the later states of them will involve having forgotten, either temporarily or permanently, in whole or in part, the argument for why it was ok to eat oysters.
+
+- When are they just like someone who learns it's ok to eat oysters from a reliable friend?
+
+## My (Tentative) View
+
+The big gap is between C and D.
+
+C. Holding the conclusion in mind and being able to produce the supporting argument with effort. 
+D. Holding the conclusion in mind and remembering that the supporting argument was once grasped, but no longer being able to produce that argument, even with effort.
+
+## Case C
+
+- In the math case, this person can tell us the proof, but it takes some time. Still, I think they more-or-less understand why the theorem is true.
+- In the morality case, this person can recall which features of oysters make them ok to eat, and why those features matter. That's a big difference from the testimony case.
+
+## Case D
+
+Is this enough for understanding in either case.
+
+- Doesn't seem close to it in the math case; I'd say in that case I used to understand it.
+- But maybe, maybe, the morality case is different.
+
+## Two Oyster Examples
+
+- Dave doesn't know anything about oysters, but trusts Carla and takes her word for it that it's ok to eat them.
+- Carla had thought about it, and decided it was ok to eat them, but now can't even remember if it was something unexpected about their biology, or a moral distinction she hadn't considered, that made her think that.
+- Are these the same?
+
+## Summary
+
+Summary of this class:
+
+- The distinctions that Pasnau starts Ch 5 with are really interesting - as is (as always) the history of them.
+- But I think he's a bit negative about their relevance to epistemology.
+- They might not be relevant to **knowledge**, but they are relevant to **understanding**.
