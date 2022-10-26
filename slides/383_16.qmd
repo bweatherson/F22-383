@@ -242,8 +242,8 @@ And then the later states of them will involve having forgotten, either temporar
 
 The big gap is between C and D.
 
-C. Holding the conclusion in mind and being able to produce the supporting argument with effort. 
-D. Holding the conclusion in mind and remembering that the supporting argument was once grasped, but no longer being able to produce that argument, even with effort.
+C.  Holding the conclusion in mind and being able to produce the supporting argument with effort. 
+D.  Holding the conclusion in mind and remembering that the supporting argument was once grasped, but no longer being able to produce that argument, even with effort.
 
 ## Case C
 
