@@ -1,0 +1,390 @@
+---
+title: 'PHIL 383: Knowledge and Reality'
+author: "Brian Weatherson"
+date: "Fall 2022"
+format:
+  pdf:
+    documentclass: article
+    md-extensions: +compact_definition_lists
+    keep-tex: true
+    block-headings: false
+    pdf-engine: xelatex
+    include-in-header: 
+      - packages.tex
+  html:
+    minimal: true
+geometry: margin=1.5in
+mainfont: SF Pro Thin
+mainfontoptions: 
+ - BoldFont = SF Pro Rounded Semibold
+ - Scale = MatchLowercase
+mathfont: Fira Math
+---
+
+```{r setup, include=FALSE, cache=F, message=F, warning=F, results="hide"}
+knitr::opts_chunk$set(cache = TRUE)
+knitr::opts_chunk$set(fig.path = 'figs/')
+knitr::opts_chunk$set(cache.path = '_cache/')
+knitr::opts_chunk$set(warning = F, message = F)
+# knitr::opts_knit$get(kable.force.latex = TRUE)
+require(tidyverse)
+require(fontawesome)
+```
+
+```{r dates_bib, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE, dev = 'pdf')
+mon <- as.Date("2022-08-29") # Monday of the First Week
+tue <- mon + 1
+wed <- tue + 1
+thu <- wed + 1
+fri <- thu + 1
+# fri <- as.Date("2016-01-08")
+
+advdate <- function(obj, adv) {
+ theday <- obj + 7*(adv - 1)
+ ttheday <- format(theday, format = "%A, %B %d")
+ return(ttheday)
+}
+
+#library(RefManageR)
+## library(knitcitations)
+## library(rcrossref)
+#bib <- ReadBib("411bib.bib")
+#myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 20)
+
+```
+
+| **Lead Instructor**: Brian Weatherson
+| `r fa("far fa-envelope")` weath\@umich.edu
+| `r fa("fas fa-wifi")` canvas.umich.edu
+| 
+| **Office Hours**: Wednesday 10-11, Room 2207; Friday 10-11, Zoom.
+| 
+| **Discussion Section Leader**: Sumeet Patwardhan
+| `r fa("far fa-envelope")` sumeetcp\@umich.edu
+
+# Course Description
+
+This course discusses a number of topics in *epistemology*, the theory of knowledge. We will start with a very brief survey of some recent debates, mainly to ensure everyone is up to speed with what is assumed in the readings later in the course. Then the bulk of the course will be devoted to working through two recent books: *After Certainty* by Robert Pasnau, and *The Rationality of Perception* by Susanna Siegel. These books are designed to complement one another. Pasnau's book is a history of how European epistemology developed the way it did, focussing on two key periods, the early 14th century and the late 17th century. Siegel's book engages with contemporary empirical work on perception and, via considerations of the social and political significance of some features of perception, comes to a new view on the role of perception in epistemology. So hopefully looking at some contemporary work in light of historical work will give us fresh insights into both.
+
+# Canvas
+
+There is a Canvas site for this course, which can be accessed from <https://canvas.umich.edu>. Course documents (syllabus, lecture notes, assignments) will be available from this site. Please make sure that you can access this site. Consult the site regularly for announcements, including changes to the course schedule. And there are many tools on the site to communicate with each other, and with me.
+
+\newpage
+
+# Required Materials
+
+There are two books for the course. Both of them are available through the bookstore. You do not need physical versions of the books; I'll be primarily teaching off the electronic versions. The books are:
+
+-   *After Certainty: A History of Our Epistemic Ideals and Illusions*, by Robert Pasnau. Oxford University Press, 2017.
+-   *The Rationality of Perception*, by Susanna Siegel. Oxford University Press, 2017.
+
+Note that in class we'll be working through the main text of Pasnau's book, not the hundreds of pages of endnotes. These are not required reading, but I do encourage you to dip into them if you're interested in more detail on any of the points. The endnotes are basically blog posts, sometimes short essays, expanding on the text, and often filling in fascinating historical detail. But I'm not expecting everyone to read all of them in the middle of term.
+
+# Course Requirements
+
+1.  Participate in discussion section. This will require that you have read the relevant material closely, and thought about what to say about it. And it will require that you then participate in the discussions in section. This will help you learn, and it will help your classmates learn.
+
+2.  Do three online quizzes. At the end of each section of the course, there will be a short quiz to do on Canvas. The quizzes will be multiple choice.
+
+3.  Write three short essays. You will have to write a short paper, around 1500 words, on each of the three sections of the course. Topics will be distributed well in advance.
+
+# Grade Breakdown
+
+-   Discussion section participation: 10%;
+-   Three Quizzes: 10% each, for a total of 30%;
+-   Three Essays: 20% each, for a total of 60%.
+
+# Due Dates
+
+- Quiz One: `r advdate(fri, 5)`, 5pm.
+- Essay One: `r advdate(fri, 7)`, 5pm.
+- Quiz Two: `r advdate(fri, 9)`, 5pm.
+- Essay Two: `r advdate(fri, 10)`, 5pm.
+- Quiz Three: `r advdate(fri, 14)`, 5pm.
+- Essay Three: `r advdate(fri, 16)`, midday.
+
+
+\newpage
+
+The course is in three parts: Introduction, which is weeks 1-5, Pasnau, which is weeks 6-8, and Siegel, which is weeks 9-12. We will do some revision and general discussion of things that have come up in the course after that. The readings are mostly linked, except for the textbooks, and two pieces that are just through Canvas. Some of the links require UM authorisation; it's easiest to simply be on campus when you access them.
+
+# Part One: Introduction
+
+## `r advdate(mon, 1)`
+
+Topic
+:   Introducing the course
+
+Required Reading
+:   This syllabus
+
+Suggested Reading
+:   None
+
+## `r advdate(wed, 1)`
+
+Topic
+:   Classical Indian Philosophy
+
+Required Reading
+:   Stephen Phillips, [*Epistemology in Classical Indian Philosophy*](https://plato.stanford.edu/entries/epistemology-india/).
+
+Suggested Reading
+:   None
+
+## `r advdate(wed, 2)`
+
+Topic
+:   Testimony as a pramāṇa
+
+Required Reading
+:   Dhirendon Mohon Datta, [*Testimony as a Method of Knowledge*](https://www.jstor.org/stable/2249544).
+
+Suggested Reading
+:   Nick Leonard, [*Epistemological Problems of Testimony*](https://plato.stanford.edu/entries/testimony-episprob/), especially §§1 & 3.
+
+## `r advdate(mon, 3)`
+
+Topic
+:   Testimony and vigilance
+
+Required Reading
+:   Dan Sperber *et al*, [*Epistemic Vigilance*](https://doi.org/10.1111/j.1468-0017.2010.01394.x).
+
+Suggested Reading
+:   Kourken Michaelian, [*The Evolution of Testimony: Receiver Vigilance, Speaker Honesty and the Reliability of Communication*](https://doi.org/10.1017/epi.2013.2).
+
+## `r advdate(wed, 3)`
+
+Topic
+:   Internalism and Externalism
+
+Required Reading
+:   George Pappas, [*Internalist vs. Externalist Conceptions of Epistemic Justification*](https://plato.stanford.edu/entries/justep-intext/), §§7 & 10.
+:   Alvin Goldman and Bob Beddor, [*Reliabilist Epistemology*](https://plato.stanford.edu/entries/reliabilism/), §2.
+
+Suggested Reading
+:   The other sections of those articles.
+:   James Pryor, [*Highlights of Recent Epistemology*](https://www.jstor.org/stable/3541945), §3.
+
+## `r advdate(mon, 4)`
+
+Topic
+:   Political arguments for externalism
+
+Required Reading
+:   Amia Srinivasan, [*Radical Externalism*](https://doi.org/10.1215/00318108-8311261).
+
+Suggested Reading
+:   Zoë Johnson King, [*Radical Internalism*](https://www.zoejohnsonking.com/s/Radical-Internalism-draft-46.pdf).
+
+\newpage
+
+## `r advdate(wed, 4)`
+
+Topic
+:   Analysis of Knowledge
+
+Required Reading
+:   Jonathan Jenkins Ichikawa and Matthias Steup, [*Anaysis of Knowledge*](https://plato.stanford.edu/entries/knowledge-analysis/), §§1-7.
+
+Suggested Reading
+:   The rest of this entry.
+:   Edmund Gettier, [*Is Justified True Belief Knowledge?*](https://doi.org/10.1093/analys/23.6.121).
+
+## `r advdate(mon, 5)`
+
+Topic
+:   Virtue and knowledge
+
+Required Reading
+:   Ernest Sosa, *A Virtue Epistemology*. (available on Canvas)
+
+Suggested Reading
+:   John Turri, Mark Alfano, and John Greco, [*Virtue Epistemology*](https://plato.stanford.edu/entries/epistemology-virtue/).
+
+
+## `r advdate(wed, 5)`
+
+Topic
+:   Descartes on Scepticism
+
+Required Reading
+:   René Descartes, *Meditations on First Philosophy*, Meditations 1 and 2 (pages 6-13 of PDF available on Canvas).
+
+Suggested Reading
+:   The rest of the Meditations.
+
+## `r advdate(mon, 6)`
+
+Topic
+:   Modern Sceptical Arguments
+
+Required Reading
+:   Alex Byrne, [*How Hard are the Sceptical Paradoxes?*](https://doi.org/10.1111/j.1468-0068.2004.00471.x).
+
+Suggested Reading
+:   Brian Weatherson, [*Scepticism, Rationalism and Externalism*](http://brian.weatherson.org/html-papers/posts/2021-01-08-scepticism-rationalism-and-externalism/)
+
+# Part Two: Robert Pasnau on History of Epistemology
+
+Throughout this part, the best suggestions for extra readings will be to either read the extensive endnotes, or to follow up some of the primary sources that Pasnau discusses.
+
+## `r advdate(wed, 6)`
+
+Topic
+:   Ideals
+
+Required Reading
+:   Pasnau, Chapter 1
+
+## `r advdate(mon, 7)`
+
+Topic
+:   Certainty
+
+Required Reading
+:   Pasnau, Chapter 2
+
+Suggested Reading
+:    Hanti Lin, [*Bayesian Epistemology*](https://plato.stanford.edu/entries/epistemology-bayesian/)
+
+## `r advdate(wed, 7)`
+
+Topic
+:   Perception
+
+Required Reading
+:   Pasnau, Chapter 3
+
+## `r advdate(wed, 8)` and `r advdate(mon, 9)`
+
+Topic
+:   Illusion
+
+Required Reading
+:   Pasnau, Chapter 4
+
+## `r advdate(wed, 9)`
+
+Topic
+:   Proof
+
+Required Reading
+:   Pasnau, Chapter 5
+
+## `r advdate(mon, 10)`
+
+Topic
+:   Scepticism
+
+Required Reading
+:   Pasnau, Chapter 6
+
+# Part Three: Susanna Siegel on Perception
+
+## `r advdate(wed, 10)`
+
+Topic
+:   Hijacked Experience
+
+Required Reading
+:   Siegel, Preface and Chapter 1
+
+## `r advdate(mon, 11)`
+
+Topic
+:   Perceptions as Irrational
+
+Required Reading
+:   Siegel, Chapters 2 and 3
+
+## `r advdate(wed, 11)`
+
+Topic
+:   Epistemic Downgrade
+
+Required Reading
+:   Siegel, Chapter 4
+
+## `r advdate(mon, 12)`
+
+Topic
+:   Inference
+
+Required Reading
+:   Siegel, Chapter 5
+
+Suggested Reading
+:   Peter Railton, [*Comment on Susanna Siegel, The Rationality of Perception*](https://onlinelibrary.wiley.com/doi/10.1111/phpr.12735)
+
+## `r advdate(wed, 12)`
+
+Topic
+:   Inference and Experience
+
+Required Reading
+:   Siegel, Chapters 6-7
+
+## `r advdate(mon, 13)`
+
+Topic
+:   Perception and Selection
+
+Required Reading
+:   Siegel, Chapters 8-9
+
+## `r advdate(mon, 14)`
+
+Topic
+:   Perception and Culture
+
+Required Reading
+:   Siegel, Chapter 10
+
+## `r advdate(wed, 14)`
+
+Topic
+:    Critics of Siegel
+
+Required Reading
+:    Errol Lord, [*The Vices of Perception*](https://onlinelibrary.wiley.com/doi/10.1111/phpr.12734)
+:    Adam Pautz, [*The Arationality of Perception: Comments on Susanna Siegel*](https://onlinelibrary.wiley.com/doi/10.1111/phpr.12733)
+
+Suggested Reading
+:    Susanna Siegel, [*Replies to Lord, Railton and Pautz*](https://onlinelibrary.wiley.com/doi/10.1111/phpr.12737)
+
+- The last week will be for review, and for extra time for any topic we felt was too rushed through the course.
+
+\newpage
+# Co-Authorship
+
+You are allowed to co-author essays in this class. But there are some rules.
+
+1. Only essays, not quizzes, can be co-authored.
+2. Each paper can have at most two co-authors.
+3. You can only co-author one paper with each co-author. (That is, you can co-author multiple papers, but you have to have different collaborators each time.)
+4. Each person has to turn the paper in on Canvas, and it has to be clearly marked as a co-authored piece.
+
+# Anonymous Grading
+
+We aim to grade work anonymously as much as possible. So when you turn in papers, do not include your name on the PDF or DOCX file that you turn in. You should just include your UMID as a way of getting the paper back to you if it gets misfiled. (And if it is co-authored, make the two ID numbers prominent, so we don't think there was in class copying!) Canvas can show us the paper without telling us who turned it in, so as long as there are no identifying marks on the paper itself we can grade the papers anonymously. We think this is a fairer way to grade papers, and we appreciate your help in making this possible.
+
+# Plagiarism
+
+Although team-work, and even co-authorship, is encouraged, plagiarism is strictly prohibited. You are responsible for making sure that none of your work is plagiarized. Be sure to cite work that you use, both direct quotations and paraphrased ideas. Any citation method that is tolerably clear is permitted, but if you'd like a good description of a citation scheme that works well in philosophy, look at <http://bit.ly/VDhRJ4>.
+
+You are encouraged to discuss the course material, including assignments, with your classmates, but all written work that you hand in under your own name/ID number must be your own. If work is handed is as the work of two people, you are affirming that each person did a fair share of the work.
+
+You should also be familiar with the academic integrity policies of the College of Literature, Science & the Arts at the University of Michigan, which are available here: <https://lsa.umich.edu/lsa/academics/academic-integrity.html>. Violations of these policies will be reported to the Office of the Assistant Dean for Student Academic Affairs, and sanctioned with a course grade of F.
+
+# Disability
+
+The University of Michigan abides by the Americans with Disabilities Act of 1990, Section 504 of the Rehabilitation Act of 1973, and other applicable federal and state laws that prohibit discrimination on the basis of disability, which mandate that reasonable accommodations be provided for qualified students with disabilities.
+
+If you have a disability, and may require some type of instructional and/or examination accommodation, please contact me early in the semester. If you have not already done so, you will also need to register with the Office of Services for Students with Disabilities. The office is located at G664 Haven Hall.
+
+For more information on disability services at the University of Michigan, go to <http://ssd.umich.edu>.
+
