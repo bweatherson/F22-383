@@ -1,0 +1,229 @@
+---
+title: "Knowledge and Reality, Lecture 18"
+author: "Brian Weatherson"
+date: 2022-11-02
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+## Reminder
+
+- Election day is 6 days away.
+- You can vote at UMMA, just outside this building
+
+# A Grand Theory of Perception
+
+## Four Steps
+
+1. Physical world $\rightarrow$ sensory irritations
+2. Sensory irritations $\rightarrow$ experiences
+3. Experiences $\rightarrow$ beliefs
+4. Beliefs $\rightarrow$ actions
+
+## World to Inputs
+
+We mostly think this is a matter for the scientists to discover.
+
+- But note that there are two kinds of philosopher who disagree.
+
+## World to Inputs
+
+Sceptics think that there may not be an external world.
+
+- And if not, the external world can't cause sensory irritations.
+- But we're by and large setting them aside.
+- For this part of the course, assume there is an external world, and it is much like science says it is.
+
+## World to Input
+
+Idealists (in this sense of idealist) deny that the external world is _physical_.
+
+- They think that the world is in some sense fundamentally mental.
+- Perhaps the entire world is a construction out of (perhaps merely possible) sense-experiences.
+- Again, set that view to one side, though until recently it was _very_ popular in Western philosophy.
+
+## Inputs to Experiences
+
+We don't see firing rates in the optic nerve, or hear vibrations in the inner ear.
+
+- It's only when these things are converted into experiences that we have perceptions.
+- There are a few reasons to think that we are sensitive to things that we don't consciously experience - e.g., blindsight, or very fast reactions.
+- But we'll mostly pay attention to things where the is a conscious experience.
+
+## Inputs to Experiences
+
+I'll sometimes call these things 'appearances' or 'looks', when talking about visual experience.
+
+- These are all meant to be the same kind of thing.
+- As we get further into the book, we'll fuss more about some details here.
+
+## Experiences to Beliefs
+
+We don't believe everything we see.
+
+- Sometimes we ignore it. Actually most of the time I guess that's true; I have almost no beliefs about the periphery of my vision most of the time.
+- Sometimes we overrule it, when we think something must be illusory.
+- But we're interested in perception because so often we do take things to be as they appear.
+
+## Beliefs to Action
+
+And sometimes belief leads to action.
+
+- Not always in the way that would be optimal
+- Sometimes there is a deer in the headlights effect
+- Sometimes someone is committed to an action and does it even when they know by perception it would be wrong/pointles.
+- But often enough.
+
+## Four Steps
+
+1. Physical world $\rightarrow$ sensory irritations
+2. Sensory irritations $\rightarrow$ experiences
+3. Experiences $\rightarrow$ beliefs
+4. Beliefs $\rightarrow$ actions
+
+
+## Where Does Philosophy Fit In?
+
+A simple view:
+
+- No role for philosophy at steps 1 and 2; they are just scientific question.
+- Epistemology has a lot to say about step 3, about how beliefs are formed.
+- And practical philosophy (ethics, philosophy of action) has a lot to say about step 4.
+
+## Where Does Philosophy Fit In?
+
+Siegel's view:
+
+- Somewhat sympathetic to the simple view about step 1, though we'll come back to it.
+- But thinks that the theory of rationality should cover all of steps 2 to 4.
+
+# Differences Between the Stages
+
+## Three Questions
+
+- Which of the four stages is under voluntary control (or anything like it)?
+- Which of the four stages reflects skill on the part of the perceiver?
+- Which of the four involves (or should involve) other beliefs?
+
+## Voluntary Control
+
+- Stage 1 seems to. You can turn your head, close your eyes, shift your attention, or zone out.
+- Stage 2 is a little harder to see intuitively, though maybe focus can do it.
+
+---
+
+![The necker cube 'illusion](../images/necker.png){height=60%}
+
+## Voluntary Control
+
+- Stage 3 doesn't seem to be voluntary; you can't just decide that this experience is good evidence that it will snow tonight.
+- Stage 4 does seem voluntary; actions are paradigmatically voluntary (in normal circumstances)
+
+## Voluntary Control
+
+- We'll want to come back to this point; you might think given the focus of epistemologists on stage 3, it should be **more** voluntary than the others.
+
+## Skill
+
+Seems pretty clear that 1, 3 and 4 can show skill.
+
+- Looking in the right places is a skill.
+- Drawing the right inferences is a skill.
+- Acting sensibily is a skill.
+
+## Skilled Looking
+
+What's interesting is how much 2 seems to be a skill as well.
+
+- An expert musician can *hear* what's wrong with an instrument/performance.
+- A skilled neo-natal nurse can *see* that a baby is jaundiced.
+
+## Skill
+
+There doesn't seem to be any difference between the steps here.
+
+## Penetration
+
+For better or worse, the term 'cognitive penetration' has become to standard term for when a part of the mind is sensitive to other beliefs the person has.
+
+- A big question in philosophy and psychology for the last few decades has been how much cognitive penetration there is, and should be.
+
+## Belief
+
+Imagine that as leaving this classroom, you have the experience as of glancing an elephant from the corner of your eye.
+
+- You should (and probably would) believe this is some kind of illusion.
+- This isn't a zoo, and getting an elephant up those stairs (or worse still, into those awful elevators) would be tough.
+
+## Belief
+
+What you believe on the basis of an experience is, and should be, sensitive to what else you believe.
+
+- As we sometimes put it, belief formation should be holistic.
+
+## Experience
+
+Big questions:
+
+1. How much is experience sensitive to what we antecedently believe?
+2. How sensitive should it be?
+
+## Experience
+
+One view:
+
+- Experience is, and should be, isolated from belief.
+- If someone sets up a careful illusion as of an elephant in the hallway, you should (and probably would) quickly infer that it is an illustion.
+- But you should, and probably would, get the illusory experience. You should have the experience of an elephant.
+
+## Experience
+
+Of course, things can't be quite this simple.
+
+- Skill can change how the world looks. Think again about the musician or the nurse.
+- But the thought on this view is that belief alone doesn't do that; it's a distinct task to acquire this skill.
+
+## Siegel's Position
+
+1. Background beliefs can affect experiences themselves, not just what conclusions we draw from them.
+2. While this could be good, if the background beliefs are irrational, and especially if they are pernicious, as in the case of racist or otherwise prejudiced beliefs, the experiences themselves are irrational.
+
+## Siegel's Position
+
+That is, we can ask about the rationality of the irritation $\rightarrow$ experience transition, along with other transitions in the perceptual process.
+
+# Experience Modification as a Good
+
+## Helping and Hijacking
+
+
+
+
+# Experiences
+
+## Step 2 - Irritations $\rightarrow$ Experiences
+
