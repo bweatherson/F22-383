@@ -32,11 +32,6 @@ format:
        }
 ---
 
-## Reminder
-
-- Election day is 6 days away.
-- You can vote at UMMA, just outside this building
-
 # A Grand Theory of Perception
 
 ## Four Steps
@@ -66,6 +61,11 @@ Idealists (in this sense of idealist) deny that the external world is _physical_
 
 - They think that the world is in some sense fundamentally mental.
 - Perhaps the entire world is a construction out of (perhaps merely possible) sense-experiences.
+
+## World to Input
+
+Idealists (in this sense of idealist) deny that the external world is _physical_.
+
 - Again, set that view to one side, though until recently it was _very_ popular in Western philosophy.
 
 ## Inputs to Experiences
@@ -74,6 +74,11 @@ We don't see firing rates in the optic nerve, or hear vibrations in the inner ea
 
 - It's only when these things are converted into experiences that we have perceptions.
 - There are a few reasons to think that we are sensitive to things that we don't consciously experience - e.g., blindsight, or very fast reactions.
+
+## Inputs to Experiences
+
+We don't see firing rates in the optic nerve, or hear vibrations in the inner ear.
+
 - But we'll mostly pay attention to things where the is a conscious experience.
 
 ## Inputs to Experiences
@@ -89,6 +94,11 @@ We don't believe everything we see.
 
 - Sometimes we ignore it. Actually most of the time I guess that's true; I have almost no beliefs about the periphery of my vision most of the time.
 - Sometimes we overrule it, when we think something must be illusory.
+
+## Experiences to Beliefs
+
+We don't believe everything we see.
+
 - But we're interested in perception because so often we do take things to be as they appear.
 
 ## Beliefs to Action
@@ -179,6 +189,11 @@ For better or worse, the term 'cognitive penetration' has become to standard ter
 Imagine that as leaving this classroom, you have the experience as of glancing an elephant from the corner of your eye.
 
 - You should (and probably would) believe this is some kind of illusion.
+
+## Belief
+
+Imagine that as leaving this classroom, you have the experience as of glancing an elephant from the corner of your eye.
+
 - This isn't a zoo, and getting an elephant up those stairs (or worse still, into those awful elevators) would be tough.
 
 ## Belief
@@ -200,7 +215,7 @@ One view:
 
 - Experience is, and should be, isolated from belief.
 - If someone sets up a careful illusion as of an elephant in the hallway, you should (and probably would) quickly infer that it is an illustion.
-- But you should, and probably would, get the illusory experience. You should have the experience of an elephant.
+- But you should, and probably would, get the illusory experience. You'd have the experience of an elephant.
 
 ## Experience
 
@@ -225,6 +240,11 @@ That is, we can ask about the rationality of the irritation $\rightarrow$ experi
 The big theme of this chapter is that experience can be **hijacked** by bad prior beliefs.
 
 - Side note: I'm calling these beliefs, but there is a *big* debate about whether prejudices in general are beliefs. Maybe we'll come back to that.
+
+## Helping and Hijacking
+
+The big theme of this chapter is that experience can be **hijacked** by bad prior beliefs.
+
 - Worth spending some time on the case where they are influenced by good beliefs.
 - What's the best word here? Not hijacked really.
 
@@ -233,6 +253,9 @@ The big theme of this chapter is that experience can be **hijacked** by bad prio
 Some of the skilled observing cases I talked about earlier are like this.
 
 - Plausibly linguistic interpretation is like this too.
+
+## Good Cases
+
 - Chess players are better at remembering positions of pieces on a board, but that advantage falls away a lot when the positions are not real game positions.
 - Your experience of these very words is affected by the fact that you know that they are words, and what they mean.
 

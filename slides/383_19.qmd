@@ -1,0 +1,325 @@
+---
+title: "Knowledge and Reality, Lecture 19"
+author: "Brian Weatherson"
+date: 2022-11-07
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    classoption: 
+      - '`xcolor={dvipsnames}`{=latex}'
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Experience
+
+## Big Question
+
+Is experience sensitive to background beliefs, skills, or dispositions?
+
+## Argument from Illusion
+
+Here is one reason to think that it is not.
+
+- We see illusions the way they are 'meant' to be seen even when we know better.
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+![Edward Adelson's checker-shadow illusion](../images/checker_shadow.png){height=80%}
+
+## Checker Shadow
+
+1. The squares A and B are the same shade on the page.
+2. They don't look that way!
+3. They stay not looking that way even when you know better.
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+![Showing that A and B are the same](../images/checkershadow_double.jpg){height=80%}
+
+## Argument
+
+1. If experience were penetrated by belief, then once we believed A and B were the same, they'd look the same.
+2. They don't look the same, even once we know they are.
+C.  So, experience isn't penetrated by belief
+
+## What's Wrong with this Argument
+
+It just shows that a certain kind of penetration doesn't work.
+
+- Lots of other ways for belief to affect experience other than that.
+
+## Memorisation Test {.plain}
+
+![The position after move 22 in game 11 of 2021 World Championship](../images/chess_gm11.png){height=80%}
+
+## Two Empirical Claims
+
+1. Expert chess players do much better at remembering that position after seeing it for a few seconds than the rest of us. (Not including you if you're an expert!)
+2. They aren't *much* better at memorising boards where pieces are just randomly spread around a board.
+
+## Hypothesis
+
+1. Chess players see the board as a game state, and hence remember it better.
+2. That doesn't work for random distributions, except to the extent that some of the pieces fall into game-like distributions.
+
+## Stroop Effect
+
+It's really hard - I mean *really* hard - to perceive words in languages you can read as anything other than words.
+
+- On the next slide, say (to yourself) as quickly as possible the colors that each word is written in.
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+::: columns
+
+:::: {.column width=25%}
+```\LARGE{
+\textcolor{Blue}{Blue} \\
+\textcolor{Brown}{Brown}  \\
+\textcolor{ForestGreen}{Green}
+}```{=latex}
+::::
+
+:::: {.column width=25%}
+```\LARGE{
+ \textcolor{Purple}{Purple}    \\
+ \textcolor{BrickRed}{Red}    \\   
+ \textcolor{Yellow}{Yellow}
+}```{=latex}
+::::
+
+:::: {.column width=25%}
+```\LARGE{
+ \textcolor{Aquamarine}{Teal} \\
+ \textcolor{Black}{Black} \\
+ \textcolor{Rhodamine}{Pink}
+}```{=latex}
+::::
+
+
+:::
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+Let's try it again, with some rotations.
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+::: columns
+
+:::: {.column width=25%}
+```\LARGE{
+\textcolor{Blue}{Red} \\
+\textcolor{Brown}{Yellow}  \\
+\textcolor{ForestGreen}{Teal}
+}```{=latex}
+::::
+
+:::: {.column width=25%}
+```\LARGE{
+ \textcolor{Purple}{Black}    \\
+ \textcolor{BrickRed}{Pink}    \\   
+ \textcolor{Yellow}{Blue}
+}```{=latex}
+::::
+
+:::: {.column width=25%}
+```\LARGE{
+ \textcolor{Aquamarine}{Brown} \\
+ \textcolor{Black}{Green} \\
+ \textcolor{Rhodamine}{Purple}
+}```{=latex}
+::::
+
+
+:::
+
+## Hijacking
+
+Typically, people who can read English will do worse on this than people who cannot.
+
+- If you can read English, your perception of the words will hijack your color perception.
+- Again, feels like something is getting in the way of perception.
+
+## Big Picture
+
+- Something in background effects how things look.
+- That effect is evaluable.
+- If it is both bad for accuracy and not supported by evidence, it seems to make the perception itself irrational.
+
+# Inference and Rationality
+
+## Siegel's Picture
+
+1. Experiences are the product of (something like) inference.
+2. The products of inference are assessable as rational/irrational.
+C.  Experiences are assessable as rational/irrational.
+
+## Evaluating Inferences
+
+- In theory, can ask about whether the premises are well-supported, and about whether the inference follows from the premises.
+- In practice, hard to make this distinction out.
+- Everyone who looks like they are reasoning in a way that doesn't follow could be implicitly believing "If premises, then conclusion."
+
+## Rational
+
+Note that Siegel is explicitly using 'rational' and 'reasonable' as synonyms.
+
+- This makes sense given their etymologies.
+- Occasionally you do see them used as technical terms for different things, but I like Siegel's way of doing things.
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+"It is standard to call a belief “well-founded” if it has been formed and maintained epistemically well, and “ill-founded” if it has been formed or maintained epistemically badly. I follow standard usage, and tie it to my abstract uses of “rational” and “irrational” in the following way: a belief is ill-founded if it is formed or maintained irrationally, well-founded if it is formed and maintained rationally."
+
+## Bad Inquiry
+
+One puzzle case.
+
+- Detective makes silly choice about where to conduct inquiry, and thinks it will be good to conduct inquiries at Blank Slate.
+- This is false - there is no evidence there.
+
+## Bad Inquiry
+
+Detective goes to Blank Slate, and sees that they have green tea ice cream for sale.
+
+- Is this belief, that they have green tea ice cream, well-founded.
+- Well, it was formed in an epistemically bad way - by going to the wrong place!
+- But that's really not what Siegel means.
+
+## Bad Inquiry
+
+I think it's actually a little hard to say precisely what she does mean, but I get (and have appealed to, in this course) the general idea.
+
+- If you believe *p* because you inferred it from a silly premise, it's not well-founded.
+- And similar beliefs are also not well-founded.
+
+## Experience
+
+And that's going to feed into the picture of experience.
+
+- Seeing something as a power tool, a phone, or a gun, isn't something that happens automatically, like seeing it as light or dark.
+- It requires extra inputs, and those might be bad ones.
+
+# Two Arguments against Rationality of Perception
+
+## Section 3.1
+
+I want to end today's lecture with two arguments from section 3.1, about why one might think Siegel's argument is wrong, and experiences cannot be evaluated the way beliefs can.
+
+1. Backward-looking;
+2. Forward-looking.
+
+## Backward-Looking
+
+1. Experiences are formed passively.
+2. Beliefs are formed actively.
+3. Only actively formed states are assessable as rational or irrational.
+C.  So beliefs, but not experiences, are assessable as rational or irrational.
+
+## Siegel's Response
+
+- Premise 2 is ambiguous.
+- But on any plausible disambiguation, it is false.
+
+## What Activity Might Be (1)
+
+Activity might be phenomenological; we feel ourselves forming beliefs.
+
+- But this only applies to a small fraction of our beliefs.
+- And the ones it doesn't apply to are still capable of being rational or irrational.
+
+## What Activity Might Be (2)
+
+Activity might mean involving reasoning; our beliefs come from reasoning.
+
+- Again, this is true for only a small fraction of our beliefs.
+- You didn't reason to the conclusion that there are words on the screen now.
+- But all beliefs, even the not-formed-by-reasoning ones, can be rational or irrational.
+
+## What Activity Might Be (3)
+
+Activity might mean involving reflection.
+
+- Even if you didn't reason to the belief that there are words on the screen, or in any sense *reflect* before forming that belief, you *could have* reflected on it.
+- Maybe belief is active in that sense.
+
+## What Activity Might Be (3)
+
+But again, not everything can be reflective.
+
+- Toddlers don't have this kind of capacity for reflection, but can have rational beliefs.
+
+## Forward-Looking
+
+1. Experiences cannot be adjusted.
+2. Beliefs can be adjusted.
+3. Being adjustable is necessary for being assessable for rationality.
+C.  So beliefs, but not experiences, are assessable as rational.
+
+## What Might Adjustable Mean Here
+
+1. Subject to deliberation
+2. Capable of being disowned
+3. Change by habituation
+
+## What Might Adjustable Mean (1)
+
+If we mean that the believer can deliberate their way out of them, then delusional beliefs are not rational or irrational.
+
+- But in fact they are irrational.
+- NB: I'm not so sure here; some of the cases Siegel mentions (like Capgras) feel almost *arational*.
+
+## What Might Adjustable Mean (2)
+
+If we mean by adjustable that they can be disowned, this doesn't distinguish experience from belief.
+
+- Experiences can be disowned.
+- This isn't in the sense that you don't have them (again, think of the checker-shadow), but that you don't act on them.
+
+## What Might Adjustable Mean (2)
+
+Note that this is a change from the previous 4 things we looked at.
+
+- Now we're denying that experiences lack the property in question, rather than that beliefs have the property.
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+In the case of belief, ceasing to rely on a belief can’t come apart from ceasing to have the belief.
+
+- This doesn't seem right to me.
+- A good juror can cease to rely on a belief from outside the court without ceasing to have it.
+- There are hard questions here about what it means to rely on a belief, but they are practically significant.
+
+## What Might Adjustable Mean (3)
+
+Maybe we can habituate ourselves into not forming beliefs a certain way.
+
+- But it's even more plausible that we can habituate ourselves into not experiencing things a certain way.
+- We can learn to hear an instrument as out of tune, to see a face as expressing a different emotion, and so on.
+
+## For Next Time
+
+We'll move on to chapter 4
