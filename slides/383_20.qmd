@@ -1,0 +1,301 @@
+---
+title: "Knowledge and Reality, Lecture 20"
+author: "Brian Weatherson"
+date: 2022-11-07
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    classoption: 
+      - '`xcolor={dvipsnames}`{=latex}'
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+
+# Two Arguments against Rationality of Perception
+
+## Section 3.1
+
+I want to **start** today's lecture with two arguments from section 3.1, about why one might think Siegel's argument is wrong, and experiences cannot be evaluated the way beliefs can.
+
+1. Backward-looking;
+2. Forward-looking.
+
+## Backward-Looking
+
+1. Experiences are formed passively.
+2. Beliefs are formed actively.
+3. Only actively formed states are assessable as rational or irrational.
+C.  So beliefs, but not experiences, are assessable as rational or irrational.
+
+## Siegel's Response
+
+- Premise 2 is ambiguous.
+- But on any plausible disambiguation, it is false.
+
+## What Activity Might Be (1)
+
+Activity might be phenomenological; we feel ourselves forming beliefs.
+
+- But this only applies to a small fraction of our beliefs.
+- And the ones it doesn't apply to are still capable of being rational or irrational.
+
+## What Activity Might Be (2)
+
+Activity might mean involving reasoning; our beliefs come from reasoning.
+
+- Again, this is true for only a small fraction of our beliefs.
+- You didn't reason to the conclusion that there are words on the screen now.
+- But all beliefs, even the not-formed-by-reasoning ones, can be rational or irrational.
+
+## What Activity Might Be (3)
+
+Activity might mean involving reflection.
+
+- Even if you didn't reason to the belief that there are words on the screen, or in any sense *reflect* before forming that belief, you *could have* reflected on it.
+- Maybe belief is active in that sense.
+
+## What Activity Might Be (3)
+
+But again, not everything can be reflective.
+
+- Toddlers don't have this kind of capacity for reflection, but can have rational beliefs.
+
+## Forward-Looking
+
+1. Experiences cannot be adjusted.
+2. Beliefs can be adjusted.
+3. Being adjustable is necessary for being assessable for rationality.
+C.  So beliefs, but not experiences, are assessable as rational.
+
+## What Might Adjustable Mean Here
+
+1. Subject to deliberation
+2. Capable of being disowned
+3. Change by habituation
+
+## What Might Adjustable Mean (1)
+
+If we mean that the believer can deliberate their way out of them, then delusional beliefs are not rational or irrational.
+
+- But in fact they are irrational.
+- NB: I'm not so sure here; some of the cases Siegel mentions (like Capgras) feel almost *arational*.
+
+## What Might Adjustable Mean (2)
+
+If we mean by adjustable that they can be disowned, this doesn't distinguish experience from belief.
+
+- Experiences can be disowned.
+- This isn't in the sense that you don't have them (again, think of the checker-shadow), but that you don't act on them.
+
+## What Might Adjustable Mean (2)
+
+Note that this is a change from the previous 4 things we looked at.
+
+- Now we're denying that experiences lack the property in question, rather than that beliefs have the property.
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+In the case of belief, ceasing to rely on a belief can’t come apart from ceasing to have the belief.
+
+- This doesn't seem right to me.
+- A good juror can cease to rely on a belief from outside the court without ceasing to have it.
+- There are hard questions here about what it means to rely on a belief, but they are practically significant.
+
+## What Might Adjustable Mean (3)
+
+Maybe we can habituate ourselves into not forming beliefs a certain way.
+
+- But it's even more plausible that we can habituate ourselves into not experiencing things a certain way.
+- We can learn to hear an instrument as out of tune, to see a face as expressing a different emotion, and so on.
+
+# Setting Up Chapter 4
+
+## The Pink Drink and the Bird
+
+Why are there two examples here and not just one?
+
+- What differences are there between the examples?
+- Why do those differences matter?
+
+## The Pink Drink and the Bird
+
+I guess it's because she wants to be explicit that she cares about both perception of objects (like the drink) and perception of events (like the flying).
+
+- Is there any reason to think these would pattern differently with respect to what we care about here?
+
+## Reason-Power and Forward-Looking Power
+
+Just what is the difference between these?
+
+- Let's start with the text.
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+- Your visual experience gives you excellent reason to believe that the drink is pink. 
+- Your visual experience (in which the bird looks to be moving) gives you excellent reason to believe that the bird is flying away.
+
+Page 60
+
+## Reason-Power
+
+Experienes give you excellent reason to belief in their contents (or something like them).
+
+## Two Kinds of Reason
+
+- Motivating
+- Justifying
+- Siegel is, I think, interested in **justifying** reasons.
+
+## Forward-Looking Power
+
+Again, start with some quotes
+
+`\end{frame} \begin{frame}[plain]`{=latex}
+
+- If you form the belief that the drink is pink on the basis of the visual experience, ceteris paribus, you’ll have a well-founded belief.  
+- If you form the belief that the bird is flying away on the basis of your visual experience (in which the bird looks to be moving), ceteris paribus, you’ll have a well-founded belief.
+
+Page 60
+
+## Forward-Looking Power
+
+Experiences tend to make beliefs in their contents well-founded.
+
+## What is the Difference
+
+- Providing a reason for the belief vs making the belief well-founded;
+- This is sort of a backwards-looking vs forward-looking distinction;
+- Except it's looking forward to a backwards looking thing.
+
+## The Powers Together
+
+You'd think they go together fairly tightly.
+
+- As Siegel says, experiences typically seem to have sort of both.
+- And the forward-looking power might be explained by the reason-power.
+
+## Reason-Power without Forward-Looking Power
+
+Maybe if:
+
+(a) The reason provided is very very weak; and
+(b) There is independent reason to believe otherwise.
+
+## Forward-Looking Power without Reason-Power
+
+Maybe if beliefs can be well-founded by things other than reasons.
+
+- We get deep into murky waters about the metaphysics of reasons here, and I'm not going to go firther.
+- Footnote 5 suggests this is why Siegel is not going further this way either.
+
+# Four Theories of Perceptual Justification
+
+## Four Theories
+
+1. Disjunctivist/Naïve Realist
+2. Reliabilist
+3. Inferentialist
+4. Dogmatist
+
+## Disjunctivist
+
+- Appearances/experiences on their own have little epistemic charge.
+- What has power is **perception**, where this is understood as a success term.
+- This is very externalist; what is happening on an occasion, and what force it has, depends on external factors.
+
+## Reliabilist
+
+- Anything can provide positive charge as long as it is reliably tied to reality.
+- Typically, experiences are reliably tied to reality.
+- There is nothing particularly special about perception.
+
+## Inferentialist
+
+- On their own, experiences just provide positive charge for the proposition that one is having the experience.
+- Extra step needed to get to claims about the external world.
+- Lots of options for next step.
+
+## Inferentialist
+
+- One choice: what is the link claim? Presumably something about reliable connection.
+- Second choice: how is the link claim grounded? IBE, Basic, something else?
+- Third choice: does the individual perceiver have to appreciate the ground?
+
+## Dogmatist
+
+- In the first instance, experiences provide positive charge for the proposition that one is having the experience.
+- But unless something stops them, they also provide positive charge for external world propositions.
+- And the 'something' has to be accessible to the perceiver.
+
+## Dogmatist
+
+The big difference with the inferentialist concerns presence vs absence of reasons.
+
+- The inferentialist thinks you need a positive reason to go from Looks *p* to *p*.
+- The dogmatist thinks you need an absence of defeating reasons to go from Looks *p* to *p*.
+
+## How They Play with Rationality of Perception
+
+Disjunctivism is no problem.
+
+- In the bad case you don't have real perception, just apparent perception.
+- So there isn't much charge there.
+
+## How They Play with Rationality of Perception
+
+Reliabilism isn't much of a problem.
+
+- Provided we get the **reference class** right, the bad cases will be actually unreliable.
+- Bit of a trick here about getting the reference classes right, but not a big deal.
+
+## How They Play with Rationality of Perception
+
+Inferentialism isn't much of a problem.
+
+- Provided the 'link' is defeasible, and doesn't work in all cases, you can easily get that the support fails.
+
+## How They Play with Rationality of Perception
+
+Dogmatism does look like a problem.
+
+- Hijacked perception lacks defeaters that are apparent to the perceiver.
+- So the dogmatist thinks they have full charge.
+- But they don't.
+
+## Two Dogmatist Responses
+
+1. Maybe the perceiver could tell there was a problem; this seems optimistic.
+2. Maybe dogmatism just applies to a much narrower band of properties.
+
+## Dogmatism and Perception
+
+Most actual dogmatists don't think we really **perceive** things like that something is a gun or a power-tool.
+
+- They think we just perceive things like shapes and colors.
+- This might be an implausible theory of perception, but it makes it seem more plausible that they couldn't be hijacked.
+
+## For Next Time
+
+Chapter 5
