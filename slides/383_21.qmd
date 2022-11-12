@@ -1,0 +1,249 @@
+---
+title: "Knowledge and Reality, Lecture 21"
+author: "Brian Weatherson"
+date: 2022-11-07
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    classoption: 
+      - '`xcolor={dvipsnames}`{=latex}'
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+## Plan
+
+1. Theories of perception and how Siegel's theory relates to them.
+2. Setting up questions about inference.
+3. Siegel's objection to taking theory
+
+
+# Four Theories of Perceptual Justification
+
+## Four Theories
+
+1. Disjunctivist/Naïve Realist
+2. Reliabilist
+3. Inferentialist
+4. Dogmatist
+
+## Disjunctivist
+
+- Appearances/experiences on their own have little epistemic charge.
+- What has power is **perception**, where this is understood as a success term.
+- This is very externalist; what is happening on an occasion, and what force it has, depends on external factors.
+
+## Disjunctivist
+
+This is the natural theory to adopt if you have what Pasnau called a **diaphonous** view of perception.
+
+- If what one sees is that there is a desk, not that one is having an experience of a desk, then it is natural to simply take the desk to be the inputs to later reasoning.
+
+## Reliabilist
+
+- Anything can provide positive charge as long as it is reliably tied to reality.
+- Typically, experiences are reliably tied to reality.
+- There is nothing particularly special about perception.
+
+## Inferentialist
+
+- On their own, experiences just provide positive charge for the proposition that one is having the experience.
+- Extra step needed to get to claims about the external world.
+- Lots of options for next step.
+
+## Inferentialist
+
+- One choice: what is the link claim? Presumably something about reliable connection.
+- Second choice: how is the link claim grounded? IBE, Basic, something else?
+- Third choice: does the individual perceiver have to appreciate the ground?
+
+## Dogmatist
+
+- In the first instance, experiences provide positive charge for the proposition that one is having the experience.
+- But unless something stops them, they also provide positive charge for external world propositions.
+- And the 'something' has to be accessible to the perceiver.
+
+## Dogmatist
+
+The big difference with the inferentialist concerns presence vs absence of reasons.
+
+- The inferentialist thinks you need a positive reason to go from Looks *p* to *p*.
+- The dogmatist thinks you need an absence of defeating reasons to go from Looks *p* to *p*.
+
+## How They Play with Rationality of Perception
+
+What we want to do next is to see how plausible these theories are if we think Siegel is right and perception itself can be rational or irrational.
+
+- The argument for that is hardly complete, so this is a slightly weird thing to do at this stage.
+- And you could think any incompatibilities here are problems for Siegel.
+
+## How They Play with Rationality of Perception
+
+Disjunctivism is no problem.
+
+- In the bad case you don't have real perception, just apparent perception.
+- So there isn't much charge there.
+
+## How They Play with Rationality of Perception
+
+Reliabilism isn't much of a problem.
+
+- Provided we get the **reference class** right, the bad cases will be actually unreliable.
+- Bit of a trick here about getting the reference classes right, but not a big deal.
+
+## How They Play with Rationality of Perception
+
+Inferentialism isn't much of a problem.
+
+- Provided the 'link' is defeasible, and doesn't work in all cases, you can easily get that the support fails.
+
+## How They Play with Rationality of Perception
+
+Dogmatism does look like a problem.
+
+- Hijacked perception lacks defeaters that are apparent to the perceiver.
+- So the dogmatist thinks they have full charge.
+- But they don't.
+
+## Two Dogmatist Responses
+
+1. Maybe the perceiver could tell there was a problem; this seems optimistic.
+2. Maybe dogmatism just applies to a much narrower band of properties.
+
+## Dogmatism and Perception
+
+Most actual dogmatists don't think we really **perceive** things like that something is a gun or a power-tool.
+
+- They think we just perceive things like shapes and colors.
+- And it's much harder for those to be hijacked.
+
+# What is Inference
+
+## Inference
+
+We often form mental states by inference.
+
+- But what does this mean?
+
+## Causation
+
+If state S2 is the result of inference from S1, then S1 must cause S2.
+
+- Inference doesn't just mean that S1 would have been a good reason to believe S2.
+- It means S2 must actually come from S1.
+
+## Causation
+
+But causation is not sufficient.
+
+- Imagine I hear a song in the supermarket, and it reminds me of a beach holiday where we played that song a lot.
+- The hearing state causes the remembering state, but I don't **infer** anything about the holiday from the song.
+
+## States Not Contents
+
+Informally, we can sometimes say things like this.
+
+- "Holmes inferred that the butler did it from the fact that no one else had access to the murder weapon."
+- This suggests that inference is a relation between facts.
+
+## States Not Contents
+
+Inference can't be a relation between facts.
+
+- Sometimes we draw inferences from mistaken beliefs, and they aren't facts.
+- But there is a more subtle question that's harder to answer.
+
+## States Not Contents
+
+Is Holmes's inference a relation between:
+
+1. The proposition that no one else had access to the murder weapon, and the proposition that the butler did it; or
+2. Holmes's belief that no one else had access to the murder weapon, and his belief that the butler did it?
+
+## States Not Contents
+
+As the header might make clear, Siegel takes the answer to be 2.
+
+- And this makes sense if you care about causation.
+- The fact that no one else had access doesn't cause the butler's crime.
+- But the belief that no one else had access does cause Holmes's belief.
+
+## Which States
+
+If inference was tightly tied to contents, then it would be natural to think that it primarily related **beliefs**.
+
+- This is **not** Siegel's view.
+- She thinks that any number of states can be related by inference.
+
+## Which States
+
+This could be an inference.
+
+1. Desire to have omelette for dinner.
+2. Beliefs that (a) I'm out of eggs, (b) that the only nearby places to get eggs are Sparrow and the Co-op, and (c) roadworks make it unpleasant to go the Co-op.
+C.  Intention to go to Sparrow.
+
+## A Test?
+
+Here is a good heuristic for whether something is an inference.
+
+- If we can say it was **rational** or **irrational** to form the latter state because of the earlier state, it's an inference.
+- It's not rational or irrational to remember a holiday on hearing a song; rationality doesn't care about those kinds of memories.
+
+## A Test?
+
+Siegel sometimes sounds like she is taking this to be more than a test, but almost definitional of an inference.
+
+- I'm not sure if that's the right way to read her.
+- In any case, it doesn't sound that plausible to me; defining inference in terms of norms seems odd.
+
+## The Subject Matter
+
+What we really care about here is understanding whether a transition between states is an inference, not whether it's a good or bad inference.
+
+- But these questions can't really be 100% separated.
+- Compare, understanding what a joke is can't be wholly separated from sorting jokes into good and bad.
+- A bad enough joke is not a joke.
+
+# The Taking Condition
+
+## The Taking Condition
+
+A lot of the contemporary literature on inferences revolves around this theory.
+
+- A transition from S1 to S2 is an inference if and only if the thinker takes S1 to support S2.
+
+## Virtues of This Theory
+
+It gets our canonical cases right.
+
+- Holmes does take his belief about weapons to support his belief about the butler's guilt.
+- The person hearing a song doesn't take this to support reminiscing about the beach holiday.
+
+## Virtues of This Theory
+
+It allows for bad inferences.
+
+- This is often a challenge.
+- But as long as the person thinks they are making a good inference, the taking theory can say they are inferring.
