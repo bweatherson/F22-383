@@ -247,3 +247,58 @@ It allows for bad inferences.
 
 - This is often a challenge.
 - But as long as the person thinks they are making a good inference, the taking theory can say they are inferring.
+
+## Why Siegel Has To Oppose It
+
+- She wants to say that hijacked experiences involve bad inferring.
+- But the taking condition clearly does not apply to experiences.
+- Vivek does not take his vanity to provide a reason to believe that everyone is happy!
+
+## Two Objections
+
+1. Regress
+2. Over-intellectualisation
+
+## Regress
+
+Assume that to infer S2 from S1, another state T - the taking S1 to provide a reason for S2 - is required.
+
+- Then it looks like you're saying that S2 is inferred from S1 and T.
+- But that suggests that we need a T', taking S1 and T to support S2.
+- And then we'll need a T'',taking S1, T and T' to support S2, etc.
+
+## Regress
+
+Siegel does **not** endorse this objection.
+
+- And the first step on the previous slide does look a bit dodgy.
+- That's not to say the regress objection fails; it's an interesting challenge.
+
+## Over-Intellectualisation (Toddlers version)
+
+1. Toddlers can make inferences.
+2. Toddlers don't take things to provide reasons for other states.
+C.  Inferences don't require takings.
+
+## Over-Intellectualisation (Toddlers version)
+
+Again, this isn't quite Siegel's objection, though it's getting closer.
+
+- And I think it's fairly plausible.
+
+## Four Cases from section 5.5
+
+1. Kindness (categorisation)
+2. Pepperoni (aggregated factors)
+3. Too far north (spatio-temporal calculation)
+4. Rockmouth (search for information)
+
+## Two Questions on Each
+
+1. Are they actually examples of inferences?
+2. Are they cases where the person does not, even tacitly, take states to provide reasons.
+
+## For Next Time
+
+We'll look at the argument that hijacked experiences are inferential.
+
