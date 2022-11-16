@@ -78,7 +78,7 @@ There is still a bit of philosophical work to do to get this to be irrational.
 
 This belief is I guess a stereotype, but even that is perhaps avoidable.
 
-- Imagine Hero makes the same inference/perception when in Canada, also grounded in a belief that number of guns = number of people, so every Canadian has a gun.
+- Imagine Hero makes the same inference/perception when in Canada, from the belief that number of guns = number of people, so every Canadian has a gun.
 - That's not a stereotype (at least not a familiar one) but still irrational.
 
 ## Forward Looking
@@ -196,4 +196,53 @@ Arguably, Hero **sees** that a goal was scored.
 - If that's true, and Wright's account of the case is also true, then it's a case where perception is epistemically downgraded.
 - The perception doesn't have the power to support the conclusion that there's a game going on, even though its content entails that.
 
+## Kinds of Downgrade
+
+But note what a weird case this is. (This is not to say Siegel's wrong; it is actually a tricky weird case.)
+
+- Hero has excellent reason to believe that a goal was scored. The perception is reason-giving.
+
+## Kinds of Downgrade
+
+But note what a weird case this is. (This is not to say Siegel's wrong; it is actually a tricky weird case.)
+
+- Hero cannot infer that there is a game going on, even though that uses just logic.
+- The belief that a goal was scored loses some forward-power.
+
+## Kinds of Downgrade
+
+Part of the solution here is that it must have been antecedently reasonable for Hero to believe there was a game going on.
+
+- Part of what's happened here is that her perception does not give her **additional** reason to believe that there is game.
+
+## Generalising
+
+This might make us think of other things we have background reason to believe.
+
+- Looking around I see some chairs.
+- The existence of chairs implies the existence of things external to me.
+- So do my perceptual experiences give me reason to believe in the existence of things external to me?
+
+## Generalising
+
+It seems like they don't.
+
+- But does that mean every perception lacks a kind of forward-power?
+- And if so, does that mean that in Wright's case there isn't really a downgrade?
+
+## Endorsement
+
+No, and this is where the notion of endorsement becomes important.
+
+- A perception that doesn't well-found the belief that is a simple endorsement of it loses a particularly important kind of forward-looking power.
+
+## Bananas
+
+That's possibly what's going on in the banana case.
+
+- If there is a kind of circularity that leads to it being bad to infer this banana is yellow, then that's a special kind of badness.
+
+## For Next Time
+
+We'll jump ahead to chapter 8, looking at whether it's plausible that perceptions really do involve inference.
 
