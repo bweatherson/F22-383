@@ -1,0 +1,544 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+  xcolor={dvipsnames}]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 22},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 22}
+\author{Brian Weatherson}
+\date{11/16/22}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, boxrule=0pt, sharp corners, interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable]}{\end{tcolorbox}}\fi
+
+\begin{frame}{Plan}
+\protect\hypertarget{plan}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Ways Perception can be Irrational.
+\item
+  Circularity
+\item
+  Circularity and Perception
+\end{enumerate}
+\end{frame}
+
+\hypertarget{perception-and-rationality}{%
+\section{Perception and Rationality}\label{perception-and-rationality}}
+
+\begin{frame}{Two Failure Cases}
+\protect\hypertarget{two-failure-cases}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Backward looking
+\item
+  Forward looking
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Backward looking failure}
+\protect\hypertarget{backward-looking-failure}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A perception might be partially constituted by an inference from
+  earlier beliefs.
+\item
+  Those beliefs might be irrational.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Notes}
+\protect\hypertarget{notes}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  That it's a misperception doesn't on its own make it irrational.
+\item
+  That the earlier belief is false doesn't on its own make it
+  irrational.
+\item
+  That the earlier belief is morally dubious doesn't on its own make it
+  irrational.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{An Irrational Example}
+\protect\hypertarget{an-irrational-example}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Hero learns that there are as many guns as people in America.
+\item
+  Being unable to believe that someone could have more than one gun,
+  they infer that every American has a gun.
+\item
+  This isn't just wrong, it's leaping to a conclusion.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{An Irrational Example}
+\protect\hypertarget{an-irrational-example-1}{}
+Because Hero has this belief, every time they see someone in America
+(and leap to the conclusion that the person is an American) with any
+kind of bulge in their clothing, they see it as a gun.
+\end{frame}
+
+\begin{frame}{An Irrational Example?}
+\protect\hypertarget{an-irrational-example-2}{}
+There is still a bit of philosophical work to do to get this to be
+irrational.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Have to argue that inference really is involved. Chapter 5 started
+  this argument, and it will continue in chapter 8.
+\item
+  Have to argue that the inference is so central that it makes the
+  resuling perception irrational.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Stereotypes}
+\protect\hypertarget{stereotypes}{}
+This belief is I guess a stereotype, but even that is perhaps avoidable.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Imagine Hero makes the same inference/perception when in Canada, also
+  grounded in a belief that number of guns = number of people, so every
+  Canadian has a gun.
+\item
+  That's not a stereotype (at least not a familiar one) but still
+  irrational.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Forward Looking}
+\protect\hypertarget{forward-looking}{}
+But what I want to spend most time on today is that there is another way
+in which experiences can, for Siegel, be epistemically downgraded.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  They might not support as many things going forward.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Endorsement}
+\protect\hypertarget{endorsement}{}
+What a state supports in general is this incredibly tricky question, and
+one which we'll make more tricky as today rolls along.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But note that for experiences there is one kind of support that is
+  very important.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Endorsement}
+\protect\hypertarget{endorsement-1}{}
+Someone \textbf{endorses} an experience iff they form a belief with the
+same content (or at least part of the same content) on the basis of the
+experience.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Here's one big question about experiences: would it be rational to
+  endorse them?
+\item
+  And Siegel thinks that often it wouldn't be, in virtue of their
+  inferential nature.
+\end{itemize}
+\end{frame}
+
+\hypertarget{circularity}{%
+\section{Circularity}\label{circularity}}
+
+\begin{frame}{A Puzzle}
+\protect\hypertarget{a-puzzle}{}
+I'll start by taking several steps back, and going over a very hard
+puzzle, which I don't think anyone has a good solution to.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The puzzle concerns what you can do with information you receive in a
+  pretty reliable book.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Background}
+\protect\hypertarget{background}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Hero is reading a book about the origins of WWI.
+\item
+  The book says that Henriette Caillaux was acquitted of the murder of
+  Gaston Calmette. (This was a big deal in France in July 1914.) Call
+  this \emph{p}.
+\item
+  The book is from a reputable author and press, was well reviewed, and
+  Hero believes that \emph{p} because the book says so.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cross-Checking}
+\protect\hypertarget{cross-checking}{}
+Later, Hero starts to worry that maybe the book made some mistakes. They
+decide to investigate whether the book is accurate.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  In the course of this check, they do the following reasoning.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cross-checking}
+\protect\hypertarget{cross-checking-1}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  \emph{p} is true (as I remember from my reading).
+\item
+  The book says that \emph{p} (as I know from looking back at the
+  pages).
+\item
+  So that's something the book got right (from 1, 2)
+\item
+  So that's evidence in favor of the book's reliability.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Circularity}
+\protect\hypertarget{circularity-1}{}
+And something has gone horribly badly wrong.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  You can't get evidence that a book is reliable by opening it up,
+  reading it, and believing what it says.
+\item
+  But what exactly has gone wrong?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{A Puzzle about Chains}
+\protect\hypertarget{a-puzzle-about-chains}{}
+Hero makes two inferential steps.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  From reading \emph{p} to believing \emph{p}.
+\item
+  From believing \emph{p} and reading \emph{p} to believing that the
+  book was right about whether \emph{p}.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{A Puzzle about Chains}
+\protect\hypertarget{a-puzzle-about-chains-1}{}
+Four options
+
+\begin{enumerate}[<+->]
+[A.]
+\tightlist
+\item
+  Step 1 is bad.
+\item
+  Step 2 is bad.
+\item
+  Neither step alone is bad, but the pair is bad.
+\item
+  Actually, Hero did nothing wrong.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{A Puzzle About Chains}
+\protect\hypertarget{a-puzzle-about-chains-2}{}
+It isn't too hard to argue for C.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If you don't think you can believe what you read in well reviewed
+  books by reputable authors/presses, you're well down the road to a
+  nasty kind of scepticism.
+\item
+  And inference B is practically a matter of logic.
+\item
+  But Hero did something wrong, so D is out.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Siegel's Position}
+\protect\hypertarget{siegels-position}{}
+As I understand her, I think she says that B is the problem.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Which is striking because it's literally just logic.
+\item
+  But beliefs come with powers, and this belief does not have the power
+  to support claims about its own source's reliability.
+\item
+  That's true even with the support goes via logic.
+\end{itemize}
+\end{frame}
+
+\hypertarget{perception-and-circularity}{%
+\section{Perception and Circularity}\label{perception-and-circularity}}
+
+\begin{frame}{Wright's Example}
+\protect\hypertarget{wrights-example}{}
+Hero is walking past a school, let's say Pioneer High School on State
+St, and sees some people playing on a soccer field.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It looks just like a soccer game, and in fact it is.
+\item
+  But if they were pretending to play soccer to film a TV show, Hero
+  wouldn't have been able to tell.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Wright's Example}
+\protect\hypertarget{wrights-example-1}{}
+Hero sees the ball go into the net and the referee give the signal for a
+goal.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Hero believes (and maybe sees?) that a goal was scored.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Wright's Example}
+\protect\hypertarget{wrights-example-2}{}
+Something would go wrong if Hero reasoned as follows
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  That was a goal (as opposed to a pretend goal).
+\item
+  If that was a goal, they are really playing soccer (as opposed to
+  filming a TV show).
+\item
+  So, they are really playing soccer.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Perception}
+\protect\hypertarget{perception}{}
+Arguably, Hero \textbf{sees} that a goal was scored.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If that's true, and Wright's account of the case is also true, then
+  it's a case where perception is epistemically downgraded.
+\item
+  The perception doesn't have the power to support the conclusion that
+  there's a game going on, even though its content entails that.
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
