@@ -1,0 +1,248 @@
+---
+title: "Knowledge and Reality, Lecture 22"
+author: "Brian Weatherson"
+date: 2022-11-16
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    classoption: 
+      - handout
+      - '`xcolor={dvipsnames}`{=latex}'
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+## Plan
+
+1. Ways Perception can be Irrational.
+2. Circularity
+3. Circularity and Perception
+
+# Perception and Rationality
+
+## Two Failure Cases
+
+1. Backward looking
+2. Forward looking
+
+## Backward looking failure
+
+- A perception might be partially constituted by an inference from earlier beliefs.
+- Those beliefs might be irrational.
+
+## Notes
+
+1. That it's a misperception doesn't on its own make it irrational.
+2. That the earlier belief is false doesn't on its own make it irrational.
+3. That the earlier belief is morally dubious doesn't on its own make it irrational.
+
+## An Irrational Example
+
+- Hero learns that there are as many guns as people in America.
+- Being unable to believe that someone could have more than one gun, they infer that every American has a gun.
+- This isn't just wrong, it's leaping to a conclusion.
+
+## An Irrational Example
+
+Because Hero has this belief, every time they see someone in America (and leap to the conclusion that the person is an American) with any kind of bulge in their clothing, they see it as a gun.
+
+## An Irrational Example?
+
+There is still a bit of philosophical work to do to get this to be irrational.
+
+- Have to argue that inference really is involved. Chapter 5 started this argument, and it will continue in chapter 8.
+- Have to argue that the inference is so central that it makes the resuling perception irrational.
+
+## Stereotypes
+
+This belief is I guess a stereotype, but even that is perhaps avoidable.
+
+- Imagine Hero makes the same inference/perception when in Canada, from the belief that number of guns = number of people, so every Canadian has a gun.
+- That's not a stereotype (at least not a familiar one) but still irrational.
+
+## Forward Looking
+
+But what I want to spend most time on today is that there is another way in which experiences can, for Siegel, be epistemically downgraded.
+
+- They might not support as many things going forward.
+
+## Endorsement
+
+What a state supports in general is this incredibly tricky question, and one which we'll make more tricky as today rolls along.
+
+- But note that for experiences there is one kind of support that is very important.
+
+## Endorsement
+
+Someone **endorses** an experience iff they form a belief with the same content (or at least part of the same content) on the basis of the experience.
+
+- Here's one big question about experiences: would it be rational to endorse them?
+- And Siegel thinks that often it wouldn't be, in virtue of their inferential nature.
+
+# Circularity
+
+## A Puzzle
+
+I'll start by taking several steps back, and going over a very hard puzzle, which I don't think anyone has a good solution to.
+
+- The puzzle concerns what you can do with information you receive in a pretty reliable book.
+
+## Background
+
+- Hero is reading a book about the origins of WWI.
+- The book says that Henriette Caillaux was acquitted of the murder of Gaston Calmette. (This was a big deal in France in July 1914.) Call this *p*.
+- The book is from a reputable author and press, was well reviewed, and Hero believes that *p* because the book says so.
+
+## Cross-Checking
+
+Later, Hero starts to worry that maybe the book made some mistakes. They decide to investigate whether the book is accurate.
+
+- In the course of this check, they do the following reasoning.
+
+## Cross-checking
+
+1. *p* is true (as I remember from my reading).
+2. The book says that *p* (as I know from looking back at the pages).
+3. So that's something the book got right (from 1, 2)
+4. So that's evidence in favor of the book's reliability.
+
+## Circularity
+
+And something has gone horribly badly wrong.
+
+- You can't get evidence that a book is reliable by opening it up, reading it, and believing what it says.
+- But what exactly has gone wrong?
+
+## A Puzzle about Chains
+
+Hero makes two inferential steps.
+
+1. From reading *p* to believing *p*.
+2. From believing *p* and reading *p* to believing that the book was right about whether *p*.
+
+## A Puzzle about Chains
+
+Four options
+
+A.  Step 1 is bad.
+B.  Step 2 is bad.
+C.  Neither step alone is bad, but the pair is bad.
+D.  Actually, Hero did nothing wrong.
+
+## A Puzzle About Chains
+
+It isn't too hard to argue for C.
+
+- If you don't think you can believe what you read in well reviewed books by reputable authors/presses, you're well down the road to a nasty kind of scepticism.
+- And inference B is practically a matter of logic.
+- But Hero did something wrong, so D is out.
+
+## Siegel's Position
+
+As I understand her, I think she says that B is the problem.
+
+- Which is striking because it's literally just logic.
+- But beliefs come with powers, and this belief does not have the power to support claims about its own source's reliability.
+- That's true even with the support goes via logic.
+
+# Perception and Circularity
+
+## Wright's Example
+
+Hero is walking past a school, let's say Pioneer High School on State St, and sees some people playing on a soccer field.
+
+- It looks just like a soccer game, and in fact it is.
+- But if they were pretending to play soccer to film a TV show, Hero wouldn't have been able to tell.
+
+## Wright's Example
+
+Hero sees the ball go into the net and the referee give the signal for a goal.
+
+- Hero believes (and maybe sees?) that a goal was scored.
+
+## Wright's Example
+
+Something would go wrong if Hero reasoned as follows
+
+1. That was a goal (as opposed to a pretend goal).
+2. If that was a goal, they are really playing soccer (as opposed to filming a TV show).
+3. So, they are really playing soccer.
+
+## Perception
+
+Arguably, Hero **sees** that a goal was scored.
+
+- If that's true, and Wright's account of the case is also true, then it's a case where perception is epistemically downgraded.
+- The perception doesn't have the power to support the conclusion that there's a game going on, even though its content entails that.
+
+## Kinds of Downgrade
+
+But note what a weird case this is. (This is not to say Siegel's wrong; it is actually a tricky weird case.)
+
+- Hero has excellent reason to believe that a goal was scored. The perception is reason-giving.
+
+## Kinds of Downgrade
+
+But note what a weird case this is. (This is not to say Siegel's wrong; it is actually a tricky weird case.)
+
+- Hero cannot infer that there is a game going on, even though that uses just logic.
+- The belief that a goal was scored loses some forward-power.
+
+## Kinds of Downgrade
+
+Part of the solution here is that it must have been antecedently reasonable for Hero to believe there was a game going on.
+
+- Part of what's happened here is that her perception does not give her **additional** reason to believe that there is game.
+
+## Generalising
+
+This might make us think of other things we have background reason to believe.
+
+- Looking around I see some chairs.
+- The existence of chairs implies the existence of things external to me.
+- So do my perceptual experiences give me reason to believe in the existence of things external to me?
+
+## Generalising
+
+It seems like they don't.
+
+- But does that mean every perception lacks a kind of forward-power?
+- And if so, does that mean that in Wright's case there isn't really a downgrade?
+
+## Endorsement
+
+No, and this is where the notion of endorsement becomes important.
+
+- A perception that doesn't well-found the belief that is a simple endorsement of it loses a particularly important kind of forward-looking power.
+
+## Bananas
+
+That's possibly what's going on in the banana case.
+
+- If there is a kind of circularity that leads to it being bad to infer this banana is yellow, then that's a special kind of badness.
+
+## For Next Time
+
+We'll jump ahead to chapter 8, looking at whether it's plausible that perceptions really do involve inference.
+
