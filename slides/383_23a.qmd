@@ -146,6 +146,11 @@ To understand this argument, it helps to apply it to the polling case.
 There's a big question here about how to think about mistakes in inquiry.
 
 - This is a very interesting topic in contemporary philosophy. (Jane Friedman at NYU is the leading figure in this debate, but it's a really fascinating one.)
+
+## Norms of Inquiry
+
+There's a big question here about how to think about mistakes in inquiry.
+
 - Could biased perception be bad in the distinctive way biased inquiry is bad, which isn't exactly epistemic rationality or prudential rationality?
 
 ## Errors Either Side
@@ -198,6 +203,11 @@ Siegel really means this literally.
 The big thing to note is that Siegel's critics here very much do not say that the biased perceiver is rational. Instead they say one of two things.
 
 1. The biased perceiver is making a practical error, or an inquiry error, or some other kind of error.
+
+## Objections
+
+The big thing to note is that Siegel's critics here very much do not say that the biased perceiver is rational. Instead they say one of two things.
+
 2. The biased perceiver is making an epistemic error in not correcting for the non-representative nature of their sample. This is epistemic, but it's an epistemic error in post-perceptual processing.
 
 # Fear
@@ -222,5 +232,27 @@ What is the outlook involved in fear?
 
 ## Fear and Outlooks
 
-For a transition to be an inference
+For a transition to be an inference, it must be that:
+
+1. The fear is an information state;
+2. This information includes something about liveness or salience.
+3. The subsequent perception is caused by this information.
+
+## Alternative View
+
+Maybe fear isn't a belief, it's a distinctive kind of attitude.
+
+- Compare wanting.
+- Some people think wanting X just is believing that X is valuable/wantable.
+- But a more common view is that wanting X is just an attitude towards X, and what makes it a desire is the kind of attitude it is.
+
+## Alternative View
+
+Maybe fearing snakes is just an attitude towards snakes, rather than to the proposition that the danger posed by snakes is particularly live or salient.
+
+- I'm not sure that Siegel's inferential view would go through on this account.
+
+## For Next Time
+
+We'll possibly return to the selection effects (for people who were away for Thanksgiving!) and wrap up chapter 10.
 
