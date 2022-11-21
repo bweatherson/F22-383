@@ -1,0 +1,226 @@
+---
+title: "Knowledge and Reality, Lecture 23"
+author: "Brian Weatherson"
+date: 2022-11-21
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    classoption: 
+#      - handout
+      - '`xcolor={dvipsnames}`{=latex}'
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+## Plan
+
+1. Selection Effects
+2. Fear and Loathing and Inference
+
+# Selection Effects
+
+## A Kind of Irrationality
+
+- Observer focuses on a particular kind of feature.
+- From the things they observe, they draw unbalanced conclusions.
+- Siegel argues that this can be irrational perception.
+
+## A Contrast Case
+
+I've described cases like this earlier, but in order to better understand Siegel's argument, I think it's good to have a contrast case.
+
+- A is trying to predict an upcoming election, so decides to conduct a little opinion poll.
+- Unfortunately, a lot of things go wrong.
+
+## Polling Example
+
+A decides to conduct a poll of students on the UM quad.
+
+- Unsurprisingly, they find a lot of Democrats.
+- So they conclude that the Democratic candidate will win the election.
+
+## Three Steps
+
+1. Deciding where to conduct the poll.
+2. The conduct of the poll itself.
+3. The inferences drawn from the poll
+
+## Three Steps
+
+1. Deciding where to conduct the poll.
+
+- This seems like an obvious mistake; it's a really really non-random sample.
+- It is what people would normally call a selection effect.
+- So here's one irrational step.
+
+## Three Steps
+
+3. The inferences drawn from the poll
+
+- This is a really really bad mistake.
+- And it's uncontroversially an epistemic mistake.
+
+## Three Steps
+
+2. The conduct of the poll itself
+
+- We could imagine that this step was conducted well.
+- Of course they could mess this up too; wishful hearing on what someone says, or how enthusiastic they are.
+- But it could be good.
+
+## Irrational Perception
+
+I think this is pretty clearly *not* a case of irrational perception.
+
+- There are mistakes either side of the perception.
+- But the perceptual step, step 2, is not a mistake.
+
+## Analogy
+
+A critic might say that Siegel's example is just like the polling case.
+
+- Typically choosing to focus on particular features is a bad place to look, like polling just on the diag.
+- Not accounting for the biased sample is an epistemic error.
+
+## Analogy
+
+A critic might say that Siegel's example is just like the polling case.
+
+- But observing the negative features is good perception, just like correctly polling.
+
+## Siegel's Two Responses
+
+1. What Other Kind of Error is It?
+2. What happens when steps 1 and 2 are merged?
+
+## Error Kinds
+
+Here's a standard philosophical picture of rationality.
+
+- There are two kinds of rationality: epistemic and prudential.
+- Prudential rationality is a matter of getting what one wants.
+- Epistemic rationality is, well, everything else.
+
+## Error Kinds and the Inattentive Looker
+
+- Just focusing on the negative qualities of the job applicant is an error.
+- So it's either an epistemic or a prudential error.
+- Might it might be in the interests of the looker, in which case it isn't prudential.
+- So it's epistemic.
+
+## Error Kinds and Polling
+
+To understand this argument, it helps to apply it to the polling case.
+
+- Maybe it is in the interest of the poller to get a pro-Democrats response; that will make their bosses pleased or something.
+- If so, are all the mistakes epistemic?
+
+## Two Replies
+
+1. Mistakes about where to look feel like a distinctive kind of error, neither epistemic nor practical, which raise doubts for the first assumption of the argument.
+2. Even if that's not right, the errors still feel like they take place either side of the perception, not in the perception itself.
+
+## Norms of Inquiry
+
+There's a big question here about how to think about mistakes in inquiry.
+
+- This is a very interesting topic in contemporary philosophy. (Jane Friedman at NYU is the leading figure in this debate, but it's a really fascinating one.)
+- Could biased perception be bad in the distinctive way biased inquiry is bad, which isn't exactly epistemic rationality or prudential rationality?
+
+## Errors Either Side
+
+Even if we grant that the choice to focus on one set of features (or one set of voters) is an epistemic error, it doesn't follow that the perception of those features (or voters) is an epistemic error.
+
+- It might be that step was done well, even if either side of it was a mistake.
+
+## Siegel's Second Argument
+
+Siegel has a second argument that addresses this point.
+
+- One disanalogy between the perception case and the polling case is that in the polling case, the three steps are clearly distinguished in time.
+- That might not be true here.
+
+## Perceptions of Distributions
+
+Think about the discussion she has of seeing that there are exactly three pens on the desk, or exactly three eggs in the carton.
+
+- This isn't just a perception of the three eggs.
+- It is a perception that there are no more eggs.
+
+## Perceptions of Distributions
+
+Siegel really means this literally.
+
+- She thinks it can be part of the content of the perception that there are three eggs and no more in the carton.
+- This sounds plausible, but it isn't uncontentious.
+
+## Perceptions of Distributions
+
+- In the polling case, it would be absurd to say that one has the perception that these are a representative sample of Michigan voters.
+- Even if one believed that, it couldn't possibly be the content of a perception.
+
+## Perceptions of Distributions
+
+- But maybe in the biased observation case it could be.
+- The person doing the hiring might not just perceive (correctly!) the negative features of the candidate.
+- They might perceive that the candidate is a certain kind of candidate, with these representative features.
+
+## Big Assumptions Here
+
+1. This kind of biased inquiry is an epistemic failing, not some other kind of failing.
+2. The perceiver doesn't just see the negative features and infer they are representative, the perception includes both those things at once.
+
+- If you spot both of those features, then it seems plausible to say that the biased perception is irrational.
+
+## Objections
+
+The big thing to note is that Siegel's critics here very much do not say that the biased perceiver is rational. Instead they say one of two things.
+
+1. The biased perceiver is making a practical error, or an inquiry error, or some other kind of error.
+2. The biased perceiver is making an epistemic error in not correcting for the non-representative nature of their sample. This is epistemic, but it's an epistemic error in post-perceptual processing.
+
+# Fear
+
+## Three Uncontroversial Claims
+
+1. Sometimes fear can cause us to see the world a certain way.
+2. Sometimes the fears in question can be irrational, at least in their intensity.
+3. Fears involve seeing the world a certain way; they involve an outlook.
+
+## Two More Controversial Claims
+
+4. The link from fear to perception is an **inference**.
+5. The _outlook_ involved in fear is a belief about how the world is.
+
+## Fear and Outlooks
+
+What is the outlook involved in fear?
+
+- Siegel says it is treating certain risks as particularly _live_ or _salient_.
+- This is important, because these are risks; simply believing they are risks isn't irrational.
+
+## Fear and Outlooks
+
+For a transition to be an inference
+
