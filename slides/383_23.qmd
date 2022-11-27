@@ -1,0 +1,147 @@
+---
+title: "Knowledge and Reality, Lecture 23"
+author: "Brian Weatherson"
+date: 2022-11-21
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    classoption: 
+#      - handout
+      - '`xcolor={dvipsnames}`{=latex}'
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+## Plan
+
+1. Fear and Loathing and Inference
+2. Selection Effects
+
+# Fear and Inference
+
+## Two Initial Theses
+
+1. Sometimes, we see things a certain way because we have a certain fear.
+2. Sometimes, those fears can be irrational.
+
+## Two More Contentious Theses
+
+3. Fears have contents; they are informational states.
+4. Sometimes the way we see things as a consequence of fears is an inference from the fear.
+
+## Inference
+
+Remember Siegel rejects the **taking condition** on inference.
+
+- She doesn't think that for one state to be an inference from another, it is essential that the thinker take the transition between the two to be reason-governed.
+
+## Inference
+
+But not all causal connections are inferences.
+
+- Reminiscing about a holiday because you hear a song on the supermarket speakers is not an inference.
+- It's a causal connection, but not an inferential one.
+
+## Inference
+
+Not all causal connections that are driven by the informational content of an earlier state are inference.
+
+- A starts reminiscing about a holiday after a friend complains about the debacle of ordering Taylor Swift tickets.
+- The connection is that the worlds "Taylor Swift" remind him of Taylor Swift (in virtue of their content), and that makes him think about a particular holiday.
+
+## Inference
+
+Inferences have to be more principled, systematic, responses to the informational content of an earlier state.
+
+- Fwiw, I think this is basically the right way to think about inference; I'm on Siegel's side on this one.
+- But there is a problem here with how you handle spectacularly bad inferences.
+
+## Constraints
+
+A transition from one mental state to another is an inference iff:
+
+1. The first state is an informational state;
+2. The transition is caused not just by the state, but by its informational content; and
+3. It's the right kind of causation (which doesn't mean rational, but does mean not just triggering a memory).
+
+## Fear
+
+Some questions about fear.
+
+1. Is it an informational state?
+2. If so, what is its content?
+3. Is that content the right kind of thing to draw inferences from?
+
+## Content
+
+Siegel describes fear as an 'outlook'.
+
+- It represents some things as dangerous. But some things, like heights, are actually kind of dangerous.
+- It also involves treating things of the kind as especially 'live' or 'salient'.
+
+## Content
+
+- Is this last part, the liveness or salience of the threat, part of the content?
+- Or is it, instead, part of the attitude?
+
+## Content
+
+- If it is part of the content, it is very first-personal.
+- I represent the snake as being salient **to me**.
+- That isn't on its own a big deal; lots of content is first-personal.
+- Indeed, most cultures prioritise first-personal directions (like in front, or to my left) over absolute ones (like north, or east).
+
+## Content
+
+But it's really not obvious in some cases what is in a content, and what is in an attitude.
+
+- Consider the attitude that we would ordinarily describe as _thinking that Michigan might beat Ohio State_.
+- How should we analyse it?
+
+## Two Options
+
+1. It is a simple belief, and it has as its content something like _I don't know Michigan won't beat Ohio State_.
+2. It is a distinctive attitude of treating as a live possibilty, with the content _Michigan will beat Ohio State_.
+
+## Two Options
+
+- The first has the challenge of saying just what the content is. What I said doesn't really seem to work, and you can tinker with the details, but it's work. (Really, you can tinker - one of my longest papers is on this tinkering.)
+- The second has a very simple content, but a weird attitude.
+
+## Back to Fear
+
+- Anyway, I kind of think Siegel needs the 'outlook' involved with fear to be something like a belief with complicated content, rather than a distinctive kind of attitude.
+- Is that plausible? Eh, maybe! It's probably what I would bet on, but it's a bit assumption.
+- It isn't necessary that if a state is an 'outlook' that it is a belief with that content.
+
+## Why This Matters
+
+The state/content distinction matters here, but it's kind of interesting in other fields.
+
+1. Thinking about cognitive development; acquiring new beliefs and acquiring new kinds of states are different achievements.
+2. Thinking about artificial minds; what would it take for a robot to be _scared_? I think this is really non-obvious, and fascinating.
+
+# Selection Effects
+
+
