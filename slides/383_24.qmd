@@ -1,0 +1,148 @@
+---
+title: "Knowledge and Reality, Lecture 24"
+author: "Brian Weatherson"
+date: 2022-11-28
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    classoption: 
+#      - handout
+      - '`xcolor={dvipsnames}`{=latex}'
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Overview
+
+## Summary
+
+- The book doesn't have a traditional summary or conclusion.
+- But I think it's a good idea for us to look over what it covered.
+
+## Rationality of Perception
+
+- The traditional philosophical view is that perceptual states are arational states that ground other rational states.
+- Siegel thinks that the perceptual states themselves can be rational or, crucially, irrational.
+
+## Rationality of Perception
+
+Two key theses:
+
+1. Perception is **rich**
+2. Perception is **inferential**
+
+## Richness of Perception
+
+Siegel thinks we can perceive things like _That person is dangerous_.
+
+- This contrasts with views on which perception doesn't have contents; it is just a presentation of the world (like a window)
+- It also contrasts with the (more common) view that we just perceive shapes, colors, sounds and the like.
+
+## Inferential Perception
+
+Siegel this that:
+
+1. Perceptual states are downstream of other attitudes, including beliefs.
+2. These transitions from the other states to perceptions are **inferences**.
+
+## Inferential Perception
+
+The first thesis contrasts with views on which perception is **encapsulated**, i.e., insensitive to other information the world contains.
+
+- The existence of illusions is some evidence for encapsulation.
+- But the existence of skilled perceivings is evidence against, and Siegel takes this to be stronger.
+
+## Inferential Perception
+
+The second thesis contrasts with views on which the way perception relates to background views involves something like "mental jogging".
+
+## Inferential Perception
+
+- People often believe that salt and pepper are often found together.
+- They also frequently transition from thoughts about _salt_ to thoughts about _pepper_.
+- But the latter is not really an inference, it is just jogging.
+
+# Failed Inferences
+
+## Five Possibilities
+
+1. Poor support for premise
+2. Poor transitions
+3. Circularity
+4. False premisess
+5. Poor maintenance
+
+## Poor Support
+
+0. The largest city in a state is always the capital.
+1. Detroit is the capital of Michigan (from 0)
+2. So, this university is about an hour's drive from the Michigan capital.
+
+- In normal circumstances, 0 is unsupported, so if it's the reason for 1, the inferential belief 2 is not well-founded.
+
+## Poor Transition
+
+1. Most Fs are Gs.
+2. So, most Gs are Fs.
+
+- This one might be relevant to some of the racial stereotype inferences.
+
+## Circularity
+
+1. The scale says that the cup weighs 100g.
+2. The cup weighs 100g.
+3. So, the scale accurately measured the cup.
+
+- If 1 is the reason for 2, this isn't a good inference. And this is funny because 1 is normally a good reason for 2, and 1+2 entails 3.
+
+## False Premises
+
+1. Mother says the water from this faucet is safe to drink.
+2. So the water from this faucet is safe to drink.
+3. So when I want water, I'll get it from this faucet.
+
+- Siegel agrees with what's probably the most common view that the even if 2 is false, the transition from 1 to 2 to 3 could be a rational inference.
+
+## Maintenance
+
+This is harder to get a clear example for, but note the following is a way for a belief to be irrational.
+
+- It is originally formed by a reasonable process.
+- But once the belief is formed, it is not well maintained.
+
+## Poor Maintenance
+
+Some possible things that could go wrong.
+
+- Blocking off from sources of counter-evidence.
+- Ignoring counter-evidence.
+- Using the belief itself as a reason to reject counterevidence.
+- Using the belief itself as a reason to get more evidence.
+
+# Racial Misperceptions
+
+## Big Picture
+
+- There are a lot of racial misperceptions.
+- These are downstream 
