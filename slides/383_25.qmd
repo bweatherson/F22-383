@@ -61,6 +61,12 @@ Siegel is responding to a (possible) criticism that some of these misperceptions
 The range of experiments also helps respond to another kind of concern.
 
 - Imagine that a person has developed a kind of association between 'black' and 'dangerous' like the association between 'salt' and 'pepper'.
+
+## Minimal Connections
+
+The range of experiments also helps respond to another kind of concern.
+
+
 - That looks pretty dubious morally, arguably worse than on Siegel's positive view, but it's not obviously within the range of epistemic evaluation.
 
 ## Minimal Connections
@@ -90,6 +96,12 @@ There is one defence Siegel could offer here, but does not. In fact, she express
 
 - It is what we might call the transfer model of testimony.
 - Testimony only ever transfers the rationality/reasonableness/well-foundedness of a belief from speaker(s) to hearer(s).
+
+## Testimony
+
+There is one defence Siegel could offer here, but does not. In fact, she expressly rejects it.
+
+
 - So if the initial beliefs are ill-founded, as they are here, so will the subsequent beliefs be.
 
 ## Testimony
@@ -156,6 +168,11 @@ The second argument seems too strong as it stands. Example: A bill (call it Bill
 
 - Person believes that Democrats support it on very weak evidence.
 - Next day person has forgotten their evidence, but not their belief, and learns Republicans support Bill.
+
+## Forgetting
+
+The second argument seems too strong as it stands. Example: A bill (call it Bill) is being debated in Congress.
+
 - Person concludes Democrats and Republicans have same view on Bill.
 
 ## Forgetting
