@@ -8,7 +8,7 @@ format:
     fontsize: 17pt
 #    classoption: handout
     classoption: 
-#      - handout
+      - handout
       - '`xcolor={dvipsnames}`{=latex}'
     papersize: letter
     navigation: empty

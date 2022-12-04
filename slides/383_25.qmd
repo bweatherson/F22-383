@@ -1,7 +1,7 @@
 ---
-title: "Knowledge and Reality, Lecture 24"
+title: "Knowledge and Reality, Lecture 25"
 author: "Brian Weatherson"
-date: 2022-11-28
+date: 2022-11-30
 format: 
   beamer: 
     aspectratio: 169
@@ -33,113 +33,6 @@ format:
        }
 ---
 
-# Overview
-
-## Summary
-
-- The book doesn't have a traditional summary or conclusion.
-- But I think it's a good idea for us to look over what it covered.
-
-## Rationality of Perception
-
-- The traditional philosophical view is that perceptual states are arational states that ground other rational states.
-- Siegel thinks that the perceptual states themselves can be rational or, crucially, irrational.
-
-## Rationality of Perception
-
-Two key theses:
-
-1. Perception is **rich**
-2. Perception is **inferential**
-
-## Richness of Perception
-
-Siegel thinks we can perceive things like _That person is dangerous_.
-
-- This contrasts with views on which perception doesn't have contents; it is just a presentation of the world (like a window)
-- It also contrasts with the (more common) view that we just perceive shapes, colors, sounds and the like.
-
-## Inferential Perception
-
-Siegel this that:
-
-1. Perceptual states are downstream of other attitudes, including beliefs.
-2. These transitions from the other states to perceptions are **inferences**.
-
-## Inferential Perception
-
-The first thesis contrasts with views on which perception is **encapsulated**, i.e., insensitive to other information the world contains.
-
-- The existence of illusions is some evidence for encapsulation.
-- But the existence of skilled perceivings is evidence against, and Siegel takes this to be stronger.
-
-## Inferential Perception
-
-The second thesis contrasts with views on which the way perception relates to background views involves something like "mental jogging".
-
-## Inferential Perception
-
-- People often believe that salt and pepper are often found together.
-- They also frequently transition from thoughts about _salt_ to thoughts about _pepper_.
-- But the latter is not really an inference, it is just jogging.
-
-# Failed Inferences
-
-## Five Possibilities
-
-1. Poor support for premise
-2. Poor transitions
-3. Circularity
-4. False premisess
-5. Poor maintenance
-
-## Poor Support
-
-0. The largest city in a state is always the capital.
-1. Detroit is the capital of Michigan (from 0)
-2. So, this university is about an hour's drive from the Michigan capital.
-
-- In normal circumstances, 0 is unsupported, so if it's the reason for 1, the inferential belief 2 is not well-founded.
-
-## Poor Transition
-
-1. Most Fs are Gs.
-2. So, most Gs are Fs.
-
-- This one might be relevant to some of the racial stereotype inferences.
-
-## Circularity
-
-1. The scale says that the cup weighs 100g.
-2. The cup weighs 100g.
-3. So, the scale accurately measured the cup.
-
-- If 1 is the reason for 2, this isn't a good inference. And this is funny because 1 is normally a good reason for 2, and 1+2 entails 3.
-
-## False Premises
-
-1. Mother says the water from this faucet is safe to drink.
-2. So the water from this faucet is safe to drink.
-3. So when I want water, I'll get it from this faucet.
-
-- Siegel agrees with what's probably the most common view that the even if 2 is false, the transition from 1 to 2 to 3 could be a rational inference.
-
-## Maintenance
-
-This is harder to get a clear example for, but note the following is a way for a belief to be irrational.
-
-- It is originally formed by a reasonable process.
-- But once the belief is formed, it is not well maintained.
-
-## Poor Maintenance
-
-Some possible things that could go wrong.
-
-- Blocking off from sources of counter-evidence.
-- Ignoring counter-evidence.
-- Using the belief itself as a reason to reject counterevidence.
-- Using the belief itself as a reason to get more evidence.
-
 # Racial Misperceptions
 
 ## Big Picture
@@ -168,6 +61,12 @@ Siegel is responding to a (possible) criticism that some of these misperceptions
 The range of experiments also helps respond to another kind of concern.
 
 - Imagine that a person has developed a kind of association between 'black' and 'dangerous' like the association between 'salt' and 'pepper'.
+
+## Minimal Connections
+
+The range of experiments also helps respond to another kind of concern.
+
+
 - That looks pretty dubious morally, arguably worse than on Siegel's positive view, but it's not obviously within the range of epistemic evaluation.
 
 ## Minimal Connections
@@ -197,6 +96,12 @@ There is one defence Siegel could offer here, but does not. In fact, she express
 
 - It is what we might call the transfer model of testimony.
 - Testimony only ever transfers the rationality/reasonableness/well-foundedness of a belief from speaker(s) to hearer(s).
+
+## Testimony
+
+There is one defence Siegel could offer here, but does not. In fact, she expressly rejects it.
+
+
 - So if the initial beliefs are ill-founded, as they are here, so will the subsequent beliefs be.
 
 ## Testimony
@@ -232,6 +137,101 @@ A better model might be that the person who simply absorbs racist beliefs is (in
 
 - And that might be a difference with the case of the misleading mother.
 
-## For Next Time
+# Pautz's Criticisms
 
-We'll look at some actual critics of Siegel's book.
+---
+
+Case 1
+
+- Person expects to see a red round thing when they enter the room, for no good reason at all.
+- When they enter the room, they hallucinate a tomato, because of this hallucination.
+- Despite knowing they had this expectation, they believe there is a tomato there.
+
+---
+
+Case 2 (Pautz's Case)
+
+- Just like case one, except person forgets that they had this expectation.
+- They have no reason at all to think they are hallucinating.
+- They also believe there is a tomato in the room.
+
+## Pautz's Arguments
+
+Two claims really, that are worth separating.
+
+1. It is intuitively obvious that the belief is reasonable in this case.
+2. If you have a reason to believe something, and no reason to reject it, you should believe it.
+
+## Forgetting
+
+The second argument seems too strong as it stands. Example: A bill (call it Bill) is being debated in Congress.
+
+- Person believes that Democrats support it on very weak evidence.
+- Next day person has forgotten their evidence, but not their belief, and learns Republicans support Bill.
+
+## Forgetting
+
+The second argument seems too strong as it stands. Example: A bill (call it Bill) is being debated in Congress.
+
+- Person concludes Democrats and Republicans have same view on Bill.
+
+## Forgetting
+
+This seems maybe not particularly reasonable.
+
+- It would be something like epistemic laundering if it were reasonable.
+- But also there's nothing internal to Person _now_ that would tell them they are being unreasonable.
+
+## Forgetting
+
+A lot of what Pautz will argue turns, I think, on this kind of principle.
+
+- If someone is being unreasonable, they could figure out that they are being unreasonable by careful introspection.
+- In Siegel's cases, that's impossible.
+- But maybe it's impossible in forgetting cases.
+
+## Evil Demons
+
+This case is, I think, the core of Pautz's criticism of Siegel.
+
+- Start with a case that Siegel would describe as hijacked experience.
+- After 30 seconds, without the phenomenal feel changing, it becomes a case of evil demon deception.
+- Does it become more reasonable to trust appearances when that happens?
+
+## Evil Demons
+
+Imagine that the person does trust the appearances all along.
+
+- Siegel says that they are being rational before the demon turns up, but irrational afterwards.
+- But it seems from the inside they are doing the same thing.
+
+## Evidence
+
+There is one other big point that runs through Pautz's piece that I think is worth having on the table.
+
+- What is perceptual evidence?
+
+## Evidence for Pautz
+
+It's clear from Pautz's arguments that he thinks the evidence is something like the phenomenal apperances.
+
+- He often describes cases like the demon case as one where the evidence does not change between the 'hijacked' case and the evil demon case.
+
+## Evidence for Siegel
+
+I think that to make sense of Siegel's position, you have to understand evidence as kicking in at a much earlier stage.
+
+- Evidence is what we're meant to fundamentally base our reasons on.
+- And for Siegel, phenomenal appearances are the result of inference.
+
+## Evidence for Siegel
+
+So for Siegel, evidence must be something earlier than phenomenology.
+
+- If that's right, then I'm not sure a lot of Pautz's arguments go through.
+- On the other hand, that's a really striking position!
+- Evidence is really inaccessible, and that seems like the big argument.
+
+## Next Week
+
+We'll finish up looking at Siegel's book, with discussing some different criticisms, plus her responses to critics.
