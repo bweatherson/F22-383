@@ -1,0 +1,78 @@
+# Siegel's Response
+
+## Two Responses
+
+1. Focus on realistic cases;
+2. Look at what people actually do to see what's intuitive.
+
+## Realistic Cases
+
+Pautz's cases involve all sorts of weirdness.
+
+- First, there are people who anticipate weird things like red, round spheres.
+- Second, there are evil demons put on top of this detail.
+
+## Siegel's Cases
+
+Siegel's cases are much more realistic.
+
+- Some of them are cases of wishful seeing.
+- And others are cases of racist perception.
+
+## Principle
+
+Take intuitions about realistic cases more seriously than intuitions about unrealistic cases.
+
+- I guess that sounds fine as far as it goes, but it relies on the intuitions going Siegel's way (fairly decisively) in the realistic cases.
+
+## Protests
+
+So here's a fact that seems to support Siegel's view: there are often mass protests after shootings where the perpetrator (usually a police officer) hallucinated a gun.
+
+## Siegel's Argument
+
+I think this implicit argument here is something like this.
+
+1. People don't protest things they think are justified.
+2. On traditional views of perception, like Pautz's, these shootings would be justified.
+3. So ordinary people do not in fact have the intuitions that Pautz needs them to have (in these tragically realistic cases).
+
+## Protests
+
+This all goes by very quickly in a couple of page response, but as it stands I didn't find that particularly persuasive. So I just wanted to note a few challenges in getting from the existence of the protests to Siegel like conclusions.
+
+## Lying
+
+For one thing, the protestors might have thought the officers were simply lying about what perceptions they had.
+
+- It's kind of odd that Siegel, in the context of arguing that these officers are guilty of a distinctive kind of irrationality, seems to take their word for what kind of perception they had.
+
+## Self-Defence
+
+This is a bit more theoretical, but the protestors might have had a strict liability theory of self-defence.
+
+- This could either be a strict liability theory about the **morality** of self-defence, or about the **legality** of self-defence.
+- The legal claim would be very strange I think; not completely implausible but a long way from our actual cultural norms.
+
+## Self-Defence
+
+The moral claim is a bit more plausible.
+
+- Think about someone who has a completely blameless but mistaken view that a third party poses a danger to them, and they seriously injure the perceived attacker.
+- Don't we think they should feel some guilt or remorse, and (morally) owe their victim at least an apology and maybe compensation?
+
+## Structural
+
+Most plausibly, the protestors could be protesting the institutions that created this danger as much as the individual police officer.
+
+- Even if the officer's actions were completely rational, there is a very good complaint against a system that puts people prone to make *this* mistake in a situation where it will cause *this* harm.
+
+## Structural
+
+I'm worried I've lost the dialectic a bit here but I think it's fairly hard to get from the known facts to the conclusion Siegel draws that the protests are "a living disagreement about whether the beliefs are reasonable".
+
+- There are just too many other things the protests could be about.
+
+## For Next Time
+
+- Anything you want to discuss about essays, quizzes, the other papers, or the books/readings.
