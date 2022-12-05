@@ -1,0 +1,318 @@
+---
+title: "Knowledge and Reality, Lecture 26"
+author: "Brian Weatherson"
+date: 2022-
+format: 
+  beamer: 
+    aspectratio: 169
+    fontsize: 17pt
+#    classoption: handout
+    classoption: 
+#      - handout
+      - '`xcolor={dvipsnames}`{=latex}'
+    papersize: letter
+    navigation: empty
+    incremental: true
+    innertheme: default
+    outertheme: miniframes
+    colortheme: wolverine
+    mainfont: SF Pro Text Light
+    mainfontoptions: BoldFont = SF Pro Text Semibold, Scale = MatchLowercase
+    keep-tex: true
+    include-in-header:
+      text: |
+       \captionsetup[figure]{labelformat=empty}
+       \usepackage{pgfpages}
+       \setbeamertemplate{itemize item}[circle]
+       \setbeamertemplate{footline}[frame number]{}
+       \mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+       \AtBeginSection{%
+          \begin{frame}
+              \tableofcontents[currentsection]
+          \end{frame}
+       }
+---
+
+# Racial Misperceptions
+
+## Big Picture
+
+- There are a lot of racial misperceptions.
+- These are downstream of widely shared racial (well, racist) beliefs that are widely shared in the community.
+- At least in many (most?) cases, there is enough individual culpability in acquiring or maintaining these background beliefs that the perceptions are not well-founded.
+
+## Racial Misperceptions
+
+Note how many, and how varied, the misperceptions at the start of the chapter are.
+
+- They include seemingly innocuous things like age.
+
+## Why So Many
+
+Siegel is responding to a (possible) criticism that some of these misperceptions might be grounded in accurate beliefs about racial disparities.
+
+## Why So Many
+
+- Some of the explaining away here seems to rely on bad inferences, e.g., from Most Fs are Gs to Most Gs are Fs.
+- But in some of the experiments, it's hard to see what beliefs about the world could make the beliefs about ages justified.
+
+## Minimal Connections
+
+The range of experiments also helps respond to another kind of concern.
+
+- Imagine that a person has developed a kind of association between 'black' and 'dangerous' like the association between 'salt' and 'pepper'.
+
+## Minimal Connections
+
+The range of experiments also helps respond to another kind of concern.
+
+
+- That looks pretty dubious morally, arguably worse than on Siegel's positive view, but it's not obviously within the range of epistemic evaluation.
+
+## Minimal Connections
+
+Siegel's theory is that perceptions are irrational because they are bad inferences.
+
+- Whatever inferences are, they are richer than the connection between 'salt' and 'pepper'.
+- So she needs to rule out the possibility that there is the same kind of connection here.
+
+## Minimal Connections
+
+I was a little unsure why the association picture would fail to explain most of these experimental results.
+
+- But it's really hard to see how it helps with the age test.
+- And more generally, having a broader range of data helps to make it harder for an opponent.
+
+## Testimony
+
+But the opponent Siegel spends the most time on concedes that the background beliefs are false.
+
+- They argue that the inferences are nonetheless rational (or well-founded) because the false beliefs were formed in a reasonable way.
+- And that reasonable way is testimony from trusted sources.
+
+## Testimony
+
+There is one defence Siegel could offer here, but does not. In fact, she expressly rejects it.
+
+- It is what we might call the transfer model of testimony.
+- Testimony only ever transfers the rationality/reasonableness/well-foundedness of a belief from speaker(s) to hearer(s).
+
+## Testimony
+
+There is one defence Siegel could offer here, but does not. In fact, she expressly rejects it.
+
+
+- So if the initial beliefs are ill-founded, as they are here, so will the subsequent beliefs be.
+
+## Testimony
+
+Siegel rejects the transfer model because of the example of the well-meaning mother.
+
+- A child is entitled to trust their mother's safety advice, even if it turns out to be false and ill-founded.
+
+## Contrasts
+
+What are the contrasts between this case and casually absorbing racist beliefs?
+
+1. The mother is well-meaning and has the child's best interests at heart.
+2. The racist beliefs require poor maintenance to be sustained.
+
+## Contrasts
+
+The first of these is not particularly compelling.
+
+- For one thing, what really matters is whether the person seems well-meaning, not whether they are.
+- For another, it isn't clear that racists spreading racist beliefs to people like them are not well-meaning, in the sense of trying to improve (by their lights) the well-being of their audience.
+
+## Contrasts
+
+What about the second of these?
+
+- It seems fairly contingent at best that the belief requires poor maintenance.
+- Someone who grows up in a very homogenous (and racist) community won't have much opportunity to do any useful maintenance.
+
+## Vigilance
+
+A better model might be that the person who simply absorbs racist beliefs is (in most realistic situations) not going to be particularly vigilant.
+
+- And that might be a difference with the case of the misleading mother.
+
+# Pautz's Criticisms
+
+---
+
+Case 1
+
+- Person expects to see a red round thing when they enter the room, for no good reason at all.
+- When they enter the room, they hallucinate a tomato, because of this hallucination.
+- Despite knowing they had this expectation, they believe there is a tomato there.
+
+---
+
+Case 2 (Pautz's Case)
+
+- Just like case one, except person forgets that they had this expectation.
+- They have no reason at all to think they are hallucinating.
+- They also believe there is a tomato in the room.
+
+## Pautz's Arguments
+
+Two claims really, that are worth separating.
+
+1. It is intuitively obvious that the belief is reasonable in this case.
+2. If you have a reason to believe something, and no reason to reject it, you should believe it.
+
+## Forgetting
+
+The second argument seems too strong as it stands. Example: A bill (call it Bill) is being debated in Congress.
+
+- Person believes that Democrats support it on very weak evidence.
+- Next day person has forgotten their evidence, but not their belief, and learns Republicans support Bill.
+
+## Forgetting
+
+The second argument seems too strong as it stands. Example: A bill (call it Bill) is being debated in Congress.
+
+- Person concludes Democrats and Republicans have same view on Bill.
+
+## Forgetting
+
+This seems maybe not particularly reasonable.
+
+- It would be something like epistemic laundering if it were reasonable.
+- But also there's nothing internal to Person _now_ that would tell them they are being unreasonable.
+
+## Forgetting
+
+A lot of what Pautz will argue turns, I think, on this kind of principle.
+
+- If someone is being unreasonable, they could figure out that they are being unreasonable by careful introspection.
+- In Siegel's cases, that's impossible.
+- But maybe it's impossible in forgetting cases.
+
+## Evil Demons
+
+This case is, I think, the core of Pautz's criticism of Siegel.
+
+- Start with a case that Siegel would describe as hijacked experience.
+- After 30 seconds, without the phenomenal feel changing, it becomes a case of evil demon deception.
+- Does it become more reasonable to trust appearances when that happens?
+
+## Evil Demons
+
+Imagine that the person does trust the appearances all along.
+
+- Siegel says that they are being rational before the demon turns up, but irrational afterwards.
+- But it seems from the inside they are doing the same thing.
+
+## Evidence
+
+There is one other big point that runs through Pautz's piece that I think is worth having on the table.
+
+- What is perceptual evidence?
+
+## Evidence for Pautz
+
+It's clear from Pautz's arguments that he thinks the evidence is something like the phenomenal apperances.
+
+- He often describes cases like the demon case as one where the evidence does not change between the 'hijacked' case and the evil demon case.
+
+## Evidence for Siegel
+
+I think that to make sense of Siegel's position, you have to understand evidence as kicking in at a much earlier stage.
+
+- Evidence is what we're meant to fundamentally base our reasons on.
+- And for Siegel, phenomenal appearances are the result of inference.
+
+## Evidence for Siegel
+
+So for Siegel, evidence must be something earlier than phenomenology.
+
+- If that's right, then I'm not sure a lot of Pautz's arguments go through.
+- On the other hand, that's a really striking position!
+- Evidence is really inaccessible, and that seems like the big argument.
+
+# Siegel's Response
+
+## Two Responses
+
+1. Focus on realistic cases;
+2. Look at what people actually do to see what's intuitive.
+
+## Realistic Cases
+
+Pautz's cases involve all sorts of weirdness.
+
+- First, there are people who anticipate weird things like red, round spheres.
+- Second, there are evil demons put on top of this detail.
+
+## Siegel's Cases
+
+Siegel's cases are much more realistic.
+
+- Some of them are cases of wishful seeing.
+- And others are cases of racist perception.
+
+## Principle
+
+Take intuitions about realistic cases more seriously than intuitions about unrealistic cases.
+
+- I guess that sounds fine as far as it goes, but it relies on the intuitions going Siegel's way (fairly decisively) in the realistic cases.
+
+## Protests
+
+So here's a fact that seems to support Siegel's view: there are often mass protests after shootings where the perpetrator (usually a police officer) hallucinated a gun.
+
+## Siegel's Argument
+
+I think this implicit argument here is something like this.
+
+1. People don't protest things they think are justified.
+2. On traditional views of perception, like Pautz's, these shootings would be justified.
+3. So ordinary people do not in fact have the intuitions that Pautz needs them to have (in these tragically realistic cases).
+
+## Protests
+
+This all goes by very quickly in a couple of page response, but as it stands I didn't find that particularly persuasive. So I just wanted to note a few challenges in getting from the existence of the protests to Siegel like conclusions.
+
+## Lying
+
+For one thing, the protestors might have thought the officers were simply lying about what perceptions they had.
+
+- It's kind of odd that Siegel, in the context of arguing that these officers are guilty of a distinctive kind of irrationality, seems to take their word for what kind of perception they had.
+
+## Self-Defence
+
+This is a bit more theoretical, but the protestors might have had a strict liability theory of self-defence.
+
+- This could either be a strict liability theory about the **morality** of self-defence, or about the **legality** of self-defence.
+
+## Self-Defence
+
+This is a bit more theoretical, but the protestors might have had a strict liability theory of self-defence.
+
+- The legal claim would be very strange I think; not completely implausible but a long way from our actual cultural norms.
+
+## Self-Defence
+
+The moral claim is a bit more plausible.
+
+- Think about someone who has a completely blameless but mistaken view that a third party poses a danger to them, and they seriously injure the perceived attacker.
+- Don't we think they should feel some guilt or remorse, and (morally) owe their victim at least an apology and maybe compensation?
+
+## Structural
+
+Most plausibly, the protestors could be protesting the institutions that created this danger as much as the individual police officer.
+
+- Even if the officer's actions were completely rational, there is a very good complaint against a system that puts people prone to make *this* mistake in a situation where it will cause *this* harm.
+
+## Structural
+
+I'm worried I've lost the dialectic a bit here but I think it's fairly hard to get from the known facts to the conclusion Siegel draws that the protests are "a living disagreement about whether the beliefs are reasonable".
+
+- There are just too many other things the protests could be about.
+
+## For Next Time
+
+- Anything you want to discuss about essays, quizzes, the other papers, or the books/readings.
+

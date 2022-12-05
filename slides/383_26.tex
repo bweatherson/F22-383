@@ -1,0 +1,795 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  17pt,
+  letterpaper,
+  ignorenonframetext,
+  aspectratio=169,
+  xcolor={dvipsnames}]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[BoldFont = SF Pro Text Semibold, Scale =
+MatchLowercase]{SF Pro Text Light}
+\fi
+\usecolortheme{wolverine}
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
+\useinnertheme{default}
+\useoutertheme{miniframes}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\captionsetup[figure]{labelformat=empty}
+\usepackage{pgfpages}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{footline}[frame number]{}
+\mode<handout>{\pgfpagesuselayout{6 on 1}[letterpaper, border shrink=8mm]}
+\AtBeginSection{%
+   \begin{frame}
+       \tableofcontents[currentsection]
+   \end{frame}
+}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Knowledge and Reality, Lecture 26},
+  pdfauthor={Brian Weatherson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Knowledge and Reality, Lecture 26}
+\author{Brian Weatherson}
+\date{1/1/22}
+
+\begin{document}
+\frame{\titlepage}
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, boxrule=0pt, frame hidden, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners]}{\end{tcolorbox}}\fi
+
+\hypertarget{racial-misperceptions}{%
+\section{Racial Misperceptions}\label{racial-misperceptions}}
+
+\begin{frame}{Big Picture}
+\protect\hypertarget{big-picture}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There are a lot of racial misperceptions.
+\item
+  These are downstream of widely shared racial (well, racist) beliefs
+  that are widely shared in the community.
+\item
+  At least in many (most?) cases, there is enough individual culpability
+  in acquiring or maintaining these background beliefs that the
+  perceptions are not well-founded.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Racial Misperceptions}
+\protect\hypertarget{racial-misperceptions-1}{}
+Note how many, and how varied, the misperceptions at the start of the
+chapter are.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  They include seemingly innocuous things like age.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Why So Many}
+\protect\hypertarget{why-so-many}{}
+Siegel is responding to a (possible) criticism that some of these
+misperceptions might be grounded in accurate beliefs about racial
+disparities.
+\end{frame}
+
+\begin{frame}{Why So Many}
+\protect\hypertarget{why-so-many-1}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Some of the explaining away here seems to rely on bad inferences,
+  e.g., from Most Fs are Gs to Most Gs are Fs.
+\item
+  But in some of the experiments, it's hard to see what beliefs about
+  the world could make the beliefs about ages justified.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Minimal Connections}
+\protect\hypertarget{minimal-connections}{}
+The range of experiments also helps respond to another kind of concern.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Imagine that a person has developed a kind of association between
+  `black' and `dangerous' like the association between `salt' and
+  `pepper'.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Minimal Connections}
+\protect\hypertarget{minimal-connections-1}{}
+The range of experiments also helps respond to another kind of concern.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  That looks pretty dubious morally, arguably worse than on Siegel's
+  positive view, but it's not obviously within the range of epistemic
+  evaluation.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Minimal Connections}
+\protect\hypertarget{minimal-connections-2}{}
+Siegel's theory is that perceptions are irrational because they are bad
+inferences.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Whatever inferences are, they are richer than the connection between
+  `salt' and `pepper'.
+\item
+  So she needs to rule out the possibility that there is the same kind
+  of connection here.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Minimal Connections}
+\protect\hypertarget{minimal-connections-3}{}
+I was a little unsure why the association picture would fail to explain
+most of these experimental results.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  But it's really hard to see how it helps with the age test.
+\item
+  And more generally, having a broader range of data helps to make it
+  harder for an opponent.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Testimony}
+\protect\hypertarget{testimony}{}
+But the opponent Siegel spends the most time on concedes that the
+background beliefs are false.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  They argue that the inferences are nonetheless rational (or
+  well-founded) because the false beliefs were formed in a reasonable
+  way.
+\item
+  And that reasonable way is testimony from trusted sources.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Testimony}
+\protect\hypertarget{testimony-1}{}
+There is one defence Siegel could offer here, but does not. In fact, she
+expressly rejects it.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It is what we might call the transfer model of testimony.
+\item
+  Testimony only ever transfers the
+  rationality/reasonableness/well-foundedness of a belief from
+  speaker(s) to hearer(s).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Testimony}
+\protect\hypertarget{testimony-2}{}
+There is one defence Siegel could offer here, but does not. In fact, she
+expressly rejects it.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  So if the initial beliefs are ill-founded, as they are here, so will
+  the subsequent beliefs be.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Testimony}
+\protect\hypertarget{testimony-3}{}
+Siegel rejects the transfer model because of the example of the
+well-meaning mother.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A child is entitled to trust their mother's safety advice, even if it
+  turns out to be false and ill-founded.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Contrasts}
+\protect\hypertarget{contrasts}{}
+What are the contrasts between this case and casually absorbing racist
+beliefs?
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  The mother is well-meaning and has the child's best interests at
+  heart.
+\item
+  The racist beliefs require poor maintenance to be sustained.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Contrasts}
+\protect\hypertarget{contrasts-1}{}
+The first of these is not particularly compelling.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  For one thing, what really matters is whether the person seems
+  well-meaning, not whether they are.
+\item
+  For another, it isn't clear that racists spreading racist beliefs to
+  people like them are not well-meaning, in the sense of trying to
+  improve (by their lights) the well-being of their audience.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Contrasts}
+\protect\hypertarget{contrasts-2}{}
+What about the second of these?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It seems fairly contingent at best that the belief requires poor
+  maintenance.
+\item
+  Someone who grows up in a very homogenous (and racist) community won't
+  have much opportunity to do any useful maintenance.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Vigilance}
+\protect\hypertarget{vigilance}{}
+A better model might be that the person who simply absorbs racist
+beliefs is (in most realistic situations) not going to be particularly
+vigilant.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  And that might be a difference with the case of the misleading mother.
+\end{itemize}
+\end{frame}
+
+\hypertarget{pautzs-criticisms}{%
+\section{Pautz's Criticisms}\label{pautzs-criticisms}}
+
+\begin{frame}
+Case 1
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Person expects to see a red round thing when they enter the room, for
+  no good reason at all.
+\item
+  When they enter the room, they hallucinate a tomato, because of this
+  hallucination.
+\item
+  Despite knowing they had this expectation, they believe there is a
+  tomato there.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+Case 2 (Pautz's Case)
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Just like case one, except person forgets that they had this
+  expectation.
+\item
+  They have no reason at all to think they are hallucinating.
+\item
+  They also believe there is a tomato in the room.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Pautz's Arguments}
+\protect\hypertarget{pautzs-arguments}{}
+Two claims really, that are worth separating.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  It is intuitively obvious that the belief is reasonable in this case.
+\item
+  If you have a reason to believe something, and no reason to reject it,
+  you should believe it.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Forgetting}
+\protect\hypertarget{forgetting}{}
+The second argument seems too strong as it stands. Example: A bill (call
+it Bill) is being debated in Congress.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Person believes that Democrats support it on very weak evidence.
+\item
+  Next day person has forgotten their evidence, but not their belief,
+  and learns Republicans support Bill.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Forgetting}
+\protect\hypertarget{forgetting-1}{}
+The second argument seems too strong as it stands. Example: A bill (call
+it Bill) is being debated in Congress.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Person concludes Democrats and Republicans have same view on Bill.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Forgetting}
+\protect\hypertarget{forgetting-2}{}
+This seems maybe not particularly reasonable.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It would be something like epistemic laundering if it were reasonable.
+\item
+  But also there's nothing internal to Person \emph{now} that would tell
+  them they are being unreasonable.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Forgetting}
+\protect\hypertarget{forgetting-3}{}
+A lot of what Pautz will argue turns, I think, on this kind of
+principle.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If someone is being unreasonable, they could figure out that they are
+  being unreasonable by careful introspection.
+\item
+  In Siegel's cases, that's impossible.
+\item
+  But maybe it's impossible in forgetting cases.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evil Demons}
+\protect\hypertarget{evil-demons}{}
+This case is, I think, the core of Pautz's criticism of Siegel.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Start with a case that Siegel would describe as hijacked experience.
+\item
+  After 30 seconds, without the phenomenal feel changing, it becomes a
+  case of evil demon deception.
+\item
+  Does it become more reasonable to trust appearances when that happens?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evil Demons}
+\protect\hypertarget{evil-demons-1}{}
+Imagine that the person does trust the appearances all along.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Siegel says that they are being rational before the demon turns up,
+  but irrational afterwards.
+\item
+  But it seems from the inside they are doing the same thing.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evidence}
+\protect\hypertarget{evidence}{}
+There is one other big point that runs through Pautz's piece that I
+think is worth having on the table.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  What is perceptual evidence?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evidence for Pautz}
+\protect\hypertarget{evidence-for-pautz}{}
+It's clear from Pautz's arguments that he thinks the evidence is
+something like the phenomenal apperances.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  He often describes cases like the demon case as one where the evidence
+  does not change between the `hijacked' case and the evil demon case.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evidence for Siegel}
+\protect\hypertarget{evidence-for-siegel}{}
+I think that to make sense of Siegel's position, you have to understand
+evidence as kicking in at a much earlier stage.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Evidence is what we're meant to fundamentally base our reasons on.
+\item
+  And for Siegel, phenomenal appearances are the result of inference.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Evidence for Siegel}
+\protect\hypertarget{evidence-for-siegel-1}{}
+So for Siegel, evidence must be something earlier than phenomenology.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  If that's right, then I'm not sure a lot of Pautz's arguments go
+  through.
+\item
+  On the other hand, that's a really striking position!
+\item
+  Evidence is really inaccessible, and that seems like the big argument.
+\end{itemize}
+\end{frame}
+
+\hypertarget{siegels-response}{%
+\section{Siegel's Response}\label{siegels-response}}
+
+\begin{frame}{Two Responses}
+\protect\hypertarget{two-responses}{}
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Focus on realistic cases;
+\item
+  Look at what people actually do to see what's intuitive.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Realistic Cases}
+\protect\hypertarget{realistic-cases}{}
+Pautz's cases involve all sorts of weirdness.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  First, there are people who anticipate weird things like red, round
+  spheres.
+\item
+  Second, there are evil demons put on top of this detail.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Siegel's Cases}
+\protect\hypertarget{siegels-cases}{}
+Siegel's cases are much more realistic.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Some of them are cases of wishful seeing.
+\item
+  And others are cases of racist perception.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Principle}
+\protect\hypertarget{principle}{}
+Take intuitions about realistic cases more seriously than intuitions
+about unrealistic cases.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  I guess that sounds fine as far as it goes, but it relies on the
+  intuitions going Siegel's way (fairly decisively) in the realistic
+  cases.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Protests}
+\protect\hypertarget{protests}{}
+So here's a fact that seems to support Siegel's view: there are often
+mass protests after shootings where the perpetrator (usually a police
+officer) hallucinated a gun.
+\end{frame}
+
+\begin{frame}{Siegel's Argument}
+\protect\hypertarget{siegels-argument}{}
+I think this implicit argument here is something like this.
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  People don't protest things they think are justified.
+\item
+  On traditional views of perception, like Pautz's, these shootings
+  would be justified.
+\item
+  So ordinary people do not in fact have the intuitions that Pautz needs
+  them to have (in these tragically realistic cases).
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Protests}
+\protect\hypertarget{protests-1}{}
+This all goes by very quickly in a couple of page response, but as it
+stands I didn't find that particularly persuasive. So I just wanted to
+note a few challenges in getting from the existence of the protests to
+Siegel like conclusions.
+\end{frame}
+
+\begin{frame}{Lying}
+\protect\hypertarget{lying}{}
+For one thing, the protestors might have thought the officers were
+simply lying about what perceptions they had.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  It's kind of odd that Siegel, in the context of arguing that these
+  officers are guilty of a distinctive kind of irrationality, seems to
+  take their word for what kind of perception they had.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-Defence}
+\protect\hypertarget{self-defence}{}
+This is a bit more theoretical, but the protestors might have had a
+strict liability theory of self-defence.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  This could either be a strict liability theory about the
+  \textbf{morality} of self-defence, or about the \textbf{legality} of
+  self-defence.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-Defence}
+\protect\hypertarget{self-defence-1}{}
+This is a bit more theoretical, but the protestors might have had a
+strict liability theory of self-defence.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The legal claim would be very strange I think; not completely
+  implausible but a long way from our actual cultural norms.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Self-Defence}
+\protect\hypertarget{self-defence-2}{}
+The moral claim is a bit more plausible.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Think about someone who has a completely blameless but mistaken view
+  that a third party poses a danger to them, and they seriously injure
+  the perceived attacker.
+\item
+  Don't we think they should feel some guilt or remorse, and (morally)
+  owe their victim at least an apology and maybe compensation?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Structural}
+\protect\hypertarget{structural}{}
+Most plausibly, the protestors could be protesting the institutions that
+created this danger as much as the individual police officer.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Even if the officer's actions were completely rational, there is a
+  very good complaint against a system that puts people prone to make
+  \emph{this} mistake in a situation where it will cause \emph{this}
+  harm.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Structural}
+\protect\hypertarget{structural-1}{}
+I'm worried I've lost the dialectic a bit here but I think it's fairly
+hard to get from the known facts to the conclusion Siegel draws that the
+protests are ``a living disagreement about whether the beliefs are
+reasonable''.
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  There are just too many other things the protests could be about.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{For Next Time}
+\protect\hypertarget{for-next-time}{}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Anything you want to discuss about essays, quizzes, the other papers,
+  or the books/readings.
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
